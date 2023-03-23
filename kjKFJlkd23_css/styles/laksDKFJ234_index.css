@@ -53,14 +53,40 @@ body main .main-header {
 body main .main-header h1 {
   font-size: 5vw;
   font-weight: 400;
-  margin-bottom: 25px;
+  line-height: 5vw;
   color: #161a20;
 }
 body main .main-header p {
-  width: 85%;
-  font-size: 1.5rem;
-  line-height: 2.4rem;
+  width: 75%;
+  font-size: 1rem;
+  line-height: 1.8rem;
   color: #363739;
+  margin: 25px 0 50px 0;
+}
+body main .main-header a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: auto;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  transition: all 0.25s ease-in-out;
+  padding: 8px 12px;
+  border-radius: 50px;
+  background-color: rgba(255, 0, 0, 0.5);
+  transition: all 0.25s ease-in-out;
+}
+body main .main-header a i.bi {
+  font-size: 0;
+  transition: all 0.2s ease-in-out;
+}
+body main .main-header a:hover {
+  background-color: rgba(255, 0, 0, 0.75);
+  color: rgb(255, 255, 255);
+}
+body main .main-header a:hover i.bi {
+  font-size: 1rem;
+  margin-left: 10px;
 }
 body main .container {
   display: grid;
@@ -75,7 +101,8 @@ body main .container .c-header {
   color: rgba(58, 68, 86, 0.5490196078);
   margin: auto;
   width: 90%;
-  transform: translateY(45px);
+  position: relative;
+  top: 45px;
 }
 body main .container .c-header h3 {
   font-size: 2rem;
@@ -99,30 +126,32 @@ body main .container .insurance-card {
   width: 90%;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  transition: all 0.25s ease-in-out;
 }
 body main .container .insurance-card .card-top-border {
-  padding: 5px 0;
+  padding: 8px 0;
 }
 body main .container .insurance-card .border-blue {
-  background-color: rgb(44, 58, 255);
+  background: linear-gradient(to bottom, #2c3aff, transparent);
 }
 body main .container .insurance-card .border-red {
-  background-color: rgb(255, 44, 44);
+  background: linear-gradient(to bottom, #ff2c2c, transparent);
 }
 body main .container .insurance-card .border-green {
-  background-color: rgb(62, 255, 44);
+  background: linear-gradient(to bottom, #2cff3e, transparent);
 }
 body main .container .insurance-card .border-yellow {
-  background-color: rgb(241, 255, 44);
+  background: linear-gradient(to bottom, #ffff2c, transparent);
 }
 body main .container .insurance-card .border-orange {
-  background-color: rgb(255, 164, 44);
+  background: linear-gradient(to bottom, #ff8f2c, transparent);
 }
 body main .container .insurance-card .border-purple {
-  background-color: rgb(255, 44, 248);
+  background: linear-gradient(to bottom, #ff2cf4, transparent);
 }
 body main .container .insurance-card .content {
   padding: 20px 20px 50px 25px;
+  transition: all 0.25s ease-in-out;
 }
 body main .container .insurance-card .content .thumbnail {
   display: flex;
@@ -179,7 +208,9 @@ body main .container .insurance-card .content .sub-insurance .si-box:hover {
 body main .container .insurance-card .content .sub-insurance .si-box:hover span {
   color: white;
 }
-body main .container .insurance-card .content a {
+body main .container .insurance-card .content a.to-article-btn {
+  display: inline-flex;
+  align-items: center;
   padding: 8px 16px;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -188,6 +219,21 @@ body main .container .insurance-card .content a {
   text-decoration: none;
   color: white;
   border-radius: 100px;
+  transition: all 0.25s ease-in-out;
+}
+body main .container .insurance-card .content a.to-article-btn i.bi {
+  font-size: 0;
+  transition: all 0.2s ease-in-out;
+}
+body main .container .insurance-card .content a.to-article-btn:hover {
+  background-color: #1c68d2;
+}
+body main .container .insurance-card:hover {
+  transform: translateY(-10px);
+}
+body main .container .insurance-card:hover a.to-article-btn i.bi {
+  font-size: 1rem;
+  margin-left: 10px;
 }
 body main .asfdFf2a {
   position: absolute;
@@ -221,7 +267,7 @@ body article .a-header ul li a {
   text-decoration: none;
   color: #3a4456;
   font-size: 1rem;
-  transition: all 0.25s ease-in;
+  transition: all 0.25s ease-out;
 }
 body article .a-header ul li a:hover {
   color: #347eff;

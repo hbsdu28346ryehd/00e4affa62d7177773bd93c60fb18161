@@ -54,14 +54,40 @@ body {
             h1 {
                 font-size: 5vw;
                 font-weight: 400;
-                margin-bottom: 25px;
+                line-height: 5vw;
                 color: #161a20;
             }
             p {
-                width: 85%;
-                font-size: 1.5rem;
-                line-height: 2.4rem;
+                width: 75%;
+                font-size: 1rem;
+                line-height: 1.8rem;
                 color: #363739;
+                margin: 25px 0 50px 0;
+            }
+            a {
+                display: inline-flex;
+                align-items: center;
+                text-decoration: none;
+                margin-right: auto;
+                border-radius: 5px;
+                color: rgb(255, 255, 255);
+                transition: all 0.25s ease-in-out;
+                padding: 8px 12px;
+                border-radius: 50px;
+                background-color: rgba(255, 0, 0, 0.5);
+                transition: all 0.25s ease-in-out;
+                i.bi {
+                    font-size: 0;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            a:hover {
+                background-color: rgba(255, 0, 0, 0.75);
+                color: rgb(255, 255, 255);
+                i.bi {
+                    font-size: 1rem;
+                    margin-left: 10px;
+                }
             }
         }
         .container {
@@ -76,7 +102,8 @@ body {
                 color: #3a44568c;
                 margin: auto;
                 width: 90%;
-                transform: translateY(45px);
+                position: relative;
+                top: 45px;
                 h3 {
                     font-size: 2rem;
                     font-weight: 400;
@@ -100,17 +127,19 @@ body {
                 width: 90%;
                 overflow: hidden;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                transition: all 0.25s ease-in-out;
                 .card-top-border {
-                    padding: 5px 0;
+                    padding: 8px 0;
                 }
-                .border-blue {background-color: rgb(44, 58, 255);}
-                .border-red {background-color: rgb(255, 44, 44);}
-                .border-green {background-color: rgb(62, 255, 44);}
-                .border-yellow {background-color: rgb(241, 255, 44);}
-                .border-orange {background-color: rgb(255, 164, 44);}
-                .border-purple {background-color: rgb(255, 44, 248);}
+                .border-blue {background: linear-gradient(to bottom, #2c3aff, transparent);}
+                .border-red {background: linear-gradient(to bottom, #ff2c2c, transparent);}
+                .border-green {background: linear-gradient(to bottom, #2cff3e, transparent);}
+                .border-yellow {background: linear-gradient(to bottom, #ffff2c, transparent);}
+                .border-orange {background: linear-gradient(to bottom, #ff8f2c, transparent);}
+                .border-purple {background: linear-gradient(to bottom, #ff2cf4, transparent);}
                 .content {
                     padding: 20px 20px 50px 25px;
+                    transition: all 0.25s ease-in-out;
                     .thumbnail {
                         display: flex;
                         justify-content: flex-end;
@@ -166,7 +195,9 @@ body {
                             }
                         }
                     }
-                    a {
+                    a.to-article-btn {
+                        display: inline-flex;
+                        align-items: center;
                         padding: 8px 16px;
                         font-size: 1rem;
                         letter-spacing: 1px;
@@ -175,6 +206,23 @@ body {
                         text-decoration: none;
                         color: white;
                         border-radius: 100px;
+                        transition: all 0.25s ease-in-out;
+                        i.bi {
+                            font-size: 0;
+                            transition: all 0.2s ease-in-out;
+                        }
+                    }
+                    a.to-article-btn:hover {
+                        background-color: #1c68d2;
+                    }
+                }
+            }
+            .insurance-card:hover {
+                transform: translateY(-10px);
+                a.to-article-btn {
+                    i.bi {
+                        font-size: 1rem;
+                        margin-left: 10px;
                     }
                 }
             }
@@ -208,7 +256,7 @@ body {
                         text-decoration: none;
                         color: #3a4456;
                         font-size: 1rem;
-                        transition: all 0.25s ease-in;
+                        transition: all 0.25s ease-out;
                     }
                     a:hover {
                         color: #347eff;

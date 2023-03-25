@@ -11,25 +11,14 @@ body {
         justify-content: center;
         padding: 20px;
         background-color: white;
-        z-index: 1000;
         .logo {
             display: flex;
             align-items: center;
             column-gap: 8px;
             height: 20px;
-            .logo-icon, .logo-text {
-                display: flex;
-                align-items: center;
-            }
-            .logo-icon {
-                img {
-                    height: 20px;
-                }
-            }
-            .logo-text {
-                img {
-                    height: 15px;
-                }
+            img {
+                height: 20px;
+                cursor: pointer;
             }
         }
     }
@@ -47,6 +36,7 @@ body {
                 font-weight: 400;
                 line-height: 5vw;
                 color: #161a20;
+                font-family: poppins, sans-serif;
             }
             p {
                 width: 75%;
@@ -65,7 +55,7 @@ body {
                 transition: all 0.25s ease-in-out;
                 padding: 8px 12px;
                 border-radius: 50px;
-                background-color: rgba(255, 0, 0, 0.5);
+                background-color: $danger-light;
                 transition: all 0.25s ease-in-out;
                 i.bi {
                     font-size: 0;
@@ -73,7 +63,7 @@ body {
                 }
             }
             a:hover {
-                background-color: rgba(255, 0, 0, 0.75);
+                background-color: $danger-dark;
                 color: rgb(255, 255, 255);
                 i.bi {
                     font-size: 1rem;
@@ -120,14 +110,14 @@ body {
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                 transition: all 0.25s ease-in-out;
                 .card-top-border {
-                    padding: 8px 0;
+                    padding: 4px 0;
                 }
-                .border-blue {background: linear-gradient(to bottom, #2c3aff, transparent);}
-                .border-red {background: linear-gradient(to bottom, #ff2c2c, transparent);}
-                .border-green {background: linear-gradient(to bottom, #2cff3e, transparent);}
-                .border-yellow {background: linear-gradient(to bottom, #ffff2c, transparent);}
-                .border-orange {background: linear-gradient(to bottom, #ff8f2c, transparent);}
-                .border-purple {background: linear-gradient(to bottom, #ff2cf4, transparent);}
+                .border-blue {background: #2c3aff;}
+                .border-red {background: #ff2c2c;}
+                .border-green {background: #2cff3e;}
+                .border-yellow {background: #ffff2c;}
+                .border-orange {background: #ff8f2c;}
+                .border-purple {background: #ff2cf4;}
                 .content {
                     padding: 20px 20px 50px 25px;
                     transition: all 0.25s ease-in-out;
@@ -147,6 +137,7 @@ body {
                         font-weight: 300;
                         color: #111;
                         margin-bottom: 25px;
+                        font-family: poppins, sans-serif;
                     }
                     p {
                         font-size: 1.1rem;
@@ -250,7 +241,7 @@ body {
                         transition: all 0.25s ease-out;
                     }
                     a:hover {
-                        color: #347eff;
+                        color: $primary;
                     }
                 }
             }

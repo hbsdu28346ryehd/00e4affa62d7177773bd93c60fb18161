@@ -3,7 +3,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+*[role=button] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-decoration: none;
 }
 
 body::-webkit-scrollbar {
@@ -46,7 +53,6 @@ body footer#bF .menu .insurance ul li, body footer#bF .menu .pages ul li {
   margin-bottom: 12px;
 }
 body footer#bF .menu .insurance ul li a, body footer#bF .menu .pages ul li a {
-  text-decoration: none;
   opacity: 0.5;
   color: white;
   font-size: 1rem;
@@ -62,9 +68,6 @@ body footer#bF .menu .insurance ul .list-head, body footer#bF .menu .pages ul .l
   font-weight: 500;
   letter-spacing: 5px;
   text-transform: uppercase;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 body footer#bF .bottom-line p {
   text-align: center;
@@ -82,7 +85,6 @@ body header {
   justify-content: center;
   padding: 20px;
   background-color: white;
-  z-index: 1000;
 }
 body header .logo {
   display: flex;
@@ -91,15 +93,9 @@ body header .logo {
        column-gap: 8px;
   height: 20px;
 }
-body header .logo .logo-icon, body header .logo .logo-text {
-  display: flex;
-  align-items: center;
-}
-body header .logo .logo-icon img {
+body header .logo img {
   height: 20px;
-}
-body header .logo .logo-text img {
-  height: 15px;
+  cursor: pointer;
 }
 body main {
   grid-area: main;
@@ -117,6 +113,7 @@ body main .main-header h1 {
   font-weight: 400;
   line-height: 5vw;
   color: #161a20;
+  font-family: poppins, sans-serif;
 }
 body main .main-header p {
   width: 75%;
@@ -135,7 +132,7 @@ body main .main-header a {
   transition: all 0.25s ease-in-out;
   padding: 8px 12px;
   border-radius: 50px;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: #e74656;
   transition: all 0.25s ease-in-out;
 }
 body main .main-header a i.bi {
@@ -143,7 +140,7 @@ body main .main-header a i.bi {
   transition: all 0.2s ease-in-out;
 }
 body main .main-header a:hover {
-  background-color: rgba(255, 0, 0, 0.75);
+  background-color: #cf2132;
   color: rgb(255, 255, 255);
 }
 body main .main-header a:hover i.bi {
@@ -191,25 +188,25 @@ body main .container .insurance-card {
   transition: all 0.25s ease-in-out;
 }
 body main .container .insurance-card .card-top-border {
-  padding: 8px 0;
+  padding: 4px 0;
 }
 body main .container .insurance-card .border-blue {
-  background: linear-gradient(to bottom, #2c3aff, transparent);
+  background: #2c3aff;
 }
 body main .container .insurance-card .border-red {
-  background: linear-gradient(to bottom, #ff2c2c, transparent);
+  background: #ff2c2c;
 }
 body main .container .insurance-card .border-green {
-  background: linear-gradient(to bottom, #2cff3e, transparent);
+  background: #2cff3e;
 }
 body main .container .insurance-card .border-yellow {
-  background: linear-gradient(to bottom, #ffff2c, transparent);
+  background: #ffff2c;
 }
 body main .container .insurance-card .border-orange {
-  background: linear-gradient(to bottom, #ff8f2c, transparent);
+  background: #ff8f2c;
 }
 body main .container .insurance-card .border-purple {
-  background: linear-gradient(to bottom, #ff2cf4, transparent);
+  background: #ff2cf4;
 }
 body main .container .insurance-card .content {
   padding: 20px 20px 50px 25px;
@@ -231,6 +228,7 @@ body main .container .insurance-card .content h1 {
   font-weight: 300;
   color: #111;
   margin-bottom: 25px;
+  font-family: poppins, sans-serif;
 }
 body main .container .insurance-card .content p {
   font-size: 1.1rem;
@@ -332,5 +330,5 @@ body article .a-header ul li a {
   transition: all 0.25s ease-out;
 }
 body article .a-header ul li a:hover {
-  color: #347eff;
+  color: #0d6efd;
 }/*# sourceMappingURL=laksDKFJ234_index.css.map */

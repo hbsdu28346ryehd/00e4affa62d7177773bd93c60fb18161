@@ -253,7 +253,7 @@ body main#bM section.article-recommend .container-cards .right-box .insurance-ca
   text-align: center;
   font-weight: 500;
   color: rgba(36, 39, 42, 0.8431372549);
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   transition: all 0.25s ease-in-out;
 }
 body main#bM section.article-recommend .container-cards .right-box .insurance-card .content .sub-insurance .si-box:hover, body main#bM section.article-recommend .container-cards .left-box .insurance-card .content .sub-insurance .si-box:hover {
@@ -353,4 +353,4 @@ body article#bAr .a-header ul li a {
 body article#bAr .a-header ul li a:hover {
   background-color: #0d6efd;
   color: #fff;
-}/*# sourceMappingURL=asdflkaDFa2342af_life-insurance.css.map */
+}/*# sourceMappingURL=asdflkaDFa2342af-insurance.css.map */

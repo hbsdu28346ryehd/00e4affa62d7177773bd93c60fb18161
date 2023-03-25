@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(132, 132, 132, 0.5490196078);
+  border-radius: 50px;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #303030;
+}
+
+body footer#bF {
+  grid-area: footer;
+  padding: 100px;
+  background-color: #232934;
+}
+body footer#bF .menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  padding-bottom: 80px;
+}
+body footer#bF .menu .insurance ul, body footer#bF .menu .pages ul {
+  list-style: none;
+  padding: none;
+}
+body footer#bF .menu .insurance ul li, body footer#bF .menu .pages ul li {
+  margin-bottom: 12px;
+}
+body footer#bF .menu .insurance ul li a, body footer#bF .menu .pages ul li a {
+  text-decoration: none;
+  opacity: 0.5;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+body footer#bF .menu .insurance ul li a:hover, body footer#bF .menu .pages ul li a:hover {
+  opacity: 1;
+}
+body footer#bF .menu .insurance ul .list-head, body footer#bF .menu .pages ul .list-head {
+  color: #ffffff;
+  font-size: 0.75rem;
+  margin-bottom: 24px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body footer#bF .bottom-line p {
+  text-align: center;
+  color: #dbdcde;
+}/*# sourceMappingURL=base.css.map */

@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+@import "base";
 body {
     display: grid;
     grid-template-columns: 1fr 25%;
@@ -15,16 +9,13 @@ body {
         grid-area: header;
         display: flex;
         justify-content: center;
-        box-shadow: rgba(0, 0, 0, 0.45) 0px 8px 8px -8px;
-        position: sticky;
         padding: 20px;
-        top: 0;
         background-color: white;
         z-index: 1000;
         .logo {
             display: flex;
             align-items: center;
-            column-gap: 12px;
+            column-gap: 8px;
             height: 20px;
             .logo-icon, .logo-text {
                 display: flex;
@@ -32,12 +23,12 @@ body {
             }
             .logo-icon {
                 img {
-                    height: 24px;
+                    height: 20px;
                 }
             }
             .logo-text {
                 img {
-                    height: 16px;
+                    height: 15px;
                 }
             }
         }
@@ -202,7 +193,7 @@ body {
                         font-size: 1rem;
                         letter-spacing: 1px;
                         font-weight: 400;
-                        background-color: #207dff;
+                        background-color: $primary;
                         text-decoration: none;
                         color: white;
                         border-radius: 100px;
@@ -213,7 +204,7 @@ body {
                         }
                     }
                     a.to-article-btn:hover {
-                        background-color: #1c68d2;
+                        background-color: $primary-dark;
                     }
                 }
             }
@@ -241,7 +232,7 @@ body {
         padding: 50px 25px 150px 0;
         .a-header {
             position: sticky;
-            top: 110px;
+            top: 20px;
             p {
                 font-size: 1rem;
                 color: #3a445685;
@@ -262,51 +253,6 @@ body {
                         color: #347eff;
                     }
                 }
-            }
-        }
-    }
-    footer {
-        grid-area: footer;
-        padding: 100px;
-        background-color: #232934;
-        .menu {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 25px;
-            padding-bottom: 80px;
-            .insurance, .pages {
-                ul {
-                    list-style: none;
-                    padding: none;
-                    li {
-                        margin-bottom: 12px;
-                        a {
-                            text-decoration: none;
-                            opacity: 0.5;
-                            color: white;
-                            font-size: 1rem;
-                            transition: all 0.2s ease-in-out;
-                        }
-                        a:hover {
-                            opacity: 1;
-                        }
-                    }
-                    .list-head {
-                        color: #ffffff;
-                        font-size: .75rem;
-                        margin-bottom: 24px;
-                        font-weight: 500;
-                        letter-spacing: 5px;
-                        text-transform: uppercase;
-                        user-select: none;
-                    }
-                }
-            }
-        }
-        .bottom-line {
-            p {
-                text-align: center;
-                color: #dbdcde;
             }
         }
     }

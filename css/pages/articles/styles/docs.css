@@ -50,7 +50,7 @@ body footer#bF .menu .insurance ul, body footer#bF .menu .pages ul {
   padding: none;
 }
 body footer#bF .menu .insurance ul li, body footer#bF .menu .pages ul li {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 body footer#bF .menu .insurance ul li a, body footer#bF .menu .pages ul li a {
   opacity: 0.5;
@@ -64,7 +64,7 @@ body footer#bF .menu .insurance ul li a:hover, body footer#bF .menu .pages ul li
 body footer#bF .menu .insurance ul .list-head, body footer#bF .menu .pages ul .list-head {
   color: #ffffff;
   font-size: 0.75rem;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   font-weight: 500;
   letter-spacing: 5px;
   text-transform: uppercase;

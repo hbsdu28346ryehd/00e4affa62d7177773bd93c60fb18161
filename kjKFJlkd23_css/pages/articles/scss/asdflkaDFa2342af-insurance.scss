@@ -81,14 +81,16 @@ body {
             grid-area: article_content;
             padding: 0 30px 0 30px;
             margin-bottom: 100px;
-            p {
-                font-size: large;
-                text-align: justify;
-                color: $dark;
-                line-height: 2rem;
-                margin-bottom: 50px;
+            .content {
+                p {
+                    font-size: large;
+                    text-align: justify;
+                    color: $dark;
+                    line-height: 2rem;
+                    margin-bottom: 50px;
+                }
             }
-            section.article-recommend {
+            .recommendation {
                 margin-bottom: 100px;
                 .c-header {
                     margin-bottom: 25px;
@@ -213,7 +215,7 @@ body {
                     }
                 }
             }
-            section.article-tags {
+            .tags {
                 margin-bottom: 50px;
                 h6 {
                     color: $primary-light;

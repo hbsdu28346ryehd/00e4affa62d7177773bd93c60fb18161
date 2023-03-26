@@ -1,10 +1,10 @@
 @import "../../../scss/_base";
 body {
     display: grid;
-    grid-template-columns: 25% 1fr 20%;
-    grid-template-areas: 'header header header'
-                                        'article_left main article_right'
-                                        'footer footer footer';
+    grid-template-columns: 25% 1fr;
+    grid-template-areas: 'header header'
+                                        'article_left main'
+                                        'footer footer';
     background-color: $gray-100;
     header#bH {
         grid-area: header;
@@ -54,26 +54,32 @@ body {
     }
     main#bM {
         grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr calc(100vw - 80vw);
+        grid-template-areas: 'article_hero article_hero'
+                                            'article_content article_right';
         background-color: #ffffff;
-        border-radius: 20px 20px 0 0;
-        padding: 35px 50px;
-        section.article-header {
-            margin-bottom: 50px;
+        border-radius: 20px 0 0 0;
+        section.article-hero {
+            grid-area: article_hero;
+            padding: 10px 30px 30px 30px;
             .pub-date {
-                text-align: end;
                 color: $gray-600;
                 font-size: small;
             }
             .article-title {
-                margin: 50px 0;
-                text-align: center;
-                font-size: 4rem;
-                font-weight: 900;
-                color: $gray-800;
-                font-family: inter, sans-serif;
+                text-align: start;
+                font-size: 5rem;
+                line-height: 5.5rem;
+                margin: 20px 0;
+                font-weight: 800;
+                color: $blue-darker;
+                font-family: poppins, sans-serif;
             }
         }
-        section.article-main {
+        section.article-content {
+            grid-area: article_content;
+            padding: 0 30px 0 30px;
             margin-bottom: 100px;
             p {
                 font-size: large;
@@ -82,193 +88,199 @@ body {
                 line-height: 2rem;
                 margin-bottom: 50px;
             }
-        }
-        section.article-recommend {
-            margin-bottom: 100px;
-            .c-header {
-                margin-bottom: 25px;
+            section.article-recommend {
+                margin-bottom: 100px;
+                .c-header {
+                    margin-bottom: 25px;
+                    h6 {
+                        color: $primary-light;
+                        font-size: 1rem;
+                        letter-spacing: 2px;
+                        font-weight: 500;
+                        font-family: inter, sans-serif;
+                    }
+                }
+                .container-cards {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 25px;
+                    .right-box, .left-box {
+                        max-width: 100%;
+                        .insurance-card {
+                            border-radius: 12px;
+                            overflow: hidden;
+                            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                            transition: all 0.25s ease-in-out;
+                            .card-top-border {
+                                padding: 4px 0;
+                            }
+                            .border-blue {background: #2c3aff;}
+                            .border-red {background: #ff2c2c;}
+                            .border-green {background: #2cff3e;}
+                            .border-yellow {background: #ffff2c;}
+                            .border-orange {background: #ff8f2c;}
+                            .border-purple {background: #ff2cf4;}
+                            .content {
+                                padding: 20px 20px 25px 25px;
+                                transition: all 0.25s ease-in-out;
+                                .thumbnail {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    height: 120px;
+                                    width: 100%;
+                                    img {
+                                        height: 100%;
+                                        width: auto;
+                                    }
+                                }
+                                h1 {
+                                    font-size: 2.4rem;
+                                    letter-spacing: -0.5px;
+                                    font-weight: 300;
+                                    color: #111;
+                                    margin-bottom: 16px;
+                                    font-family: poppins, sans-serif;
+                                }
+                                p {
+                                    font-size: 0.9rem;
+                                    line-height: 1.5rem;
+                                    color: #222;
+                                    margin-bottom: 25px;
+                                }
+                                .sub-insurance {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    gap: 10px;
+                                    margin-bottom: 25px;
+                                    .si-box {
+                                        border: 1px solid #207dff3a;
+                                        cursor: pointer;
+                                        aspect-ratio: 1/1;
+                                        border-radius: 8px;
+                                        display: grid;
+                                        padding: 6px;
+                                        place-items: center;
+                                        background-color: #207dff0f;
+                                        transition: all 0.25s ease-in-out;
+                                        span {
+                                            text-align: center;
+                                            font-weight: 500;
+                                            color: #24272ad7;
+                                            font-size: 0.75rem;
+                                            transition: all 0.25s ease-in-out;
+                                        }
+                                    }
+                                    .si-box:hover {
+                                        background-color: $primary;
+                                        transform: translateY(-5px);
+                                        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                                        span {
+                                            color: white;
+                                        }
+                                    }
+                                }
+                                a.to-article-btn {
+                                    display: inline-flex;
+                                    align-items: center;
+                                    padding: 8px 16px;
+                                    font-size: 1rem;
+                                    letter-spacing: 1px;
+                                    font-weight: 400;
+                                    background-color: $primary;
+                                    text-decoration: none;
+                                    color: white;
+                                    border-radius: 100px;
+                                    transition: all 0.25s ease-in-out;
+                                    i.bi {
+                                        font-size: 0;
+                                        transition: all 0.2s ease-in-out;
+                                    }
+                                }
+                                a.to-article-btn:hover {
+                                    background-color: $primary-dark;
+                                }
+                            }
+                        }
+                        .insurance-card:hover {
+                            transform: translateY(-10px);
+                            a.to-article-btn {
+                                i.bi {
+                                    font-size: 1rem;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            section.article-tags {
+                margin-bottom: 50px;
                 h6 {
                     color: $primary-light;
                     font-size: 1rem;
                     letter-spacing: 2px;
-                    font-weight: 600;
+                    font-weight: 500;
+                    margin-bottom: 25px;
+                    font-family: inter, sans-serif;
                 }
-            }
-            .container-cards {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                column-gap: 50px;
-                .right-box, .left-box {
-                    .insurance-card {
-                        border-radius: 12px;
-                        overflow: hidden;
-                        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-                        transition: all 0.25s ease-in-out;
-                        .card-top-border {
-                            padding: 4px 0;
-                        }
-                        .border-blue {background: #2c3aff;}
-                        .border-red {background: #ff2c2c;}
-                        .border-green {background: #2cff3e;}
-                        .border-yellow {background: #ffff2c;}
-                        .border-orange {background: #ff8f2c;}
-                        .border-purple {background: #ff2cf4;}
-                        .content {
-                            padding: 20px 20px 25px 25px;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 8px;
+                    row-gap: 24px;
+                    padding: 0;
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: $dark;
+                            background-color: $gray-100;
+                            padding: 8px 16px;
+                            border-radius: 50px;
                             transition: all 0.25s ease-in-out;
-                            .thumbnail {
-                                display: flex;
-                                justify-content: flex-end;
-                                height: 120px;
-                                width: 100%;
-                                img {
-                                    height: 100%;
-                                    width: auto;
-                                }
-                            }
-                            h1 {
-                                font-size: 2.4rem;
-                                letter-spacing: -0.5px;
-                                font-weight: 300;
-                                color: #111;
-                                margin-bottom: 16px;
-                                font-family: poppins, sans-serif;
-                            }
-                            p {
-                                font-size: 0.9rem;
-                                line-height: 1.5rem;
-                                color: #222;
-                                margin-bottom: 25px;
-                            }
-                            .sub-insurance {
-                                display: grid;
-                                grid-template-columns: 1fr 1fr 1fr;
-                                gap: 20px;
-                                margin-bottom: 25px;
-                                .si-box {
-                                    border: 1px solid #207dff3a;
-                                    cursor: pointer;
-                                    aspect-ratio: 1/1;
-                                    border-radius: 8px;
-                                    display: grid;
-                                    padding: 8px;
-                                    place-items: center;
-                                    background-color: #207dff0f;
-                                    transition: all 0.25s ease-in-out;
-                                    span {
-                                        text-align: center;
-                                        font-weight: 500;
-                                        color: #24272ad7;
-                                        font-size: 0.75rem;
-                                        transition: all 0.25s ease-in-out;
-                                    }
-                                }
-                                .si-box:hover {
-                                    background-color: $primary;
-                                    transform: translateY(-5px);
-                                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-                                    span {
-                                        color: white;
-                                    }
-                                }
-                            }
-                            a.to-article-btn {
-                                display: inline-flex;
-                                align-items: center;
-                                padding: 8px 16px;
-                                font-size: 1rem;
-                                letter-spacing: 1px;
-                                font-weight: 400;
-                                background-color: $primary;
-                                text-decoration: none;
-                                color: white;
-                                border-radius: 100px;
-                                transition: all 0.25s ease-in-out;
-                                i.bi {
-                                    font-size: 0;
-                                    transition: all 0.2s ease-in-out;
-                                }
-                            }
-                            a.to-article-btn:hover {
-                                background-color: $primary-dark;
-                            }
                         }
-                    }
-                    .insurance-card:hover {
-                        transform: translateY(-10px);
-                        a.to-article-btn {
-                            i.bi {
-                                font-size: 1rem;
-                                margin-left: 10px;
-                            }
+                        a:hover {
+                            color: $white;
+                            background-color: $primary;
                         }
                     }
                 }
             }
         }
-        section.article-tags {
-            margin-bottom: 50px;
-            h6 {
-                color: $primary-light;
-                font-size: 1rem;
-                letter-spacing: 2px;
-                font-weight: 600;
-                margin-bottom: 25px;
-            }
-            ul {
-                list-style: none;
-                display: flex;
-                flex-wrap: wrap;
-                column-gap: 8px;
-                row-gap: 24px;
-                padding: 0;
-                li {
-                    a {
-                        text-decoration: none;
-                        color: $dark;
-                        background-color: $gray-100;
-                        padding: 8px 16px;
-                        border-radius: 50px;
-                        transition: all 0.25s ease-in-out;
-                    }
-                    a:hover {
-                        color: $white;
-                        background-color: $primary;
-                    }
+        article#bAr {
+            grid-area: article_right;
+            height: 100%;
+            padding: 20px 10px 50px 20px;
+            border-radius: 20px 0 0 0;
+            background-color: $gray-100;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+            .a-header {
+                p {
+                    font-size: 1rem;
+                    color: #3a445685;
+                    margin-bottom: 25px;
                 }
-            }
-        }
-    }
-    article#bAr {
-        grid-area: article_right;
-        height: 100%;
-        padding: 0 10px 50px 20px;
-        .a-header {
-            p {
-                font-size: 1rem;
-                color: #3a445685;
-                margin-bottom: 25px;
-            }
-            ul {
-                list-style: none;
-                display: flex;
-                flex-wrap: wrap;
-                row-gap: 12px;
-                column-gap: 8px;
-                padding-left: 0;
-                li {
-                    a {
-                        padding: 4px 8px;
-                        background-color: $gray-200;
-                        text-decoration: none;
-                        color: $dark;
-                        border-radius: 30px;
-                        font-size: 0.85rem;
-                        transition: all 0.25s ease-out;
-                    }
-                    a:hover {
-                        background-color: $primary;
-                        color: $white;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 12px;
+                    column-gap: 8px;
+                    padding-left: 0;
+                    li {
+                        a {
+                            padding: 4px 8px;
+                            background-color: $gray-200;
+                            text-decoration: none;
+                            color: $dark;
+                            border-radius: 30px;
+                            font-size: 0.85rem;
+                            transition: all 0.25s ease-out;
+                        }
+                        a:hover {
+                            background-color: $primary;
+                            color: $white;
+                        }
                     }
                 }
             }

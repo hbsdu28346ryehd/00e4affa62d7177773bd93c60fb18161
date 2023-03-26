@@ -77,3 +77,16 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        footer#bF {
+            padding: 50px 25px;
+            .menu {
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-around;
+                gap: 20px;
+            }
+        }
+    }
+}

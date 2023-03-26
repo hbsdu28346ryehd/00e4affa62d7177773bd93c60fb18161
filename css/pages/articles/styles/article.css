@@ -74,6 +74,16 @@ body footer#bF .bottom-line p {
   color: #dbdcde;
 }
 
+@media only screen and (max-width: 768px) {
+  body footer#bF {
+    padding: 50px 25px;
+  }
+  body footer#bF .menu {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    gap: 20px;
+  }
+}
 body {
   display: grid;
   grid-template-columns: 25% 1fr;

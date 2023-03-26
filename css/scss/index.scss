@@ -214,6 +214,7 @@ body {
             right: 25%;
             height: 150px;
             opacity: .5;
+            z-index: -5;
         }
     }
     article {
@@ -243,6 +244,106 @@ body {
                         color: $primary;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header' 'main' 'article' 'footer';
+        header {
+            padding: 25px 10px;
+            .logo {
+                height: 24px;
+                img {
+                    height: 24px;
+                }
+            }
+        }
+        main {
+            margin-bottom: 50px;
+            .main-header {
+                padding: 0 25px;
+                text-align: center;
+                height: calc(100vh - 120px);
+                margin-bottom: 75px;
+                h1 {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    font-weight: 500;
+                    margin-bottom: 12px;
+                }
+                p {
+                    width: 100%;
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                }
+                a {
+                    font-size: 1rem;
+                    padding: 8px 16px;
+                }
+            }
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas: 'cheader' 'leftbox' 'rightbox';
+                row-gap: 25px;
+                column-gap: 0;
+                padding: 0 25px;
+                .c-header {
+                    width: 100%;
+                    top: 0;
+                    margin-bottom: 0;
+                    h3 {
+                        font-size: 1.5rem;
+                        text-align: start;
+                    }
+                }
+                .right-box {
+                    padding-top: 50px;
+                }
+                .right-box, .left-box {
+                    row-gap: 75px;
+                }
+                .insurance-card {
+                    .content {
+                        padding: 20px 20px 30px 25px;
+                        h1 {
+                            font-size: 2.4rem;
+                            margin-bottom: 20px;
+                        }
+                        p {
+                            font-size: 1.1rem;
+                            line-height: 1.8rem;
+                            margin-bottom: 25px;
+                        }
+                        .sub-insurance {
+                            gap: 10px;
+                            margin-bottom: 25px;
+                            .si-box {
+                                span {
+                                    font-size: 0.75rem;
+                                }
+                            }
+                        }
+                        a.to-article-btn {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+            .asfdFf2a {
+                top: 50px;
+                right: 0px;
+                height: 100px;
+            }
+        }
+        article {
+            padding: 0 25px;
+            margin-bottom: 50px;
+            .a-header {
+                position: static;
             }
         }
     }

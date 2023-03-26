@@ -74,6 +74,16 @@ body footer#bF .bottom-line p {
   color: #dbdcde;
 }
 
+@media only screen and (max-width: 768px) {
+  body footer#bF {
+    padding: 50px 25px;
+  }
+  body footer#bF .menu {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    gap: 20px;
+  }
+}
 body {
   display: grid;
   grid-template-columns: 1fr 25%;
@@ -300,6 +310,7 @@ body main .asfdFf2a {
   right: 25%;
   height: 150px;
   opacity: 0.5;
+  z-index: -5;
 }
 body article {
   grid-area: article;
@@ -330,4 +341,101 @@ body article .a-header ul li a {
 }
 body article .a-header ul li a:hover {
   color: #0d6efd;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "article" "footer";
+  }
+  body header {
+    padding: 25px 10px;
+  }
+  body header .logo {
+    height: 24px;
+  }
+  body header .logo img {
+    height: 24px;
+  }
+  body main {
+    margin-bottom: 50px;
+  }
+  body main .main-header {
+    padding: 0 25px;
+    text-align: center;
+    height: calc(100vh - 120px);
+    margin-bottom: 75px;
+  }
+  body main .main-header h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  body main .main-header p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  body main .main-header a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  body main .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "cheader" "leftbox" "rightbox";
+    row-gap: 25px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    padding: 0 25px;
+  }
+  body main .container .c-header {
+    width: 100%;
+    top: 0;
+    margin-bottom: 0;
+  }
+  body main .container .c-header h3 {
+    font-size: 1.5rem;
+    text-align: start;
+  }
+  body main .container .right-box {
+    padding-top: 50px;
+  }
+  body main .container .right-box, body main .container .left-box {
+    row-gap: 75px;
+  }
+  body main .container .insurance-card .content {
+    padding: 20px 20px 30px 25px;
+  }
+  body main .container .insurance-card .content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  body main .container .insurance-card .content p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 25px;
+  }
+  body main .container .insurance-card .content .sub-insurance {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  body main .container .insurance-card .content .sub-insurance .si-box span {
+    font-size: 0.75rem;
+  }
+  body main .container .insurance-card .content a.to-article-btn {
+    font-size: 1rem;
+  }
+  body main .asfdFf2a {
+    top: 50px;
+    right: 0px;
+    height: 100px;
+  }
+  body article {
+    padding: 0 25px;
+    margin-bottom: 50px;
+  }
+  body article .a-header {
+    position: static;
+  }
 }/*# sourceMappingURL=index.css.map */

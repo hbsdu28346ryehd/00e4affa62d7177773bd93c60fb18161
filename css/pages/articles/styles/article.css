@@ -154,7 +154,7 @@ body main#bM section.article-hero .pub-date {
   font-size: small;
 }
 body main#bM section.article-hero .article-title {
-  text-align: start;
+  text-align: center;
   font-size: 4rem;
   line-height: 4.5rem;
   margin: 20px 0;
@@ -395,6 +395,29 @@ body main#bM section.article-content .content a {
 body main#bM section.article-content .content a:hover {
   color: #0061f1;
   text-decoration: underline;
+}
+body main#bM section.article-content .article-image img {
+  width: 800px;
+  height: 500px;
+  display: block;
+  margin: 25px auto;
+  border-radius: 12px;
+}
+body main#bM section.article-content .article-subtypes ol {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+body main#bM section.article-content .article-subtypes ol li {
+  margin-bottom: 20px;
+}
+body main#bM section.article-content .article-subtypes ol li a {
+  text-decoration: none;
+  color: #3a4456;
+  font-size: 1rem;
+  transition: all 0.25s ease-out;
+}
+body main#bM section.article-content .article-subtypes ol li a:hover {
+  color: #347eff;
 }
 body main#bM section.article-content .recommendation {
   margin-bottom: 100px;

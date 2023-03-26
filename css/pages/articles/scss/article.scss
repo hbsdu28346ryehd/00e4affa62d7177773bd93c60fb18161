@@ -68,7 +68,7 @@ body {
                 font-size: small;
             }
             .article-title {
-                text-align: start;
+                text-align: center;
                 font-size: 4rem;
                 line-height: 4.5rem;
                 margin: 20px 0;
@@ -157,6 +157,33 @@ body {
                     color: $primary-dark;
                     text-decoration: underline;
                 }
+            }
+            .article-image img{
+             
+                width: 800px;
+                height: 500px;
+                display: block;
+                margin: 25px auto;
+                border-radius: 12px;
+            }
+            .article-subtypes{
+                ol {
+                   
+                    padding-left: 20px;
+                    padding-bottom: 10px;
+                    li {
+                        margin-bottom: 20px;
+                        a {
+                            text-decoration: none;
+                            color: #3a4456;
+                            font-size: 1rem;
+                            transition: all 0.25s ease-out;
+                        }
+                        a:hover {
+                            color: #347eff;
+                        }
+                    }
+                }   
             }
             .recommendation {
                 margin-bottom: 100px;

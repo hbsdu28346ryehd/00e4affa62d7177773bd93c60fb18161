@@ -68,7 +68,7 @@ body {
                 font-size: small;
             }
             .article-title {
-                text-align: center;
+                text-align: start;
                 font-size: 4rem;
                 line-height: 4.5rem;
                 margin: 20px 0;
@@ -158,17 +158,20 @@ body {
                     text-decoration: underline;
                 }
             }
-            .article-image img{
-             
-                width: 800px;
-                height: 500px;
-                display: block;
-                margin: 25px auto;
+            .article-image {
+                width: 100%;
+                height: auto;
                 border-radius: 12px;
+                overflow: hidden;
+                object-fit:cover;
+                img {
+                    width: 100%;
+                    height: auto;
+                    outline: none;
+                }
             }
             .article-subtypes{
                 ol {
-                   
                     padding-left: 20px;
                     padding-bottom: 10px;
                     li {
@@ -181,6 +184,7 @@ body {
                         }
                         a:hover {
                             color: #347eff;
+                            text-decoration: none;
                         }
                     }
                 }   

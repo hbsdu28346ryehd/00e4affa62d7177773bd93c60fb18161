@@ -84,46 +84,67 @@ body {
             .content {
                 h1,h2,h3,h4,h5,h6 {
                     font-family: poppins, sans-serif;
-                    margin-bottom: 12px;
+                    color: $gray-500;
+                    .class-name {
+                        font-size: 0.75rem;
+                        color: $primary-light;
+                    }
                 }
-                h1 {
-                    font-size: 2.5rem;
-                    font-weight: 700;
+                @each $header, $size in $font-sizes {
+                    .#{$header} {
+                        font-size: $size;
+                        margin-bottom: 1rem;
+                        color: $dark;
+                    }
                 }
-                h2 {
-                    font-size: 2.25rem;
-                    font-weight: 700;
+                @for $i from 3 through 9 {
+                    .fw-#{$i}00 {
+                        font-weight: 100 * $i;
+                    }
                 }
-                h3 {
-                    font-size: 2rem;
-                    font-weight: 700;
+                @for $i from 1 through 5 {
+                    .mb-#{$i} {
+                        margin-bottom: 0.25 + $i;
+                    }
+                    .mt-#{$i} {
+                        margin-top: 0.25 + $i;
+                    }
+                    .mr-#{$i} {
+                        margin-right: 0.25 + $i;
+                    }
+                    .ml-#{$i} {
+                        margin-left: 0.25 + $i;
+                    }
+                    .pb-#{$i} {
+                        padding-bottom: 0.25 + $i;
+                    }
+                    .pt-#{$i} {
+                        padding-top: 0.25 + $i;
+                    }
+                    .pr-#{$i} {
+                        padding-right: 0.25 + $i;
+                    }
+                    .pl-#{$i} {
+                        padding-left: 0.25 + $i;
+                    }
                 }
-                h4 {
-                    font-size: 1.75rem;
-                    font-weight: 400;
-                }
-                h5 {
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                }
-                h6 {
-                    font-size: 1.25rem;
-                    font-weight: 700;
-                }
-                p {
-                    font-size: large;
-                    text-align: justify;
+                p { text-align: justify; }
+                p, li {
                     color: $dark;
-                    line-height: 2rem;
-                    margin-bottom: 50px;
+                    line-height: 1.75rem;
+                    font-size: 1rem;
+                    margin-bottom: 8px;
                 }
                 ul, ol {
-                    padding-left: 25px;
-                    margin-bottom: 50px;
-                    li {
-                        line-height: 2rem;
-                        margin-bottom: 10px;
-                    }
+                    padding-left: 20px;
+                }
+                ul { list-style: circle; }
+                a {
+                    text-decoration: none;
+                    color: $primary;
+                }
+                a:hover {
+                    color: $primary-dark;
                 }
             }
             .recommendation {

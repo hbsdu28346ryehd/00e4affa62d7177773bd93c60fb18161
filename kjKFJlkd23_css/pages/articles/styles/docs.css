@@ -159,46 +159,204 @@ body main#bM section.article-content {
 }
 body main#bM section.article-content .content h1, body main#bM section.article-content .content h2, body main#bM section.article-content .content h3, body main#bM section.article-content .content h4, body main#bM section.article-content .content h5, body main#bM section.article-content .content h6 {
   font-family: poppins, sans-serif;
-  margin-bottom: 12px;
+  color: #adb5bd;
 }
-body main#bM section.article-content .content h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+body main#bM section.article-content .content h1 .class-name, body main#bM section.article-content .content h2 .class-name, body main#bM section.article-content .content h3 .class-name, body main#bM section.article-content .content h4 .class-name, body main#bM section.article-content .content h5 .class-name, body main#bM section.article-content .content h6 .class-name {
+  font-size: 0.75rem;
+  color: #3586ff;
 }
-body main#bM section.article-content .content h2 {
+body main#bM section.article-content .content .h1 {
+  font-size: 3.75rem;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+body main#bM section.article-content .content .h2 {
+  font-size: 3.25rem;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+body main#bM section.article-content .content .h3 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+body main#bM section.article-content .content .h4 {
   font-size: 2.25rem;
-  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #212529;
 }
-body main#bM section.article-content .content h3 {
-  font-size: 2rem;
-  font-weight: 700;
-}
-body main#bM section.article-content .content h4 {
+body main#bM section.article-content .content .h5 {
   font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+body main#bM section.article-content .content .h6 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+body main#bM section.article-content .content .fw-300 {
+  font-weight: 300;
+}
+body main#bM section.article-content .content .fw-400 {
   font-weight: 400;
 }
-body main#bM section.article-content .content h5 {
-  font-size: 1.5rem;
+body main#bM section.article-content .content .fw-500 {
   font-weight: 500;
 }
-body main#bM section.article-content .content h6 {
-  font-size: 1.25rem;
+body main#bM section.article-content .content .fw-600 {
+  font-weight: 600;
+}
+body main#bM section.article-content .content .fw-700 {
   font-weight: 700;
 }
+body main#bM section.article-content .content .fw-800 {
+  font-weight: 800;
+}
+body main#bM section.article-content .content .fw-900 {
+  font-weight: 900;
+}
+body main#bM section.article-content .content .mb-1 {
+  margin-bottom: 1.25;
+}
+body main#bM section.article-content .content .mt-1 {
+  margin-top: 1.25;
+}
+body main#bM section.article-content .content .mr-1 {
+  margin-right: 1.25;
+}
+body main#bM section.article-content .content .ml-1 {
+  margin-left: 1.25;
+}
+body main#bM section.article-content .content .pb-1 {
+  padding-bottom: 1.25;
+}
+body main#bM section.article-content .content .pt-1 {
+  padding-top: 1.25;
+}
+body main#bM section.article-content .content .pr-1 {
+  padding-right: 1.25;
+}
+body main#bM section.article-content .content .pl-1 {
+  padding-left: 1.25;
+}
+body main#bM section.article-content .content .mb-2 {
+  margin-bottom: 2.25;
+}
+body main#bM section.article-content .content .mt-2 {
+  margin-top: 2.25;
+}
+body main#bM section.article-content .content .mr-2 {
+  margin-right: 2.25;
+}
+body main#bM section.article-content .content .ml-2 {
+  margin-left: 2.25;
+}
+body main#bM section.article-content .content .pb-2 {
+  padding-bottom: 2.25;
+}
+body main#bM section.article-content .content .pt-2 {
+  padding-top: 2.25;
+}
+body main#bM section.article-content .content .pr-2 {
+  padding-right: 2.25;
+}
+body main#bM section.article-content .content .pl-2 {
+  padding-left: 2.25;
+}
+body main#bM section.article-content .content .mb-3 {
+  margin-bottom: 3.25;
+}
+body main#bM section.article-content .content .mt-3 {
+  margin-top: 3.25;
+}
+body main#bM section.article-content .content .mr-3 {
+  margin-right: 3.25;
+}
+body main#bM section.article-content .content .ml-3 {
+  margin-left: 3.25;
+}
+body main#bM section.article-content .content .pb-3 {
+  padding-bottom: 3.25;
+}
+body main#bM section.article-content .content .pt-3 {
+  padding-top: 3.25;
+}
+body main#bM section.article-content .content .pr-3 {
+  padding-right: 3.25;
+}
+body main#bM section.article-content .content .pl-3 {
+  padding-left: 3.25;
+}
+body main#bM section.article-content .content .mb-4 {
+  margin-bottom: 4.25;
+}
+body main#bM section.article-content .content .mt-4 {
+  margin-top: 4.25;
+}
+body main#bM section.article-content .content .mr-4 {
+  margin-right: 4.25;
+}
+body main#bM section.article-content .content .ml-4 {
+  margin-left: 4.25;
+}
+body main#bM section.article-content .content .pb-4 {
+  padding-bottom: 4.25;
+}
+body main#bM section.article-content .content .pt-4 {
+  padding-top: 4.25;
+}
+body main#bM section.article-content .content .pr-4 {
+  padding-right: 4.25;
+}
+body main#bM section.article-content .content .pl-4 {
+  padding-left: 4.25;
+}
+body main#bM section.article-content .content .mb-5 {
+  margin-bottom: 5.25;
+}
+body main#bM section.article-content .content .mt-5 {
+  margin-top: 5.25;
+}
+body main#bM section.article-content .content .mr-5 {
+  margin-right: 5.25;
+}
+body main#bM section.article-content .content .ml-5 {
+  margin-left: 5.25;
+}
+body main#bM section.article-content .content .pb-5 {
+  padding-bottom: 5.25;
+}
+body main#bM section.article-content .content .pt-5 {
+  padding-top: 5.25;
+}
+body main#bM section.article-content .content .pr-5 {
+  padding-right: 5.25;
+}
+body main#bM section.article-content .content .pl-5 {
+  padding-left: 5.25;
+}
 body main#bM section.article-content .content p {
-  font-size: large;
   text-align: justify;
+}
+body main#bM section.article-content .content p, body main#bM section.article-content .content li {
   color: #212529;
-  line-height: 2rem;
-  margin-bottom: 50px;
+  line-height: 1.75rem;
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
 body main#bM section.article-content .content ul, body main#bM section.article-content .content ol {
-  padding-left: 25px;
-  margin-bottom: 50px;
+  padding-left: 20px;
 }
-body main#bM section.article-content .content ul li, body main#bM section.article-content .content ol li {
-  line-height: 2rem;
-  margin-bottom: 10px;
+body main#bM section.article-content .content ul {
+  list-style: circle;
+}
+body main#bM section.article-content .content a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+body main#bM section.article-content .content a:hover {
+  color: #0061f1;
 }
 body main#bM section.article-content .recommendation {
   margin-bottom: 100px;
@@ -413,4 +571,4 @@ body main#bM article#bAr .a-tags ul li a {
 body main#bM article#bAr .a-tags ul li a:hover {
   background-color: #0d6efd;
   color: #fff;
-}/*# sourceMappingURL=asdflkaDFa2342af-insurance.css.map */
+}/*# sourceMappingURL=docs.css.map */

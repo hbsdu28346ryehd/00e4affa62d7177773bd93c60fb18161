@@ -367,7 +367,7 @@ body main#bM section.article-content .content p {
 }
 body main#bM section.article-content .content p, body main#bM section.article-content .content li {
   color: #212529;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   font-size: 1rem;
   margin-bottom: 8px;
 }

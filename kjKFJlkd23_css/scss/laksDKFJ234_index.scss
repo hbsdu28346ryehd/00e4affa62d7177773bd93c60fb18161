@@ -73,10 +73,10 @@ body {
         }
         .container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: calc(50% - 25px) calc(50% - 25px);
             grid-template-areas: 'cheader cheader'
                                                 'leftbox rightbox';
-            column-gap: 80px;
+            column-gap: 50px;
             padding: 0 100px;
             .c-header {
                 grid-area: cheader;
@@ -105,7 +105,6 @@ body {
             }
             .insurance-card {
                 border-radius: 12px;
-                width: 90%;
                 overflow: hidden;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                 transition: all 0.25s ease-in-out;
@@ -132,7 +131,7 @@ body {
                         }
                     }
                     h1 {
-                        font-size: 2.8rem;
+                        font-size: 2.4rem;
                         letter-spacing: -0.5px;
                         font-weight: 300;
                         color: #111;
@@ -164,7 +163,7 @@ body {
                                 text-align: center;
                                 font-weight: 500;
                                 color: #24272ad7;
-                                font-size: 0.9rem;
+                                font-size: 0.8rem;
                                 transition: all 0.25s ease-in-out;
                             }
                         }

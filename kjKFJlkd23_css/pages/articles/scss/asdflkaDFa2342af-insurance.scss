@@ -253,8 +253,19 @@ body {
             padding: 20px 10px 50px 20px;
             border-radius: 20px 0 0 0;
             background-color: $gray-100;
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-            .a-header {
+            box-shadow: $box-shadow;
+            .a-thumbnail {
+                width: 100%;
+                object-fit: contain;
+                margin-bottom: 25px;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: $box-shadow;
+                img {
+                    width: 100%;
+                }
+            }
+            .a-tags {
                 p {
                     font-size: 1rem;
                     color: #3a445685;

@@ -24,25 +24,26 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #3586ff;
+  background-color: #a1c2fa;
   border-radius: 50px;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #0d6efd;
+  background-color: #4285f4;
 }
 
 body footer#bF {
   grid-area: footer;
   padding: 50px 100px 100px 100px;
-  background-color: #232934;
+  background-color: #1a1a1a;
 }
 body footer#bF .google-ad {
   margin: 0 auto;
   margin-bottom: 50px;
   text-align: center;
+  background: #262626;
 }
 body footer#bF .menu {
   display: grid;
@@ -97,6 +98,7 @@ body {
 body .google-ad {
   width: 100%;
   height: auto;
+  background-color: #f2f2f2;
 }
 body header {
   grid-area: header;
@@ -115,10 +117,11 @@ body header .logo {
 body header .logo img {
   height: 20px;
   cursor: pointer;
+  aspect-ratio: attr(height)/attr(width);
 }
 body main {
   grid-area: main;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 body main .main-header {
   padding: 100px;
@@ -151,7 +154,7 @@ body main .main-header a {
   transition: all 0.25s ease-in-out;
   padding: 8px 12px;
   border-radius: 50px;
-  background-color: #e74656;
+  background-color: #df574b;
   transition: all 0.25s ease-in-out;
 }
 body main .main-header a i.bi {
@@ -159,7 +162,7 @@ body main .main-header a i.bi {
   transition: all 0.2s ease-in-out;
 }
 body main .main-header a:hover {
-  background-color: #cf2132;
+  background-color: #993027;
   color: rgb(255, 255, 255);
 }
 body main .main-header a:hover i.bi {
@@ -169,33 +172,31 @@ body main .main-header a:hover i.bi {
 body main .container {
   display: grid;
   grid-template-columns: calc(50% - 25px) calc(50% - 25px);
-  grid-template-areas: "ad ad" "cheader cheader" "leftbox rightbox";
+  grid-template-areas: "ad_top ad_top" "cheader cheader" "leftbox rightbox" "ad_bottom ad_bottom";
   -moz-column-gap: 50px;
        column-gap: 50px;
   row-gap: 25px;
   padding: 0 100px;
   margin-bottom: 50px;
 }
-body main .container .ad-container {
-  grid-area: ad;
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
+body main .container .ad-container-top {
+  grid-area: ad_top;
   margin-bottom: 50px;
+}
+body main .container .ad-container-top .google-ad {
+  margin: 0 auto;
   text-align: center;
 }
 body main .container .c-header {
   grid-area: cheader;
-  color: rgba(58, 68, 86, 0.5490196078);
-  margin: auto;
-  width: 90%;
-  position: relative;
-  top: 50px;
+  color: #404040;
+  margin-bottom: 25px;
 }
 body main .container .c-header h3 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-align: end;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  font-family: poppins, sans-serif;
 }
 body main .container .right-box {
   grid-area: rightbox;
@@ -208,6 +209,7 @@ body main .container .right-box, body main .container .left-box {
   display: flex;
   flex-direction: column;
   row-gap: 50px;
+  max-width: 400px;
 }
 body main .container .right-box .google-ad, body main .container .left-box .google-ad {
   text-align: center;
@@ -223,25 +225,25 @@ body main .container .insurance-card .card-top-border {
   padding: 4px 0;
 }
 body main .container .insurance-card .border-blue {
-  background: #2c3aff;
+  background: #4285f4;
 }
 body main .container .insurance-card .border-red {
-  background: #ff2c2c;
+  background: #db4437;
 }
 body main .container .insurance-card .border-green {
-  background: #2cff3e;
+  background: #0f9d58;
 }
 body main .container .insurance-card .border-yellow {
-  background: #ffff2c;
+  background: #f4b400;
 }
 body main .container .insurance-card .border-orange {
-  background: #ff8f2c;
+  background: #808080;
 }
 body main .container .insurance-card .border-purple {
-  background: #ff2cf4;
+  background: #a1c2fa;
 }
 body main .container .insurance-card .content {
-  padding: 20px 20px 50px 25px;
+  padding: 20px 20px 25px 25px;
   transition: all 0.25s ease-in-out;
 }
 body main .container .insurance-card .content .thumbnail {
@@ -255,45 +257,45 @@ body main .container .insurance-card .content .thumbnail img {
   width: auto;
 }
 body main .container .insurance-card .content h2 {
-  font-size: 2.4rem;
-  letter-spacing: -0.5px;
-  font-weight: 300;
+  font-size: 32px;
+  font-weight: 400;
   color: #111;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   font-family: poppins, sans-serif;
 }
 body main .container .insurance-card .content p {
-  font-size: 1.1rem;
-  line-height: 1.8rem;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
   color: #222;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 body main .container .insurance-card .content .sub-insurance {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 50px;
+  gap: 10px;
+  margin-bottom: 25px;
 }
 body main .container .insurance-card .content .sub-insurance .si-box {
-  border: 1px solid rgba(32, 125, 255, 0.2274509804);
+  border: 1px solid #d9e7fd;
   cursor: pointer;
   aspect-ratio: 1/1;
   border-radius: 8px;
   display: grid;
-  padding: 8px;
+  padding: 6px;
   place-items: center;
-  background-color: rgba(32, 125, 255, 0.0588235294);
+  background-color: #ecf3fe;
   transition: all 0.25s ease-in-out;
 }
 body main .container .insurance-card .content .sub-insurance .si-box span {
   text-align: center;
-  font-weight: 500;
-  color: rgba(36, 39, 42, 0.8431372549);
-  font-size: 0.8rem;
+  color: #262626;
+  font-size: 14px;
+  line-height: 18px;
   transition: all 0.25s ease-in-out;
 }
 body main .container .insurance-card .content .sub-insurance .si-box:hover {
-  background-color: #207dff;
+  background-color: #4285f4;
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
@@ -304,12 +306,13 @@ body main .container .insurance-card .content a.to-article-btn {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
-  font-size: 1rem;
+  font-size: 14px;
   letter-spacing: 1px;
+  line-height: 18px;
   font-weight: 400;
-  background-color: #0d6efd;
+  background-color: #4285f4;
   text-decoration: none;
-  color: white;
+  color: #fff;
   border-radius: 100px;
   transition: all 0.25s ease-in-out;
 }
@@ -318,7 +321,7 @@ body main .container .insurance-card .content a.to-article-btn i.bi {
   transition: all 0.2s ease-in-out;
 }
 body main .container .insurance-card .content a.to-article-btn:hover {
-  background-color: #0061f1;
+  background-color: #356ac3;
 }
 body main .container .insurance-card:hover {
   transform: translateY(-10px);
@@ -327,17 +330,21 @@ body main .container .insurance-card:hover a.to-article-btn i.bi {
   font-size: 1rem;
   margin-left: 10px;
 }
+body main .container .ad-container-bottom {
+  grid-area: ad_bottom;
+  margin-top: 50px;
+}
+body main .container .ad-container-bottom .google-ad {
+  margin: 0 auto;
+  text-align: center;
+}
 body main .asfdFf2a {
   position: absolute;
   top: 100px;
   right: 25%;
-  height: 150px;
   opacity: 0.5;
   z-index: -5;
-}
-body main .ad-container .google-ad {
-  margin: 0 auto;
-  text-align: center;
+  aspect-ratio: attr(height)/attr(width);
 }
 body article {
   grid-area: article;
@@ -346,7 +353,7 @@ body article {
 }
 body article .a-header p {
   font-size: 1rem;
-  color: rgba(58, 68, 86, 0.5215686275);
+  color: #404040;
   margin-bottom: 25px;
 }
 body article .a-header ul {
@@ -358,12 +365,12 @@ body article .a-header ul li {
 }
 body article .a-header ul li a {
   text-decoration: none;
-  color: #3a4456;
+  color: #1a1a1a;
   font-size: 1rem;
   transition: all 0.25s ease-out;
 }
 body article .a-header ul li a:hover {
-  color: #0d6efd;
+  color: #4285f4;
 }
 body article .ad-container {
   position: sticky;

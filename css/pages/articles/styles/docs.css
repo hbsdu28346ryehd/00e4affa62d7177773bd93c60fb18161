@@ -24,25 +24,26 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #3586ff;
+  background-color: #a1c2fa;
   border-radius: 50px;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #0d6efd;
+  background-color: #4285f4;
 }
 
 body footer#bF {
   grid-area: footer;
   padding: 50px 100px 100px 100px;
-  background-color: #232934;
+  background-color: #1a1a1a;
 }
 body footer#bF .google-ad {
   margin: 0 auto;
   margin-bottom: 50px;
   text-align: center;
+  background: #262626;
 }
 body footer#bF .menu {
   display: grid;
@@ -93,7 +94,7 @@ body {
   display: grid;
   grid-template-columns: 25% 1fr;
   grid-template-areas: "header header" "article_left main" "footer footer";
-  background-color: #f8f9fa;
+  background-color: #e6e6e6;
 }
 body header#bH {
   grid-area: header;
@@ -155,7 +156,7 @@ body main#bM section.article-hero {
   padding: 10px 30px 30px 30px;
 }
 body main#bM section.article-hero .pub-date {
-  color: #6c757d;
+  color: #666666;
   font-size: small;
 }
 body main#bM section.article-hero .article-title {
@@ -164,7 +165,7 @@ body main#bM section.article-hero .article-title {
   line-height: 4.5rem;
   margin: 20px 0;
   font-weight: 800;
-  color: #031c43;
+  color: #070d18;
   font-family: poppins, sans-serif;
 }
 body main#bM section.article-content {
@@ -174,48 +175,48 @@ body main#bM section.article-content {
 }
 body main#bM section.article-content .content .class-name {
   font-size: 0.7rem;
-  color: #3586ff;
+  color: #a1c2fa;
   font-weight: 500;
 }
 body main#bM section.article-content .content label {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #dc3545;
+  color: #db4437;
   letter-spacing: 1px;
 }
 body main#bM section.article-content .content h1, body main#bM section.article-content .content h2, body main#bM section.article-content .content h3, body main#bM section.article-content .content h4, body main#bM section.article-content .content h5, body main#bM section.article-content .content h6 {
   font-family: poppins, sans-serif;
-  color: #adb5bd;
+  color: #808080;
 }
 body main#bM section.article-content .content .h1 {
   font-size: 3.75rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h2 {
   font-size: 3.25rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h3 {
   font-size: 2.75rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h4 {
   font-size: 2.25rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h5 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h6 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .fw-300 {
   font-weight: 300;
@@ -392,7 +393,7 @@ body main#bM section.article-content .content p {
   text-align: justify;
 }
 body main#bM section.article-content .content p, body main#bM section.article-content .content li {
-  color: #212529;
+  color: #1a1a1a;
   line-height: 1.5rem;
   font-size: 1rem;
   margin-bottom: 8px;
@@ -405,11 +406,11 @@ body main#bM section.article-content .content ul {
 }
 body main#bM section.article-content .content a {
   text-decoration: none;
-  color: #0d6efd;
+  color: #4285f4;
   transition: all 0.2s ease-in-out;
 }
 body main#bM section.article-content .content a:hover {
-  color: #0061f1;
+  color: #21437a;
   text-decoration: underline;
 }
 body main#bM section.article-content .recommendation {
@@ -419,7 +420,7 @@ body main#bM section.article-content .recommendation .c-header {
   margin-bottom: 25px;
 }
 body main#bM section.article-content .recommendation .c-header h6 {
-  color: #3586ff;
+  color: #a1c2fa;
   font-size: 1rem;
   letter-spacing: 2px;
   font-weight: 500;
@@ -513,7 +514,7 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   transition: all 0.25s ease-in-out;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .sub-insurance .si-box:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .sub-insurance .si-box:hover {
-  background-color: #0d6efd;
+  background-color: #4285f4;
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
@@ -527,7 +528,7 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 400;
-  background-color: #0d6efd;
+  background-color: #4285f4;
   text-decoration: none;
   color: white;
   border-radius: 100px;
@@ -538,7 +539,7 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   transition: all 0.2s ease-in-out;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content a.to-article-btn:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content a.to-article-btn:hover {
-  background-color: #0061f1;
+  background-color: #21437a;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card:hover {
   transform: translateY(-10px);
@@ -551,7 +552,7 @@ body main#bM section.article-content .tags {
   margin-bottom: 50px;
 }
 body main#bM section.article-content .tags h6 {
-  color: #3586ff;
+  color: #a1c2fa;
   font-size: 1rem;
   letter-spacing: 2px;
   font-weight: 500;
@@ -569,22 +570,22 @@ body main#bM section.article-content .tags ul {
 }
 body main#bM section.article-content .tags ul li a {
   text-decoration: none;
-  color: #212529;
-  background-color: #f8f9fa;
+  color: #1a1a1a;
+  background-color: #e6e6e6;
   padding: 8px 16px;
   border-radius: 50px;
   transition: all 0.25s ease-in-out;
 }
 body main#bM section.article-content .tags ul li a:hover {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #4285f4;
 }
 body main#bM article#bAr {
   grid-area: article_right;
   height: 100%;
   padding: 20px 10px 50px 20px;
   border-radius: 20px 0 0 0;
-  background-color: #f8f9fa;
+  background-color: #e6e6e6;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 body main#bM article#bAr .a-thumbnail {
@@ -615,14 +616,14 @@ body main#bM article#bAr .a-tags ul {
 }
 body main#bM article#bAr .a-tags ul li a {
   padding: 4px 8px;
-  background-color: #e9ecef;
+  background-color: #cccccc;
   text-decoration: none;
-  color: #212529;
+  color: #1a1a1a;
   border-radius: 30px;
   font-size: 0.85rem;
   transition: all 0.25s ease-out;
 }
 body main#bM article#bAr .a-tags ul li a:hover {
-  background-color: #0d6efd;
+  background-color: #4285f4;
   color: #fff;
 }/*# sourceMappingURL=docs.css.map */

@@ -23,24 +23,25 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: $primary-light;
+    background-color: $blue-light-50;
     border-radius: 50px;
     transition: background-color 1s;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: $primary;
+    background-color: $blue;
 }
 
 body {
     footer#bF {
         grid-area: footer;
         padding: 50px 100px 100px 100px;
-        background-color: #232934;
+        background-color: $gray-dark-80;
         .google-ad {
             margin: 0 auto;
             margin-bottom: 50px;
             text-align: center;
+            background: $gray-dark-70;
         }
         .menu {
             display: grid;

@@ -24,25 +24,26 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #3586ff;
+  background-color: #a1c2fa;
   border-radius: 50px;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #0d6efd;
+  background-color: #4285f4;
 }
 
 body footer#bF {
   grid-area: footer;
   padding: 50px 100px 100px 100px;
-  background-color: #232934;
+  background-color: #1a1a1a;
 }
 body footer#bF .google-ad {
   margin: 0 auto;
   margin-bottom: 50px;
   text-align: center;
+  background: #262626;
 }
 body footer#bF .menu {
   display: grid;
@@ -93,7 +94,7 @@ body {
   display: grid;
   grid-template-columns: 25% 1fr;
   grid-template-areas: "header header" "article_left main" "footer footer";
-  background-color: #f8f9fa;
+  background-color: #f2f2f2;
 }
 body header#bH {
   grid-area: header;
@@ -123,7 +124,7 @@ body article#bAl .a-header {
 }
 body article#bAl .a-header p {
   font-size: 1rem;
-  color: rgba(58, 68, 86, 0.5215686275);
+  color: #737373;
   margin-bottom: 25px;
 }
 body article#bAl .a-header ul {
@@ -135,76 +136,80 @@ body article#bAl .a-header ul li {
 }
 body article#bAl .a-header ul li a {
   text-decoration: none;
-  color: #3a4456;
+  color: #0d0d0d;
   font-size: 1rem;
-  transition: all 0.25s ease-out;
+  transition: all 0.1s ease-out;
 }
 body article#bAl .a-header ul li a:hover {
-  color: #347eff;
+  color: #4285f4;
 }
 body main#bM {
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr 20vw;
   grid-template-areas: "article_hero article_hero" "article_content article_right";
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 20px 0 0 0;
 }
 body main#bM section.article-hero {
   grid-area: article_hero;
   padding: 10px 30px 30px 30px;
+  max-width: 800px;
 }
 body main#bM section.article-hero .pub-date {
-  color: #6c757d;
-  font-size: small;
+  color: #5a5a5a;
+  font-size: 14px;
 }
 body main#bM section.article-hero .article-title {
   text-align: start;
-  font-size: 4rem;
-  line-height: 4.5rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
   margin: 20px 0;
   font-weight: 800;
-  color: #031c43;
+  color: #142849;
   font-family: poppins, sans-serif;
 }
 body main#bM section.article-content {
   grid-area: article_content;
   padding: 0 30px 0 30px;
+  font-size: 18px;
+  line-height: 32px;
+  max-width: 800px;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 body main#bM section.article-content .content h1, body main#bM section.article-content .content h2, body main#bM section.article-content .content h3, body main#bM section.article-content .content h4, body main#bM section.article-content .content h5, body main#bM section.article-content .content h6 {
   font-family: poppins, sans-serif;
-  color: #adb5bd;
 }
 body main#bM section.article-content .content .h1 {
   font-size: 3.75rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h2 {
   font-size: 3.25rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h3 {
   font-size: 2.75rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h4 {
   font-size: 2.25rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h5 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .h6 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  color: #212529;
+  color: #1a1a1a;
 }
 body main#bM section.article-content .content .fw-300 {
   font-weight: 300;
@@ -378,12 +383,10 @@ body main#bM section.article-content .content .pl-5 {
   padding-left: 5.25;
 }
 body main#bM section.article-content .content p {
-  text-align: justify;
+  text-align: start;
 }
 body main#bM section.article-content .content p, body main#bM section.article-content .content li {
-  color: #212529;
-  line-height: 1.5rem;
-  font-size: 1rem;
+  color: #1a1a1a;
   margin-bottom: 8px;
 }
 body main#bM section.article-content .content ul, body main#bM section.article-content .content ol {
@@ -394,12 +397,11 @@ body main#bM section.article-content .content ul {
 }
 body main#bM section.article-content .content a {
   text-decoration: none;
-  color: #0d6efd;
+  color: #4285f4;
   transition: all 0.2s ease-in-out;
 }
 body main#bM section.article-content .content a:hover {
-  color: #0061f1;
-  text-decoration: underline;
+  color: #21437a;
 }
 body main#bM section.article-content .article-image {
   width: 100%;
@@ -419,30 +421,31 @@ body main#bM section.article-content .article-subtypes ol {
   padding-bottom: 10px;
 }
 body main#bM section.article-content .article-subtypes ol li {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 body main#bM section.article-content .article-subtypes ol li a {
   text-decoration: none;
-  color: #3a4456;
-  font-size: 1rem;
-  transition: all 0.25s ease-out;
+  color: #1a1a1a;
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  transition: all 0.1s ease-out;
 }
 body main#bM section.article-content .article-subtypes ol li a:hover {
-  color: #347eff;
+  color: #4285f4;
   text-decoration: none;
 }
 body main#bM section.article-content .recommendation {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 body main#bM section.article-content .recommendation .c-header {
   margin-bottom: 25px;
 }
 body main#bM section.article-content .recommendation .c-header h6 {
-  color: #3586ff;
-  font-size: 1rem;
+  color: #4285f4;
+  font-size: 12px;
   letter-spacing: 2px;
-  font-weight: 500;
-  font-family: inter, sans-serif;
+  font-weight: bold;
+  font-family: roboto, sans-serif;
 }
 body main#bM section.article-content .recommendation .container-cards {
   display: grid;
@@ -462,22 +465,22 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   padding: 4px 0;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-blue, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-blue {
-  background: #2c3aff;
+  background: #4285f4;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-red, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-red {
-  background: #ff2c2c;
+  background: #db4437;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-green, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-green {
-  background: #2cff3e;
+  background: #0f9d58;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-yellow, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-yellow {
-  background: #ffff2c;
+  background: #f4b400;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-orange, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-orange {
-  background: #ff8f2c;
+  background: #808080;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-purple, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-purple {
-  background: #ff2cf4;
+  background: #a1c2fa;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content {
   padding: 20px 20px 25px 25px;
@@ -494,16 +497,16 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   width: auto;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content h2, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content h2 {
-  font-size: 2.4rem;
-  letter-spacing: -0.5px;
-  font-weight: 300;
+  font-size: 32px;
+  font-weight: 400;
   color: #111;
   margin-bottom: 16px;
   font-family: poppins, sans-serif;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content p, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content p {
-  font-size: 0.9rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
   color: #222;
   margin-bottom: 25px;
 }
@@ -514,25 +517,25 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   margin-bottom: 25px;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .sub-insurance .si-box, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .sub-insurance .si-box {
-  border: 1px solid rgba(32, 125, 255, 0.2274509804);
+  border: 1px solid #d9e7fd;
   cursor: pointer;
   aspect-ratio: 1/1;
   border-radius: 8px;
   display: grid;
   padding: 6px;
   place-items: center;
-  background-color: rgba(32, 125, 255, 0.0588235294);
+  background-color: #ecf3fe;
   transition: all 0.25s ease-in-out;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .sub-insurance .si-box span, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .sub-insurance .si-box span {
   text-align: center;
-  font-weight: 500;
-  color: rgba(36, 39, 42, 0.8431372549);
-  font-size: 0.75rem;
+  color: #262626;
+  font-size: 14px;
+  line-height: 18px;
   transition: all 0.25s ease-in-out;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .sub-insurance .si-box:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .sub-insurance .si-box:hover {
-  background-color: #0d6efd;
+  background-color: #4285f4;
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
@@ -543,12 +546,13 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
-  font-size: 1rem;
+  font-size: 14px;
   letter-spacing: 1px;
+  line-height: 18px;
   font-weight: 400;
-  background-color: #0d6efd;
+  background-color: #4285f4;
   text-decoration: none;
-  color: white;
+  color: #fff;
   border-radius: 100px;
   transition: all 0.25s ease-in-out;
 }
@@ -557,7 +561,7 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   transition: all 0.2s ease-in-out;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content a.to-article-btn:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content a.to-article-btn:hover {
-  background-color: #0061f1;
+  background-color: #356ac3;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card:hover {
   transform: translateY(-10px);
@@ -567,43 +571,42 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   margin-left: 10px;
 }
 body main#bM section.article-content .tags {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 body main#bM section.article-content .tags h6 {
-  color: #3586ff;
-  font-size: 1rem;
+  color: #4285f4;
+  font-size: 12px;
   letter-spacing: 2px;
-  font-weight: 500;
-  margin-bottom: 25px;
-  font-family: inter, sans-serif;
+  font-weight: bold;
+  font-family: roboto, sans-serif;
+  margin-bottom: 8px;
 }
 body main#bM section.article-content .tags ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
-  row-gap: 24px;
+  gap: 8px;
   padding: 0;
 }
 body main#bM section.article-content .tags ul li a {
   text-decoration: none;
-  color: #212529;
-  background-color: #f8f9fa;
+  font-size: 14px;
+  color: #1a1a1a;
+  background-color: #f2f2f2;
   padding: 8px 16px;
   border-radius: 50px;
   transition: all 0.25s ease-in-out;
 }
 body main#bM section.article-content .tags ul li a:hover {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #0f9d58;
 }
 body main#bM article#bAr {
   grid-area: article_right;
   height: 100%;
   padding: 20px 10px 50px 20px;
   border-radius: 20px 0 0 0;
-  background-color: #f8f9fa;
+  background-color: #f2f2f2;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 body main#bM article#bAr .a-thumbnail {
@@ -619,9 +622,13 @@ body main#bM article#bAr .a-thumbnail img {
   width: 100%;
 }
 body main#bM article#bAr .a-tags p {
-  font-size: 1rem;
-  color: rgba(58, 68, 86, 0.5215686275);
-  margin-bottom: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #4285f4;
+  margin: 24px 0 12px 0;
 }
 body main#bM article#bAr .a-tags ul {
   list-style: none;
@@ -634,14 +641,14 @@ body main#bM article#bAr .a-tags ul {
 }
 body main#bM article#bAr .a-tags ul li a {
   padding: 4px 8px;
-  background-color: #e9ecef;
+  background-color: #e6e6e6;
   text-decoration: none;
-  color: #212529;
+  color: #1a1a1a;
   border-radius: 30px;
-  font-size: 0.85rem;
+  font-size: 14px;
   transition: all 0.25s ease-out;
 }
 body main#bM article#bAr .a-tags ul li a:hover {
-  background-color: #0d6efd;
+  background-color: #4285f4;
   color: #fff;
 }/*# sourceMappingURL=article.css.map */

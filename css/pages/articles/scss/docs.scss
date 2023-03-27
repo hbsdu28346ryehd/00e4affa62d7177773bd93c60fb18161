@@ -5,7 +5,7 @@ body {
     grid-template-areas: 'header header'
                                         'article_left main'
                                         'footer footer';
-    background-color: $gray-100;
+    background-color: $gray-light-80;
     header#bH {
         grid-area: header;
         display: flex;
@@ -64,7 +64,7 @@ body {
             grid-area: article_hero;
             padding: 10px 30px 30px 30px;
             .pub-date {
-                color: $gray-600;
+                color: $gray-dark-20;
                 font-size: small;
             }
             .article-title {
@@ -73,7 +73,7 @@ body {
                 line-height: 4.5rem;
                 margin: 20px 0;
                 font-weight: 800;
-                color: $blue-darker;
+                color: $blue-dark-90;
                 font-family: poppins, sans-serif;
             }
         }
@@ -84,24 +84,24 @@ body {
             .content {
                 .class-name {
                     font-size: 0.7rem;
-                    color: $primary-light;
+                    color: $blue-light-50;
                     font-weight: 500;
                 }
                 label {
                     font-size: 0.9rem;
                     font-weight: 500;
-                    color: $danger;
+                    color: $red;
                     letter-spacing: 1px;
                 }
                 h1,h2,h3,h4,h5,h6 {
                     font-family: poppins, sans-serif;
-                    color: $gray-500;
+                    color: $gray;
                 }
                 @each $header, $size in $font-sizes {
                     .#{$header} {
                         font-size: $size;
                         margin-bottom: 1rem;
-                        color: $dark;
+                        color: $gray-dark-80;
                     }
                 }
                 @for $i from 3 through 9 {
@@ -150,7 +150,7 @@ body {
                 }
                 p { text-align: justify; }
                 p, li {
-                    color: $dark;
+                    color: $gray-dark-80;
                     line-height: 1.5rem;
                     font-size: 1rem;
                     margin-bottom: 8px;
@@ -161,11 +161,11 @@ body {
                 ul { list-style: circle; }
                 a {
                     text-decoration: none;
-                    color: $primary;
+                    color: $blue;
                     transition: all 0.2s ease-in-out;
                 }
                 a:hover {
-                    color: $primary-dark;
+                    color: $blue-dark-50;
                     text-decoration: underline;
                 }
             }
@@ -174,7 +174,7 @@ body {
                 .c-header {
                     margin-bottom: 25px;
                     h6 {
-                        color: $primary-light;
+                        color: $blue-light-50;
                         font-size: 1rem;
                         letter-spacing: 2px;
                         font-weight: 500;
@@ -252,7 +252,7 @@ body {
                                         }
                                     }
                                     .si-box:hover {
-                                        background-color: $primary;
+                                        background-color: $blue;
                                         transform: translateY(-5px);
                                         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                                         span {
@@ -267,7 +267,7 @@ body {
                                     font-size: 1rem;
                                     letter-spacing: 1px;
                                     font-weight: 400;
-                                    background-color: $primary;
+                                    background-color: $blue;
                                     text-decoration: none;
                                     color: white;
                                     border-radius: 100px;
@@ -278,7 +278,7 @@ body {
                                     }
                                 }
                                 a.to-article-btn:hover {
-                                    background-color: $primary-dark;
+                                    background-color: $blue-dark-50;
                                 }
                             }
                         }
@@ -297,7 +297,7 @@ body {
             .tags {
                 margin-bottom: 50px;
                 h6 {
-                    color: $primary-light;
+                    color: $blue-light-50;
                     font-size: 1rem;
                     letter-spacing: 2px;
                     font-weight: 500;
@@ -314,15 +314,15 @@ body {
                     li {
                         a {
                             text-decoration: none;
-                            color: $dark;
-                            background-color: $gray-100;
+                            color: $gray-dark-80;
+                            background-color: $gray-light-80;
                             padding: 8px 16px;
                             border-radius: 50px;
                             transition: all 0.25s ease-in-out;
                         }
                         a:hover {
                             color: $white;
-                            background-color: $primary;
+                            background-color: $blue;
                         }
                     }
                 }
@@ -333,7 +333,7 @@ body {
             height: 100%;
             padding: 20px 10px 50px 20px;
             border-radius: 20px 0 0 0;
-            background-color: $gray-100;
+            background-color: $gray-light-80;
             box-shadow: $box-shadow;
             .a-thumbnail {
                 width: 100%;
@@ -362,15 +362,15 @@ body {
                     li {
                         a {
                             padding: 4px 8px;
-                            background-color: $gray-200;
+                            background-color: $gray-light-60;
                             text-decoration: none;
-                            color: $dark;
+                            color: $gray-dark-80;
                             border-radius: 30px;
                             font-size: 0.85rem;
                             transition: all 0.25s ease-out;
                         }
                         a:hover {
-                            background-color: $primary;
+                            background-color: $blue;
                             color: $white;
                         }
                     }

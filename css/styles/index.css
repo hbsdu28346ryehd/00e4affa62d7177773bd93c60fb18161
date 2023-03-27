@@ -89,6 +89,10 @@ body {
   grid-template-columns: 1fr 25%;
   grid-template-areas: "header header" "main article" "footer footer";
 }
+body .google-ad {
+  width: 100%;
+  height: auto;
+}
 body header {
   grid-area: header;
   display: flex;

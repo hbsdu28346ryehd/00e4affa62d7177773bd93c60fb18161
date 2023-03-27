@@ -5,6 +5,10 @@ body {
     grid-template-areas: 'header header'
                                         'main article'
                                         'footer footer';
+    .google-ad {
+        width: 100%;
+        height: auto;
+    }
     header {
         grid-area: header;
         display: flex;

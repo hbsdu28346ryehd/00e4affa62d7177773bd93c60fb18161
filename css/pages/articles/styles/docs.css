@@ -36,8 +36,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 body footer#bF {
   grid-area: footer;
-  padding: 100px;
+  padding: 50px 100px 100px 100px;
   background-color: #232934;
+}
+body footer#bF .google-ad {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
 }
 body footer#bF .menu {
   display: grid;

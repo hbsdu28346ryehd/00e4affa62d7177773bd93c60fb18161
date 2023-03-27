@@ -36,8 +36,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 body footer#bF {
   grid-area: footer;
-  padding: 100px;
+  padding: 50px 100px 100px 100px;
   background-color: #232934;
+}
+body footer#bF .google-ad {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
 }
 body footer#bF .menu {
   display: grid;
@@ -164,10 +169,20 @@ body main .main-header a:hover i.bi {
 body main .container {
   display: grid;
   grid-template-columns: calc(50% - 25px) calc(50% - 25px);
-  grid-template-areas: "cheader cheader" "leftbox rightbox";
+  grid-template-areas: "ad ad" "cheader cheader" "leftbox rightbox";
   -moz-column-gap: 50px;
        column-gap: 50px;
+  row-gap: 25px;
   padding: 0 100px;
+  margin-bottom: 50px;
+}
+body main .container .ad-container {
+  grid-area: ad;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
 }
 body main .container .c-header {
   grid-area: cheader;
@@ -175,10 +190,10 @@ body main .container .c-header {
   margin: auto;
   width: 90%;
   position: relative;
-  top: 45px;
+  top: 50px;
 }
 body main .container .c-header h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-align: end;
 }
@@ -192,7 +207,11 @@ body main .container .left-box {
 body main .container .right-box, body main .container .left-box {
   display: flex;
   flex-direction: column;
-  row-gap: 150px;
+  row-gap: 50px;
+}
+body main .container .right-box .google-ad, body main .container .left-box .google-ad {
+  text-align: center;
+  margin: 0 auto;
 }
 body main .container .insurance-card {
   border-radius: 12px;
@@ -316,14 +335,14 @@ body main .asfdFf2a {
   opacity: 0.5;
   z-index: -5;
 }
+body main .ad-container .google-ad {
+  margin: 0 auto;
+  text-align: center;
+}
 body article {
   grid-area: article;
   height: 100%;
   padding: 50px 25px 150px 0;
-}
-body article .a-header {
-  position: sticky;
-  top: 20px;
 }
 body article .a-header p {
   font-size: 1rem;
@@ -345,6 +364,16 @@ body article .a-header ul li a {
 }
 body article .a-header ul li a:hover {
   color: #0d6efd;
+}
+body article .ad-container {
+  position: sticky;
+  top: 20px;
+}
+body article .ad-container .google-ad {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 @media only screen and (max-width: 768px) {

@@ -78,19 +78,30 @@ body {
         .container {
             display: grid;
             grid-template-columns: calc(50% - 25px) calc(50% - 25px);
-            grid-template-areas: 'cheader cheader'
+            grid-template-areas: 'ad ad'
+                                                'cheader cheader'
                                                 'leftbox rightbox';
             column-gap: 50px;
+            row-gap: 25px;
             padding: 0 100px;
+            margin-bottom: 50px;
+            .ad-container {
+                grid-area: ad;
+                width: 100%;
+                padding: 0;
+                margin: 0 auto;
+                margin-bottom: 50px;
+                text-align: center;
+            }
             .c-header {
                 grid-area: cheader;
                 color: #3a44568c;
                 margin: auto;
                 width: 90%;
                 position: relative;
-                top: 45px;
+                top: 50px;
                 h3 {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     font-weight: 400;
                     text-align: end;
                 }
@@ -105,7 +116,11 @@ body {
             .right-box, .left-box {
                 display: flex;
                 flex-direction: column;
-                row-gap: 150px;
+                row-gap: 50px;
+                .google-ad {
+                    text-align: center;
+                    margin: 0 auto;
+                }
             }
             .insurance-card {
                 border-radius: 12px;
@@ -220,14 +235,18 @@ body {
             opacity: .5;
             z-index: -5;
         }
+        .ad-container {
+            .google-ad {
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
     }
     article {
         grid-area: article;
         height: 100%;
         padding: 50px 25px 150px 0;
         .a-header {
-            position: sticky;
-            top: 20px;
             p {
                 font-size: 1rem;
                 color: #3a445685;
@@ -248,6 +267,16 @@ body {
                         color: $primary;
                     }
                 }
+            }
+        }
+        .ad-container {
+            position: sticky;
+            top: 20px;
+            .google-ad {
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 50px;
             }
         }
     }

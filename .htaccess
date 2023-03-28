@@ -9,9 +9,8 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
 # Redirect to www
-RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
-RewriteCond %{HTTPS}s ^on(s)|
-RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^insurancebhaiya.com [NC]
+RewriteRule ^(.*)$ http://www.insurancebhaiya.com/$1 [L,R=301]
 
 # Set index page to domain name
 DirectoryIndex /

@@ -10,7 +10,7 @@ RewriteRule ^(.*)$ $1.html [L]
 
 # Redirect to www
 RewriteCond %{HTTP_HOST} ^insurancebhaiya.com [NC]
-RewriteRule ^(.*)$ http://www.insurancebhaiya.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.insurancebhaiya.com/$1 [L,R=301]
 
 # Set index page to domain name
 DirectoryIndex /

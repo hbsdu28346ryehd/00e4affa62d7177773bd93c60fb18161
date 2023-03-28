@@ -60,7 +60,7 @@ body footer#bF .menu .insurance ul li, body footer#bF .menu .pages ul li {
   margin-bottom: 8px;
 }
 body footer#bF .menu .insurance ul li a, body footer#bF .menu .pages ul li a {
-  opacity: 0.5;
+  opacity: 0.7;
   color: white;
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
@@ -76,9 +76,30 @@ body footer#bF .menu .insurance ul .list-head, body footer#bF .menu .pages ul .l
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-body footer#bF .bottom-line p {
-  text-align: center;
+body footer#bF .bottom-line {
+  margin: 50px 0 0 0;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   color: #dbdcde;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+body footer#bF .bottom-line a, body footer#bF .bottom-line p {
+  margin: 0;
+}
+body footer#bF .bottom-line .policy-pages {
+  display: flex;
+  gap: 20px;
+}
+body footer#bF .bottom-line a {
+  text-decoration: none;
+  color: #dbdcde;
+}
+body footer#bF .bottom-line a:hover {
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -89,6 +110,14 @@ body footer#bF .bottom-line p {
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     gap: 20px;
+  }
+  body footer#bF .menu a {
+    opacity: 0.8 !important;
+  }
+  body footer#bF .bottom-line {
+    flex-direction: column;
+    gap: 25px;
+    letter-spacing: 0;
   }
 }
 body {
@@ -424,7 +453,7 @@ body article .ad-container .google-ad {
   }
   body main .container {
     grid-template-columns: 1fr;
-    grid-template-areas: "cheader" "leftbox" "rightbox";
+    grid-template-areas: "ad_top" "cheader" "leftbox" "ad_bottom" "rightbox";
     row-gap: 25px;
     -moz-column-gap: 0;
          column-gap: 0;
@@ -468,9 +497,9 @@ body article .ad-container .google-ad {
     font-size: 1rem;
   }
   body main .asfdFf2a {
-    top: 50px;
-    right: 0px;
-    height: 100px;
+    top: auto;
+    bottom: -30px;
+    left: 0px;
   }
   body article {
     padding: 0 25px;
@@ -478,5 +507,8 @@ body article .ad-container .google-ad {
   }
   body article .a-header {
     position: static;
+  }
+  body article .ad-container {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */

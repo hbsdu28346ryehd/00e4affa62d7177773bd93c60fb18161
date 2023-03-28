@@ -326,7 +326,7 @@ body {
             }
             .container {
                 grid-template-columns: 1fr;
-                grid-template-areas: 'cheader' 'leftbox' 'rightbox';
+                grid-template-areas: 'ad_top' 'cheader' 'leftbox' 'ad_bottom' 'rightbox';
                 row-gap: 25px;
                 column-gap: 0;
                 padding: 0 25px;
@@ -373,9 +373,9 @@ body {
                 }
             }
             .asfdFf2a {
-                top: 50px;
-                right: 0px;
-                height: 100px;
+                top: auto;
+                bottom: -30px;
+                left: 0px;
             }
         }
         article {
@@ -383,6 +383,9 @@ body {
             margin-bottom: 50px;
             .a-header {
                 position: static;
+            }
+            .ad-container {
+                display: none;
             }
         }
     }

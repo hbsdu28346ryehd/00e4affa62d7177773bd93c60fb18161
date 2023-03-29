@@ -201,32 +201,39 @@ body header .hero .hero-content .content-box .subtext {
 body header .hero .hero-content .content-box .subtext i.bi-hearts {
   color: #db4437;
 }
-body header .hero .hero-content .content-box a, body header .hero .hero-content .content-box p {
+body header .hero .hero-content .content-box .hero-footer-btn {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  margin-right: auto;
+  align-items: center;
+  margin-top: 40px;
+}
+body header .hero .hero-content .content-box .hero-footer-btn a, body header .hero .hero-content .content-box .hero-footer-btn p {
   font-size: 16px;
   text-decoration: none;
 }
-body header .hero .hero-content .content-box .hero-btn {
-  padding: 8px 16px;
-  background-color: #404040;
+body header .hero .hero-content .content-box .hero-footer-btn .hero-btn {
+  padding: 12px 24px;
+  background-color: #fff;
   margin-right: auto;
-  margin-top: 40px;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 2px;
+  border-radius: 30px;
+  color: #1a1a1a;
+  font-weight: 600;
+  letter-spacing: 1px;
   font-family: inter, sans-serif;
-  margin-bottom: 12px;
   transition: all 0.15s ease-in-out;
 }
-body header .hero .hero-content .content-box .hero-btn:hover {
+body header .hero .hero-content .content-box .hero-footer-btn .hero-btn:hover {
   background-color: #3b78dc;
+  color: white;
 }
-body header .hero .hero-content .content-box .hero-link {
-  color: #689df6;
+body header .hero .hero-content .content-box .hero-footer-btn .hero-link {
+  color: #5591f5;
   transition: all 0.15s ease-in-out;
 }
-body header .hero .hero-content .content-box .hero-link:hover {
-  color: #a1c2fa;
+body header .hero .hero-content .content-box .hero-footer-btn .hero-link:hover {
+  color: #689df6;
 }
 body header .hero .hero-image {
   overflow: hidden;

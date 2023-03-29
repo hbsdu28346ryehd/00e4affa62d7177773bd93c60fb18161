@@ -38,6 +38,9 @@ body {
         grid-area: footer;
         padding: 50px 100px;
         background-color: $gray-dark-80;
+        .ad-label {
+            color: $gray;
+        }
         .google-ad {
             margin: 0 auto;
             margin-bottom: 50px;
@@ -85,6 +88,15 @@ body {
             color: #dbdcde;
             font-size: 14px;
             letter-spacing: 1px;
+            .copy-right-text {
+                display: inline-flex;
+                align-items: center;
+                column-gap: 12px;
+                img {
+                    background: $white;
+                    border-radius: 25px;
+                }
+            }
             a, p {
                 margin: 0;
             }

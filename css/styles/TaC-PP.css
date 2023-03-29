@@ -40,6 +40,9 @@ body footer#bF {
   padding: 50px 100px;
   background-color: #1a1a1a;
 }
+body footer#bF .ad-label {
+  color: #808080;
+}
 body footer#bF .google-ad {
   margin: 0 auto;
   margin-bottom: 50px;
@@ -85,6 +88,16 @@ body footer#bF .bottom-line {
   color: #dbdcde;
   font-size: 14px;
   letter-spacing: 1px;
+}
+body footer#bF .bottom-line .copy-right-text {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+body footer#bF .bottom-line .copy-right-text img {
+  background: #fff;
+  border-radius: 25px;
 }
 body footer#bF .bottom-line a, body footer#bF .bottom-line p {
   margin: 0;

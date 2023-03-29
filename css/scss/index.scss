@@ -6,10 +6,20 @@ body {
                                         'main article'
                                         'footer footer';
     background-color: $gray-dark-80;
-    .google-ad {
-        width: 100%;
-        height: auto;
-        background-color: $gray-light-90;
+    .ad-container {
+        position: relative;
+        .ad-label {
+            position: absolute;
+            color:$gray; 
+            top: 8px; 
+            left: 10px;
+        }
+        .google-ad {
+            width: 100%;
+            height: auto;
+            background-color: $gray-light-90;
+            border-radius: 8px;
+        }
     }
     header {
         grid-area: header;
@@ -265,9 +275,6 @@ body {
         height: 100%;
         padding: 50px 25px 100px 25px;
         color: white;
-        .google-ad {
-            background-color: $gray-dark-70;
-        }
         .a-header {
             p {
                 font-size: 1rem;
@@ -293,13 +300,17 @@ body {
             }
         }
         .ad-container {
+            margin-top: 50px;
             position: sticky;
             top: 20px;
+            .ad-label {
+                color: $gray;
+            }
             .google-ad {
                 width: 100%;
                 text-align: center;
                 margin: 0 auto;
-                margin-top: 50px;
+                background-color: $gray-dark-70;
             }
         }
     }

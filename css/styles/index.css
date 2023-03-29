@@ -40,6 +40,9 @@ body footer#bF {
   padding: 50px 100px;
   background-color: #1a1a1a;
 }
+body footer#bF .ad-label {
+  color: #808080;
+}
 body footer#bF .google-ad {
   margin: 0 auto;
   margin-bottom: 50px;
@@ -86,6 +89,16 @@ body footer#bF .bottom-line {
   font-size: 14px;
   letter-spacing: 1px;
 }
+body footer#bF .bottom-line .copy-right-text {
+  display: inline-flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+body footer#bF .bottom-line .copy-right-text img {
+  background: #fff;
+  border-radius: 25px;
+}
 body footer#bF .bottom-line a, body footer#bF .bottom-line p {
   margin: 0;
 }
@@ -125,10 +138,20 @@ body {
   grid-template-areas: "header header" "main article" "footer footer";
   background-color: #1a1a1a;
 }
-body .google-ad {
+body .ad-container {
+  position: relative;
+}
+body .ad-container .ad-label {
+  position: absolute;
+  color: #808080;
+  top: 8px;
+  left: 10px;
+}
+body .ad-container .google-ad {
   width: 100%;
   height: auto;
   background-color: #f2f2f2;
+  border-radius: 8px;
 }
 body header {
   grid-area: header;
@@ -395,9 +418,6 @@ body article {
   padding: 50px 25px 100px 25px;
   color: white;
 }
-body article .google-ad {
-  background-color: #262626;
-}
 body article .a-header p {
   font-size: 1rem;
   color: #f7cb4d;
@@ -421,14 +441,18 @@ body article .a-header ul li a:hover {
   color: #f6c333;
 }
 body article .ad-container {
+  margin-top: 50px;
   position: sticky;
   top: 20px;
+}
+body article .ad-container .ad-label {
+  color: #808080;
 }
 body article .ad-container .google-ad {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  margin-top: 50px;
+  background-color: #262626;
 }
 
 @media only screen and (max-width: 768px) {

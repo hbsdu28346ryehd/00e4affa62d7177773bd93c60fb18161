@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 body footer#bF {
   grid-area: footer;
-  padding: 50px 100px 100px 100px;
+  padding: 50px 100px;
   background-color: #1a1a1a;
 }
 body footer#bF .google-ad {
@@ -50,7 +50,6 @@ body footer#bF .menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
-  padding-bottom: 80px;
 }
 body footer#bF .menu .insurance ul, body footer#bF .menu .pages ul {
   list-style: none;
@@ -124,6 +123,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 25%;
   grid-template-areas: "header header" "main article" "footer footer";
+  background-color: #1a1a1a;
 }
 body .google-ad {
   width: 100%;
@@ -132,86 +132,101 @@ body .google-ad {
 }
 body header {
   grid-area: header;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  background-color: white;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 0 50px;
 }
-body header .logo {
+body header .hero {
+  padding: 100px 0;
+  max-width: 1250px;
+  margin: auto;
   display: flex;
   align-items: center;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
-  height: 20px;
+  justify-content: space-between;
+  max-height: 75vh;
 }
-body header .logo img {
-  height: 20px;
+body header .hero .hero-content {
+  color: #fff;
+  height: 100%;
+  max-width: 700px;
+}
+body header .hero .hero-content .logo {
+  height: auto;
+}
+body header .hero .hero-content .logo img {
   cursor: pointer;
   aspect-ratio: attr(height)/attr(width);
 }
-body main {
-  grid-area: main;
-  margin-bottom: 100px;
-}
-body main .main-header {
-  padding: 100px;
-  height: calc(100vh - 50px);
+body header .hero .hero-content .content-box {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-body main .main-header h1 {
-  font-size: 5vw;
-  font-weight: 400;
-  line-height: 5vw;
-  color: #161a20;
+body header .hero .hero-content .content-box .title-text {
+  width: 100%;
+  font-size: 150px;
+  font-family: poppins, sans-serif;
+  font-weight: 800;
+}
+body header .hero .hero-content .content-box .subtext {
+  font-size: 24px;
+  color: #fada80;
+  line-height: 34px;
   font-family: poppins, sans-serif;
 }
-body main .main-header p {
-  width: 75%;
-  font-size: 1rem;
-  line-height: 1.8rem;
-  color: #363739;
-  margin: 25px 0 50px 0;
+body header .hero .hero-content .content-box .subtext i.bi-hearts {
+  color: #db4437;
 }
-body main .main-header a {
-  display: inline-flex;
-  align-items: center;
+body header .hero .hero-content .content-box a, body header .hero .hero-content .content-box p {
+  font-size: 16px;
   text-decoration: none;
+}
+body header .hero .hero-content .content-box .hero-btn {
+  padding: 8px 16px;
+  background-color: #404040;
   margin-right: auto;
-  border-radius: 5px;
-  color: rgb(255, 255, 255);
-  transition: all 0.25s ease-in-out;
-  padding: 8px 12px;
-  border-radius: 50px;
-  background-color: #df574b;
-  transition: all 0.25s ease-in-out;
+  margin-top: 40px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-family: inter, sans-serif;
+  margin-bottom: 12px;
+  transition: all 0.15s ease-in-out;
 }
-body main .main-header a i.bi {
-  font-size: 0;
-  transition: all 0.2s ease-in-out;
+body header .hero .hero-content .content-box .hero-btn:hover {
+  background-color: #3b78dc;
 }
-body main .main-header a:hover {
-  background-color: #993027;
-  color: rgb(255, 255, 255);
+body header .hero .hero-content .content-box .hero-link {
+  color: #689df6;
+  transition: all 0.15s ease-in-out;
 }
-body main .main-header a:hover i.bi {
-  font-size: 1rem;
-  margin-left: 10px;
+body header .hero .hero-content .content-box .hero-link:hover {
+  color: #a1c2fa;
+}
+body header .hero .hero-image {
+  overflow: hidden;
+}
+body header .hero .hero-image img {
+  aspect-ratio: attr(width)/attr(height);
+}
+body main {
+  grid-area: main;
+  padding: 100px 0;
+  background-color: white;
+  border-radius: 0 50px 50px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 3px inset;
 }
 body main .container {
-  display: grid;
-  grid-template-columns: calc(50% - 25px) calc(50% - 25px);
-  grid-template-areas: "ad_top ad_top" "cheader cheader" "leftbox rightbox" "ad_bottom ad_bottom";
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  row-gap: 25px;
-  padding: 0 100px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 body main .container .ad-container-top {
   grid-area: ad_top;
-  margin-bottom: 50px;
 }
 body main .container .ad-container-top .google-ad {
   margin: 0 auto;
@@ -220,7 +235,6 @@ body main .container .ad-container-top .google-ad {
 body main .container .c-header {
   grid-area: cheader;
   color: #404040;
-  margin-bottom: 25px;
 }
 body main .container .c-header h3 {
   font-size: 24px;
@@ -228,85 +242,92 @@ body main .container .c-header h3 {
   text-align: center;
   font-family: poppins, sans-serif;
 }
-body main .container .right-box {
+body main .container .insurance-types-container-box {
+  grid-area: types;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+body main .container .insurance-types-container-box .right-box {
   grid-area: rightbox;
   padding-top: 150px;
 }
-body main .container .left-box {
+body main .container .insurance-types-container-box .left-box {
   grid-area: leftbox;
 }
-body main .container .right-box, body main .container .left-box {
+body main .container .insurance-types-container-box .right-box, body main .container .insurance-types-container-box .left-box {
   display: flex;
   flex-direction: column;
   row-gap: 50px;
   max-width: 400px;
 }
-body main .container .right-box .google-ad, body main .container .left-box .google-ad {
+body main .container .insurance-types-container-box .right-box .google-ad, body main .container .insurance-types-container-box .left-box .google-ad {
   text-align: center;
   margin: 0 auto;
 }
-body main .container .insurance-card {
+body main .container .insurance-types-container-box .insurance-card {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-card .card-top-border {
+body main .container .insurance-types-container-box .insurance-card .card-top-border {
   padding: 4px 0;
 }
-body main .container .insurance-card .border-blue {
+body main .container .insurance-types-container-box .insurance-card .border-blue {
   background: #4285f4;
 }
-body main .container .insurance-card .border-red {
+body main .container .insurance-types-container-box .insurance-card .border-red {
   background: #db4437;
 }
-body main .container .insurance-card .border-green {
+body main .container .insurance-types-container-box .insurance-card .border-green {
   background: #0f9d58;
 }
-body main .container .insurance-card .border-yellow {
+body main .container .insurance-types-container-box .insurance-card .border-yellow {
   background: #f4b400;
 }
-body main .container .insurance-card .border-orange {
+body main .container .insurance-types-container-box .insurance-card .border-orange {
   background: #808080;
 }
-body main .container .insurance-card .border-purple {
+body main .container .insurance-types-container-box .insurance-card .border-purple {
   background: #a1c2fa;
 }
-body main .container .insurance-card .content {
+body main .container .insurance-types-container-box .insurance-card .content {
   padding: 20px 20px 25px 25px;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-card .content .thumbnail {
+body main .container .insurance-types-container-box .insurance-card .content .thumbnail {
   display: flex;
   justify-content: flex-end;
   height: 120px;
   width: 100%;
 }
-body main .container .insurance-card .content .thumbnail img {
+body main .container .insurance-types-container-box .insurance-card .content .thumbnail img {
   height: 100%;
   width: auto;
 }
-body main .container .insurance-card .content h2 {
+body main .container .insurance-types-container-box .insurance-card .content h2 {
   font-size: 32px;
   font-weight: 400;
   color: #111;
   margin-bottom: 16px;
   font-family: poppins, sans-serif;
 }
-body main .container .insurance-card .content p {
+body main .container .insurance-types-container-box .insurance-card .content p {
   font-size: 16px;
   line-height: 24px;
   text-align: start;
   color: #222;
   margin-bottom: 25px;
 }
-body main .container .insurance-card .content .sub-insurance {
+body main .container .insurance-types-container-box .insurance-card .content .sub-insurance {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   margin-bottom: 25px;
 }
-body main .container .insurance-card .content .sub-insurance .si-box {
+body main .container .insurance-types-container-box .insurance-card .content .sub-insurance .si-box {
   border: 1px solid #d9e7fd;
   cursor: pointer;
   aspect-ratio: 1/1;
@@ -317,22 +338,22 @@ body main .container .insurance-card .content .sub-insurance .si-box {
   background-color: #ecf3fe;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-card .content .sub-insurance .si-box span {
+body main .container .insurance-types-container-box .insurance-card .content .sub-insurance .si-box span {
   text-align: center;
   color: #262626;
   font-size: 14px;
   line-height: 18px;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-card .content .sub-insurance .si-box:hover {
+body main .container .insurance-types-container-box .insurance-card .content .sub-insurance .si-box:hover {
   background-color: #4285f4;
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-body main .container .insurance-card .content .sub-insurance .si-box:hover span {
+body main .container .insurance-types-container-box .insurance-card .content .sub-insurance .si-box:hover span {
   color: white;
 }
-body main .container .insurance-card .content a.to-article-btn {
+body main .container .insurance-types-container-box .insurance-card .content a.to-article-btn {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
@@ -346,17 +367,17 @@ body main .container .insurance-card .content a.to-article-btn {
   border-radius: 100px;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-card .content a.to-article-btn i.bi {
+body main .container .insurance-types-container-box .insurance-card .content a.to-article-btn i.bi {
   font-size: 0;
   transition: all 0.2s ease-in-out;
 }
-body main .container .insurance-card .content a.to-article-btn:hover {
+body main .container .insurance-types-container-box .insurance-card .content a.to-article-btn:hover {
   background-color: #356ac3;
 }
-body main .container .insurance-card:hover {
+body main .container .insurance-types-container-box .insurance-card:hover {
   transform: translateY(-10px);
 }
-body main .container .insurance-card:hover a.to-article-btn i.bi {
+body main .container .insurance-types-container-box .insurance-card:hover a.to-article-btn i.bi {
   font-size: 1rem;
   margin-left: 10px;
 }
@@ -368,22 +389,18 @@ body main .container .ad-container-bottom .google-ad {
   margin: 0 auto;
   text-align: center;
 }
-body main .asfdFf2a {
-  position: absolute;
-  top: 100px;
-  right: 25%;
-  opacity: 0.5;
-  z-index: -5;
-  aspect-ratio: attr(height)/attr(width);
-}
 body article {
   grid-area: article;
   height: 100%;
-  padding: 50px 25px 150px 0;
+  padding: 50px 25px 100px 25px;
+  color: white;
+}
+body article .google-ad {
+  background-color: #262626;
 }
 body article .a-header p {
   font-size: 1rem;
-  color: #404040;
+  color: #f7cb4d;
   margin-bottom: 25px;
 }
 body article .a-header ul {
@@ -392,15 +409,16 @@ body article .a-header ul {
 }
 body article .a-header ul li {
   margin-bottom: 24px;
+  color: #f6c333;
 }
 body article .a-header ul li a {
   text-decoration: none;
-  color: #1a1a1a;
+  color: #fff;
   font-size: 1rem;
   transition: all 0.25s ease-out;
 }
 body article .a-header ul li a:hover {
-  color: #4285f4;
+  color: #f6c333;
 }
 body article .ad-container {
   position: sticky;
@@ -429,27 +447,6 @@ body article .ad-container .google-ad {
   }
   body main {
     margin-bottom: 50px;
-  }
-  body main .main-header {
-    padding: 0 25px;
-    text-align: center;
-    height: calc(100vh - 120px);
-    margin-bottom: 75px;
-  }
-  body main .main-header h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-    font-weight: 500;
-    margin-bottom: 12px;
-  }
-  body main .main-header p {
-    width: 100%;
-    font-size: 1rem;
-    line-height: 1.6rem;
-  }
-  body main .main-header a {
-    font-size: 1rem;
-    padding: 8px 16px;
   }
   body main .container {
     grid-template-columns: 1fr;
@@ -495,11 +492,6 @@ body article .ad-container .google-ad {
   }
   body main .container .insurance-card .content a.to-article-btn {
     font-size: 1rem;
-  }
-  body main .asfdFf2a {
-    top: auto;
-    bottom: -30px;
-    left: 0px;
   }
   body article {
     padding: 0 25px;

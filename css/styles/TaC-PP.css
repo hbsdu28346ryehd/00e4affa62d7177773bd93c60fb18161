@@ -37,7 +37,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 body footer#bF {
   grid-area: footer;
-  padding: 50px 100px 100px 100px;
+  padding: 50px 100px;
   background-color: #1a1a1a;
 }
 body footer#bF .google-ad {
@@ -50,7 +50,6 @@ body footer#bF .menu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
-  padding-bottom: 80px;
 }
 body footer#bF .menu .insurance ul, body footer#bF .menu .pages ul {
   list-style: none;

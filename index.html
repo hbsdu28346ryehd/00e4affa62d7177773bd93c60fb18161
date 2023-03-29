@@ -40,26 +40,27 @@
 <body>
     <!-- Header Section -->
     <header>
-        <a href="/" role="button">
-            <div class="logo">
-                <img src="assets/logo/logo-horizontal-dark.png" alt="Insurance bhaiya logo" height="50px" width="150px" loading="lazy" decoding="sync">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="logo">
+                    <a href="/" role="button">
+                        <img src="assets/logo/logo-horizontal-light.png" alt="Insurance bhaiya logo" height="25px" width="auto" loading="lazy" decoding="sync">
+                    </a>
+                </div>
+                <div class="content-box">
+                    <h1 class="title-text">Covered</h1>
+                    <p class="subtext">Protect what matters most with our easy-to-use insurance resources. From auto to home to health insurance, we've got you covered. <i class="bi bi-hearts"></i></p>
+                    <a href="#types-of-insurances" class="hero-btn">Explore</a>
+                    <p>Know more about <a href="/" class="hero-link">Insurance <i class="bi bi-arrow-right"></i></a></p>
+                </div>
             </div>
-        </a>
+            <div class="hero-image">
+                <img src="/assets/images/Home/hero.png" alt="insurance illustration" width="500px" height="100%" loading="lazy" decoding="async">
+            </div>
+        </section>
     </header>
     <!-- Main Section -->
-    <main>
-        <img src="https://thumbs.dreamstime.com/b/money-bag-image-49428632.jpg" alt="Money bag illustration" height="150px" width="150px" class="asfdFf2a" loading="lazy" decoding="async">
-        <div class="main-header">
-            <h1 class="q1">What is Insurance?</h1>
-            <p>Insurance is like a good friend who's always got your back when things go wrong. 
-                You pay a little bit of money upfront, and in return, they promise to help you out if something bad happens. 
-                It's like having a safety net for life's unexpected curveballs. Just remember, 
-                if your house burns down, your car gets stolen, or you get sick, 
-                don't forget to call your friend (aka your insurance company).</p>
-            <div class="goto-btn">
-                <a href="/" role="button"><span>Know more about insurance</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-        </div>
+    <main id="types-of-insurances">
         <div class="container">
             <!-- Ad -->
             <div class="ad-container ad-container-top">
@@ -81,198 +82,201 @@
             <div class="c-header">
                 <h3>Insurances Types</h3>
             </div>
-            <div class="left-box">
-                <!-- Auto Insurance -->
-                <div class="insurance-card">
-                    <div class="border-blue card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://assets.materialup.com/uploads/ed316f7f-cbc3-49db-917b-aee511dc32a2/preview.jpg" alt="Auto insurance illustration" loading="lazy" decoding="async">
+            <!-- Insurance Types -->
+            <div class="insurance-types-container-box">
+                <div class="left-box">
+                    <!-- Auto Insurance -->
+                    <div class="insurance-card">
+                        <div class="border-blue card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://assets.materialup.com/uploads/ed316f7f-cbc3-49db-917b-aee511dc32a2/preview.jpg" alt="Auto insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Auto</h2>
+                            <p>Covers damage to or theft of a vehicle, and liability for bodily injury or property damage caused by the insured driver.</p>
+                            <a href="./article/auto-insurance" class="to-article-btn" role="button" target="_blank"><span>Auto Insurance</span><i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <h2>Auto</h2>
-                        <p>Covers damage to or theft of a vehicle, and liability for bodily injury or property damage caused by the insured driver.</p>
-                        <a href="./article/auto-insurance" class="to-article-btn" role="button" target="_blank"><span>Auto Insurance</span><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                    <!-- Ad -->
+                    <div class="google-ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5051249680078855"
+                        crossorigin="anonymous"></script>
+                        <!-- square ad -->
+                        <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-client="ca-pub-5051249680078855"
+                                data-ad-slot="7303636686"
+                                data-ad-format="auto"
+                                data-full-width-responsive="true"></ins>
+                        <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <!-- Health Insurance -->
+                    <div class="insurance-card">
+                        <div class="border-red card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://img.graphicsurf.com/2020/08/medical-insurance-vector-illustration.jpg" alt="Health insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Health</h2>
+                            <p>Covers medical expenses incurred by the policyholder or their family, including hospitalization, prescription drugs, and doctor's visits.</p>
+                            <a href="./article/health-insurance" class="to-article-btn" role="button" target="_blank"><span>Health Insurance</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- LIfe -->
+                    <div class="insurance-card">
+                        <div class="border-green card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://assets.materialup.com/uploads/5ef49763-e845-4c85-ac2e-32b9ac62958f/preview.jpg" alt="Life insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Life</h2>
+                            <p>pays out a lump sum to the policyholder's beneficiaries upon their death, providing financial support for their loved ones.</p>
+                            <a href="/article/life-insurance" class="to-article-btn" role="button" target="_blank"><span>Life Insurance</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Ad -->
+                    <div class="google-ad" title="ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5051249680078855"
+                        crossorigin="anonymous"></script>
+                        <!-- square ad -->
+                        <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-client="ca-pub-5051249680078855"
+                                data-ad-slot="7303636686"
+                                data-ad-format="auto"
+                                data-full-width-responsive="true"></ins>
+                        <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+                    <!-- Disability -->
+                    <div class="insurance-card">
+                        <div class="border-orange card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://img.freepik.com/free-vector/social-security-benefit-abstract-concept-illustration-social-security-protection-application-form-benefit-calculator-retirement-insurance-disability-income-agent_335657-3637.jpg?w=2000" alt="Disability insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Disability</h2>
+                            <p>Provides financial protection to individuals who are unable to work due to illness or injury.</p>
+                            <a href="./article/disability-insurance" class="to-article-btn" role="button" target="_blank"><span>Disability Insurance</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Flood -->
+                    <div class="insurance-card">
+                        <div class="border-green card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://img.freepik.com/free-vector/flood-abstract-concept-illustration-natural-disaster-water-flow-heavy-rainfall-tropical-cyclone-tsunami-overflowing-lake-water-contamination-climate-change_335657-3411.jpg?w=2000" alt="Flood insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Flood</h2>
+                            <p>Covers damage caused by flooding, which is often excluded from standard homeowners' insurance policies.</p>
+                            <a href="./article/flood-insurance" class="to-article-btn" role="button" target="_blank"><span>Flood Insurance</span><i class="bi bi-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
-                <!-- Ad -->
-                <div class="google-ad">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5051249680078855"
-                    crossorigin="anonymous"></script>
-                    <!-- square ad -->
-                    <ins class="adsbygoogle"
-                            style="display:block"
-                            data-ad-client="ca-pub-5051249680078855"
-                            data-ad-slot="7303636686"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true"></ins>
-                    <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <!-- Health Insurance -->
-                <div class="insurance-card">
-                    <div class="border-red card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://img.graphicsurf.com/2020/08/medical-insurance-vector-illustration.jpg" alt="Health insurance illustration" loading="lazy" decoding="async">
+                <div class="right-box">
+                    <!-- Homeowners -->
+                    <div class="insurance-card">
+                        <div class="border-green card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://prolink.insure/wp-content/uploads/2020/06/7-Things-to-Consider-Before-Buying-Home-Insurance.png" alt="Homeowners insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Homeowners</h2>
+                            <p>Covers damage or loss to a home and its contents from events such as fire, theft, and natural disasters.</p>
+                            <a href="./article/homeowners-insurance" class="to-article-btn" role="button" target="_blank"><span>Homeowners Insurance</span><i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <h2>Health</h2>
-                        <p>Covers medical expenses incurred by the policyholder or their family, including hospitalization, prescription drugs, and doctor's visits.</p>
-                        <a href="./article/health-insurance" class="to-article-btn" role="button" target="_blank"><span>Health Insurance</span><i class="bi bi-arrow-right"></i></a>
                     </div>
-                </div>
-                <!-- LIfe -->
-                <div class="insurance-card">
-                    <div class="border-green card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://assets.materialup.com/uploads/5ef49763-e845-4c85-ac2e-32b9ac62958f/preview.jpg" alt="Life insurance illustration" loading="lazy" decoding="async">
+                    <!-- Liability -->
+                    <div class="insurance-card">
+                        <div class="border-orange card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://prolink.insure/wp-content/uploads/2020/11/All-About-Commercial-General-Liability-Insurance.png" alt="Liability insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Liability</h2>
+                            <p>Protects individuals or businesses from financial loss if they are found liable for causing harm or injury to someone else.</p>
+                            <a href="./article/liability-insurance" class="to-article-btn" role="button" target="_blank"><span>Liability Insurance</span><i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <h2>Life</h2>
-                        <p>pays out a lump sum to the policyholder's beneficiaries upon their death, providing financial support for their loved ones.</p>
-                        <a href="/article/life-insurance" class="to-article-btn" role="button" target="_blank"><span>Life Insurance</span><i class="bi bi-arrow-right"></i></a>
                     </div>
-                </div>
-                <!-- Ad -->
-                <div class="google-ad" title="ad">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5051249680078855"
-                    crossorigin="anonymous"></script>
-                    <!-- square ad -->
-                    <ins class="adsbygoogle"
-                            style="display:block"
-                            data-ad-client="ca-pub-5051249680078855"
-                            data-ad-slot="7303636686"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true"></ins>
-                    <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <!-- Disability -->
-                <div class="insurance-card">
-                    <div class="border-orange card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://img.freepik.com/free-vector/social-security-benefit-abstract-concept-illustration-social-security-protection-application-form-benefit-calculator-retirement-insurance-disability-income-agent_335657-3637.jpg?w=2000" alt="Disability insurance illustration" loading="lazy" decoding="async">
-                        </div>
-                        <h2>Disability</h2>
-                        <p>Provides financial protection to individuals who are unable to work due to illness or injury.</p>
-                        <a href="./article/disability-insurance" class="to-article-btn" role="button" target="_blank"><span>Disability Insurance</span><i class="bi bi-arrow-right"></i></a>
+                    <!-- Ad -->
+                    <div class="google-ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5051249680078855"
+                        crossorigin="anonymous"></script>
+                        <!-- square ad -->
+                        <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-client="ca-pub-5051249680078855"
+                                data-ad-slot="7303636686"
+                                data-ad-format="auto"
+                                data-full-width-responsive="true"></ins>
+                        <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
                     </div>
-                </div>
-                <!-- Flood -->
-                <div class="insurance-card">
-                    <div class="border-green card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://img.freepik.com/free-vector/flood-abstract-concept-illustration-natural-disaster-water-flow-heavy-rainfall-tropical-cyclone-tsunami-overflowing-lake-water-contamination-climate-change_335657-3411.jpg?w=2000" alt="Flood insurance illustration" loading="lazy" decoding="async">
+                    <!-- Travel -->
+                    <div class="insurance-card">
+                        <div class="border-blue card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://assets.materialup.com/uploads/64a8b3e4-aa74-4cd3-9df8-08a5935598a6/preview.jpg" alt="Travel insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Travel</h2>
+                            <p>Covers unexpected events that may occur while traveling, such as trip cancellation, medical emergencies, or lost luggage.</p>
+                            <a href="./article/travel-insurance" class="to-article-btn" role="button" target="_blank"><span>Travel Insurance</span><i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <h2>Flood</h2>
-                        <p>Covers damage caused by flooding, which is often excluded from standard homeowners' insurance policies.</p>
-                        <a href="./article/flood-insurance" class="to-article-btn" role="button" target="_blank"><span>Flood Insurance</span><i class="bi bi-arrow-right"></i></a>
                     </div>
-                </div>
-            </div>
-            <div class="right-box">
-                <!-- Homeowners -->
-                <div class="insurance-card">
-                    <div class="border-green card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://prolink.insure/wp-content/uploads/2020/06/7-Things-to-Consider-Before-Buying-Home-Insurance.png" alt="Homeowners insurance illustration" loading="lazy" decoding="async">
+                    <!-- Pet --> 
+                    <div class="insurance-card">
+                        <div class="border-red card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://img.freepik.com/premium-vector/man-with-dog-shows-pet-insurance-blank-happy-male-with-corgi-his-hands-cartoon-flat-vector-illustration-white-background-pet-insurance-consept-with-space-text_528592-404.jpg?w=2000" alt="Pet insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Pet</h2>
+                            <p>Covers veterinary expenses for pets, including accidents and illnesses.</p>
+                            <a href="./article/pet-insurance" class="to-article-btn" role="button" target="_blank"><span>Pet Insurance</span><i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <h2>Homeowners</h2>
-                        <p>Covers damage or loss to a home and its contents from events such as fire, theft, and natural disasters.</p>
-                        <a href="./article/homeowners-insurance" class="to-article-btn" role="button" target="_blank"><span>Homeowners Insurance</span><i class="bi bi-arrow-right"></i></a>
                     </div>
-                </div>
-                <!-- Liability -->
-                <div class="insurance-card">
-                    <div class="border-orange card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://prolink.insure/wp-content/uploads/2020/11/All-About-Commercial-General-Liability-Insurance.png" alt="Liability insurance illustration" loading="lazy" decoding="async">
-                        </div>
-                        <h2>Liability</h2>
-                        <p>Protects individuals or businesses from financial loss if they are found liable for causing harm or injury to someone else.</p>
-                        <a href="./article/liability-insurance" class="to-article-btn" role="button" target="_blank"><span>Liability Insurance</span><i class="bi bi-arrow-right"></i></a>
+                    <!-- Ad -->
+                    <div class="google-ad">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5051249680078855"
+                        crossorigin="anonymous"></script>
+                        <!-- square ad -->
+                        <ins class="adsbygoogle"
+                                style="display:block"
+                                data-ad-client="ca-pub-5051249680078855"
+                                data-ad-slot="7303636686"
+                                data-ad-format="auto"
+                                data-full-width-responsive="true"></ins>
+                        <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
                     </div>
-                </div>
-                <!-- Ad -->
-                <div class="google-ad">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5051249680078855"
-                    crossorigin="anonymous"></script>
-                    <!-- square ad -->
-                    <ins class="adsbygoogle"
-                            style="display:block"
-                            data-ad-client="ca-pub-5051249680078855"
-                            data-ad-slot="7303636686"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true"></ins>
-                    <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <!-- Travel -->
-                <div class="insurance-card">
-                    <div class="border-blue card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://assets.materialup.com/uploads/64a8b3e4-aa74-4cd3-9df8-08a5935598a6/preview.jpg" alt="Travel insurance illustration" loading="lazy" decoding="async">
+                    <!-- Business -->
+                    <div class="insurance-card">
+                        <div class="border-yellow card-top-border"></div>
+                        <div class="content">
+                            <div class="thumbnail">
+                                <img src="https://previews.123rf.com/images/tastycat/tastycat1911/tastycat191100527/133406067-vector-flat-business-insurance-person-illustration-businessman-agent-with-shield-and-coin-isolated.jpg" alt="Business insurance illustration" loading="lazy" decoding="async">
+                            </div>
+                            <h2>Business</h2>
+                            <p>Covers a variety of risks associated with running a business, including property damage, liability, and employee injuries.</p>
+                            <div class="sub-insurance">
+                                <a href="#" class="si-box" role="button">
+                                    <span>General Liability</span>
+                                </a>
+                                <a href="#" class="si-box" role="button">
+                                    <span>Property</span>
+                                </a>
+                                <a href="#" class="si-box" role="button">
+                                    <span>Business Interruption</span>
+                                </a>
+                            </div>
+                            <a href="./article/business-insurance" class="to-article-btn" role="button" target="_blank"><span>Business Insurance</span><i class="bi bi-arrow-right"></i></a>
                         </div>
-                        <h2>Travel</h2>
-                        <p>Covers unexpected events that may occur while traveling, such as trip cancellation, medical emergencies, or lost luggage.</p>
-                        <a href="./article/travel-insurance" class="to-article-btn" role="button" target="_blank"><span>Travel Insurance</span><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Pet --> 
-                <div class="insurance-card">
-                    <div class="border-red card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://img.freepik.com/premium-vector/man-with-dog-shows-pet-insurance-blank-happy-male-with-corgi-his-hands-cartoon-flat-vector-illustration-white-background-pet-insurance-consept-with-space-text_528592-404.jpg?w=2000" alt="Pet insurance illustration" loading="lazy" decoding="async">
-                        </div>
-                        <h2>Pet</h2>
-                        <p>Covers veterinary expenses for pets, including accidents and illnesses.</p>
-                        <a href="./article/pet-insurance" class="to-article-btn" role="button" target="_blank"><span>Pet Insurance</span><i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <!-- Ad -->
-                <div class="google-ad">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5051249680078855"
-                    crossorigin="anonymous"></script>
-                    <!-- square ad -->
-                    <ins class="adsbygoogle"
-                            style="display:block"
-                            data-ad-client="ca-pub-5051249680078855"
-                            data-ad-slot="7303636686"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true"></ins>
-                    <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
-                <!-- Business -->
-                <div class="insurance-card">
-                    <div class="border-yellow card-top-border"></div>
-                    <div class="content">
-                        <div class="thumbnail">
-                            <img src="https://previews.123rf.com/images/tastycat/tastycat1911/tastycat191100527/133406067-vector-flat-business-insurance-person-illustration-businessman-agent-with-shield-and-coin-isolated.jpg" alt="Business insurance illustration" loading="lazy" decoding="async">
-                        </div>
-                        <h2>Business</h2>
-                        <p>Covers a variety of risks associated with running a business, including property damage, liability, and employee injuries.</p>
-                        <div class="sub-insurance">
-                            <a href="#" class="si-box" role="button">
-                                <span>General Liability</span>
-                            </a>
-                            <a href="#" class="si-box" role="button">
-                                <span>Property</span>
-                            </a>
-                            <a href="#" class="si-box" role="button">
-                                <span>Business Interruption</span>
-                            </a>
-                        </div>
-                        <a href="./article/business-insurance" class="to-article-btn" role="button" target="_blank"><span>Business Insurance</span><i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

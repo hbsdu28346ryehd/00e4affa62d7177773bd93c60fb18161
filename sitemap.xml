@@ -1,43 +1,133 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-  <url>
-    <loc>https://insurancebhaiya.com/</loc>
-    <lastmod>2023-03-27T06:02:49+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://insurancebhaiya.com/article/life-insurance</loc>
-    <lastmod>2023-03-27T06:02:49+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://insurancebhaiya.com/article/life-insurance/term-life-insurance</loc>
-    <lastmod>2023-03-27T06:02:49+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://insurancebhaiya.com/article/life-insurance/permanent-life-insurance</loc>
-    <lastmod>2023-03-27T06:02:49+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://insurancebhaiya.com/article/life-insurance/final-expense-insurance</loc>
-    <lastmod>2023-03-27T06:02:49+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://insurancebhaiya.com/article/life-insurance/permanent-life-insurance/whole-life-insurance</loc>
-    <lastmod>2023-03-27T06:02:49+00:00</lastmod>
-    <priority>0.51</priority>
-  </url>
-  <url>
-    <loc>https://insurancebhaiya.com/article/life-insurance/permanent-life-insurance/universal-life-insurance</loc>
-    <lastmod>2023-03-27T06:02:49+00:00</lastmod>
-    <priority>0.51</priority>
-  </url>
-  <url>
-    <loc>https://insurancebhaiya.com/article/life-insurance/permanent-life-insurance/variable-life-insurance</loc>
-    <lastmod>2023-03-27T06:02:49+00:00</lastmod>
-    <priority>0.51</priority>
-  </url>
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://insurancebhaiya.com/</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/auto-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/health-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/life-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/disability-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/flood-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/homeowners-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/liability-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/travel-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/pet-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/business-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/pages/privacy-policy</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/pages/terms-and-conditions</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/auto-insurance/liability-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/auto-insurance/collision-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/auto-insurance/comprehensive-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/auto-insurance/personal-injury-protection-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/auto-insurance/uninsured-motorist-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/auto-insurance/gap-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/auto-insurance/roadside-assistance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/life-insurance/term-life-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/life-insurance/permanent-life-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/life-insurance/final-expense-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/life-insurance/permanent-life-insurance/whole-life-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/life-insurance/permanent-life-insurance/universal-life-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://insurancebhaiya.com/article/life-insurance/permanent-life-insurance/variable-life-insurance</loc>
+<lastmod>2023-03-29T01:55:55+00:00</lastmod>
+<priority>0.51</priority>
+</url>
 </urlset>

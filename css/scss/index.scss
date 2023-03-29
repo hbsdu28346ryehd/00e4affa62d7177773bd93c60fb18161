@@ -65,32 +65,38 @@ body {
                             color: $red;
                         }
                     }
-                    a, p {
-                        font-size: 16px;
-                        text-decoration: none;
-                    }
-                    .hero-btn {
-                        padding: 8px 16px;
-                        background-color: $gray-dark-50;
+                    .hero-footer-btn {
+                        display: flex;
+                        column-gap: 24px;
                         margin-right: auto;
+                        align-items: center;
                         margin-top: 40px;
-                        border-radius: 4px;
-                        color: $white;
-                        font-weight: 500;
-                        letter-spacing: 2px;
-                        font-family: inter, sans-serif;
-                        margin-bottom: 12px;
-                        transition: all 0.15s ease-in-out;
-                    }
-                    .hero-btn:hover {
-                        background-color: $blue-dark-10;
-                    }
-                    .hero-link {
-                        color: $blue-light-20;
-                        transition: all 0.15s ease-in-out;
-                    }
-                    .hero-link:hover {
-                        color: $blue-light-50;
+                        a, p {
+                            font-size: 16px;
+                            text-decoration: none;
+                        }
+                        .hero-btn {
+                            padding: 12px 24px;
+                            background-color: $white;
+                            margin-right: auto;
+                            border-radius: 30px;
+                            color: $gray-dark-80;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            font-family: inter, sans-serif;
+                            transition: all 0.15s ease-in-out;
+                        }
+                        .hero-btn:hover {
+                            background-color: $blue-dark-10;
+                            color: white;
+                        }
+                        .hero-link {
+                            color: $blue-light-10;
+                            transition: all 0.15s ease-in-out;
+                        }
+                        .hero-link:hover {
+                            color: $blue-light-20;
+                        }
                     }
                 }
             }

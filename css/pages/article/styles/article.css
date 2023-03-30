@@ -138,6 +138,10 @@ body {
   grid-template-areas: "header header" "article_left main" "footer footer";
   background-color: #f2f2f2;
 }
+body .nav-url-box {
+  height: 0;
+  width: 0;
+}
 body header#bH {
   grid-area: header;
   display: flex;
@@ -165,10 +169,10 @@ body article#bAl .sticky-top {
   top: 20px;
 }
 body article#bAl .sidebar-box .label-blue {
-  color: #4285f4;
+  color: #3b78dc;
 }
 body article#bAl .sidebar-box .label-yellow {
-  color: #f4b400;
+  color: #dca200;
 }
 body article#bAl .sidebar-box .label {
   font-size: 12px;
@@ -184,11 +188,11 @@ body article#bAl .sidebar-box ol, body article#bAl .sidebar-box ul {
   padding-left: 20px;
 }
 body article#bAl .sidebar-box ol li, body article#bAl .sidebar-box ul li {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 body article#bAl .sidebar-box ol li a, body article#bAl .sidebar-box ul li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   transition: all 0.1s ease-out;
   color: #000;
 }
@@ -200,7 +204,7 @@ body article#bAl .sidebar-box .navigation {
   padding: 0;
 }
 body article#bAl .sidebar-box .navigation li {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 body article#bAl .sidebar-box .navigation li ul {
   list-style: none;
@@ -254,7 +258,7 @@ body main#bM section.article-hero .article-path ul li {
 }
 body main#bM section.article-hero .article-path ul li a {
   text-decoration: none;
-  color: #999999;
+  color: #666666;
   letter-spacing: 0.5px;
 }
 body main#bM section.article-hero .article-path ul li a:hover {
@@ -512,7 +516,7 @@ body main#bM section.article-content .content ul {
 }
 body main#bM section.article-content .content a {
   text-decoration: none;
-  color: #4285f4;
+  color: #3b78dc;
   transition: all 0.2s ease-in-out;
 }
 body main#bM section.article-content .content a:hover {
@@ -554,7 +558,7 @@ body main#bM section.article-content .recommendation .c-header {
   margin-bottom: 25px;
 }
 body main#bM section.article-content .recommendation .c-header h6 {
-  color: #4285f4;
+  color: #3b78dc;
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -663,7 +667,7 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   letter-spacing: 1px;
   line-height: 18px;
   font-weight: 400;
-  background-color: #4285f4;
+  background-color: #3b78dc;
   text-decoration: none;
   color: #fff;
   border-radius: 100px;
@@ -674,7 +678,7 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   transition: all 0.2s ease-in-out;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content a.to-article-btn:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content a.to-article-btn:hover {
-  background-color: #356ac3;
+  background-color: #2e5dab;
 }
 body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card:hover {
   transform: translateY(-10px);
@@ -687,7 +691,7 @@ body main#bM section.article-content .tags {
   margin-bottom: 25px;
 }
 body main#bM section.article-content .tags h6 {
-  color: #4285f4;
+  color: #3b78dc;
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -740,7 +744,7 @@ body main#bM article#bAr .a-tags p {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #4285f4;
+  color: #3b78dc;
   margin: 24px 0 12px 0;
 }
 body main#bM article#bAr .a-tags ul {

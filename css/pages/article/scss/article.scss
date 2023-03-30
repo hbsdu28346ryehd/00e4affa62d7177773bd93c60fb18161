@@ -6,6 +6,10 @@ body {
                                         'article_left main'
                                         'footer footer';
     background-color: $gray-light-90;
+    .nav-url-box {
+        height: 0;
+        width: 0;
+    }
     header#bH {
         grid-area: header;
         display: flex;
@@ -31,8 +35,8 @@ body {
             top: 20px;
         }
         .sidebar-box {
-            .label-blue {color: $blue;}
-            .label-yellow {color: $yellow;}
+            .label-blue {color: $blue-dark-10;}
+            .label-yellow {color: $yellow-dark-10;}
             .label {
                 font-size: 12px;
                 margin-bottom: 18px;
@@ -46,10 +50,10 @@ body {
             ol, ul {
                 padding-left: 20px;
                 li {
-                    margin-bottom: 14px;
+                    margin-bottom: 12px;
                     a {
                         text-decoration: none;
-                        font-size: 16px;
+                        font-size: 14px;
                         transition: all 0.1s ease-out;
                         color: $black;
                     }
@@ -62,7 +66,7 @@ body {
                 list-style: none;
                 padding: 0;
                 li {
-                    margin-bottom: 18px;
+                    margin-bottom: 12px;
                     ul { 
                         list-style: none; 
                         padding-left: 24px;
@@ -115,7 +119,7 @@ body {
                         font-size: 16px;
                         a {
                             text-decoration: none;
-                            color: $gray-light-20;
+                            color: $gray-dark-20;
                             letter-spacing: 0.5px;
                         }
                         a:hover {
@@ -225,7 +229,7 @@ body {
                 ul { list-style: circle; }
                 a {
                     text-decoration: none;
-                    color: $blue;
+                    color: $blue-dark-10;
                     transition: all 0.2s ease-in-out;
                 }
                 a:hover {
@@ -265,7 +269,7 @@ body {
                 .c-header {
                     margin-bottom: 25px;
                     h6 {
-                        color: $blue;
+                        color: $blue-dark-10;
                         font-size: 12px;
                         letter-spacing: 2px;
                         font-weight: bold;
@@ -359,7 +363,7 @@ body {
                                     letter-spacing: 1px;
                                     line-height: 18px;
                                     font-weight: 400;
-                                    background-color: $blue;
+                                    background-color: $blue-dark-10;
                                     text-decoration: none;
                                     color: $white;
                                     border-radius: 100px;
@@ -370,7 +374,7 @@ body {
                                     }
                                 }
                                 a.to-article-btn:hover {
-                                    background-color: $blue-dark-20;
+                                    background-color: $blue-dark-30;
                                 }
                             }
                         }
@@ -389,7 +393,7 @@ body {
             .tags {
                 margin-bottom: 25px;
                 h6 {
-                    color: $blue;
+                    color: $blue-dark-10;
                     font-size: 12px;
                     letter-spacing: 2px;
                     font-weight: bold;
@@ -445,7 +449,7 @@ body {
                     text-transform: uppercase;
                     font-weight: bold;
                     letter-spacing: 2px;
-                    color: $blue;
+                    color: $blue-dark-10;
                     margin: 24px 0 12px 0;
                 }
                 ul {

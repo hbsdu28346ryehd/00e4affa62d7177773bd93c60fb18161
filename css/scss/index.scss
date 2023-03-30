@@ -61,9 +61,6 @@ body {
                         color: $yellow-light-50;
                         line-height: 34px;
                         font-family: poppins, sans-serif;
-                        i.bi-hearts {
-                            color: $red;
-                        }
                     }
                     .hero-footer-btn {
                         display: flex;
@@ -246,7 +243,7 @@ body {
                             color: $white;
                             border-radius: 100px;
                             transition: all 0.25s ease-in-out;
-                            i.bi {
+                            span.icon {
                                 font-size: 0;
                                 transition: all 0.2s ease-in-out;
                             }
@@ -259,7 +256,7 @@ body {
                 .insurance-card:hover {
                     transform: translateY(-10px);
                     a.to-article-btn {
-                        i.bi {
+                        span.icon {
                             font-size: 1rem;
                             margin-left: 10px;
                         }

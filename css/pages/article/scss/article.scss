@@ -1,11 +1,11 @@
 @import "../../../scss/_base";
 body {
     display: grid;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 325px 1fr;
     grid-template-areas: 'header header'
                                         'article_left main'
                                         'footer footer';
-    background-color: $gray-light-90;
+    background-color: $theme-bg;
     .nav-url-box {
         height: 0;
         width: 0;
@@ -35,55 +35,47 @@ body {
             top: 20px;
         }
         .sidebar-box {
-            .label-blue {color: $blue-dark-10;}
-            .label-yellow {color: $yellow-dark-10;}
             .label {
-                font-size: 12px;
-                margin-bottom: 18px;
+                font-size: 14px;
+                margin-bottom: 24px;
                 letter-spacing: 2px;
+                font-weight: 800;
+                color: $black;
                 font-weight: bold;
                 text-transform: uppercase;
             }
-            ul {
-                list-style: circle;
-            }
-            ol, ul {
+            .navigation {
+                list-style: none;
+                letter-spacing: 0.5px;
                 padding-left: 20px;
+                li:before { content: "\262F"; margin-left: -20px; margin-right: 6px; color: $gray-light-50;}
                 li {
-                    margin-bottom: 12px;
+                    padding: 4px 0;
                     a {
                         text-decoration: none;
                         font-size: 14px;
+                        padding: 4px 0;
+                        font-weight: 500;
                         transition: all 0.1s ease-out;
+                        border-radius: 3px;
                         color: $black;
+                        span { 
+                            font-weight: 300;
+                        }
                     }
                     a:hover {
-                        color: $blue;
-                    }
-                }
-            }
-            .navigation {
-                list-style: none;
-                padding: 0;
-                li {
-                    margin-bottom: 12px;
-                    ul { 
-                        list-style: none; 
-                        padding-left: 24px;
-                    }
-                    ol {
-                        padding-left: 32px;
+                        background-color: $theme-bg-dark;
                     }
                     ul, ol {
-                        margin-top: 12px;
+                        list-style: none; 
+                        padding-left: 10px;
+                        margin: 8px 0;
+                        li:before { content: "\268A"; margin-left: -20px; margin-right: 6px; color: $gray-light-10;}
                         li {
-                            margin-bottom: 0;
-                            margin-bottom: 12px;
+                            padding: 2px 0;
                             a {
                                 color: $black;
-                            }
-                            a:hover {
-                                color: $blue;
+                                font-weight: 400;
                             }
                         }
                     }
@@ -94,11 +86,16 @@ body {
     main#bM {
         grid-area: main;
         display: grid;
-        grid-template-columns: 1fr calc(100vw - 80vw);
+        grid-template-columns: 1fr 325px;
         grid-template-areas: 'article_hero article_hero'
                                             'article_content article_right';
         background-color: $white;
         border-radius: 20px 0 0 0;
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: $gray-light-50;
+        }
         section.article-hero {
             grid-area: article_hero;
             padding: 40px 50px;
@@ -121,6 +118,9 @@ body {
                             text-decoration: none;
                             color: $gray-dark-20;
                             letter-spacing: 0.5px;
+                            span {
+                                font-weight: 500;
+                            }
                         }
                         a:hover {
                             color: $blue;
@@ -252,6 +252,47 @@ body {
                     color: $blue;
                 }
             }
+            .previous-next-articles {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 'previous next';
+                gap: 50px;
+                .previous-article-btn {
+                    grid-area: previous;
+                    span {
+                        margin-right: 4px;
+                    }
+                }
+                .next-article-btn {
+                    grid-area: next;
+                    text-align: end;
+                    span {
+                        margin-left: 4px;
+                    }
+                }
+                .btn-box {
+                    a {
+                        text-align: center;
+                        color: $black;
+                        padding: 8px 12px;
+                        font-size: 16px;
+                        font-family: roboto, sans-serif;
+                        background-color: $theme-bg;
+                        border-radius: 4px;
+                        border: 1px solid $theme-bg-dark;
+                        text-decoration: none;
+                        transition: all 0.2s ease-in-out;
+                        span {
+                            font-weight: 600;
+                            color: $yellow;
+                        }
+                    }
+                    a:hover {
+                        background-color: $blue;
+                        color: $white;
+                    }
+                }
+            }
             .recommendation {
                 margin-bottom: 50px;
                 .c-header {
@@ -265,114 +306,110 @@ body {
                     }
                 }
                 .container-cards {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 25px;
-                    .right-box, .left-box {
-                        max-width: 100%;
-                        .insurance-card {
-                            border-radius: 12px;
-                            overflow: hidden;
-                            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                    .insurance-card {
+                        display: flex;
+                        border-radius: 12px;
+                        padding-right: 20px;
+                        overflow: hidden;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                        transition: all 0.25s ease-in-out;
+                        .card-top-border {
+                            padding: 0 4px;
+                        }
+                        .border-blue {background: $blue;}
+                        .border-red {background: $red;}
+                        .border-green {background: $green;}
+                        .border-yellow {background: $yellow;}
+                        .border-orange {background: $gray;}
+                        .border-purple {background: $blue-light-50;}
+                        .content {
+                            padding: 20px 0 25px 20px;
                             transition: all 0.25s ease-in-out;
-                            .card-top-border {
-                                padding: 4px 0;
+                            z-index: 1;
+                            h2 {
+                                font-size: 32px;
+                                font-weight: 400;
+                                color: #111;
+                                margin-bottom: 16px;
+                                font-family: poppins, sans-serif;
                             }
-                            .border-blue {background: $blue;}
-                            .border-red {background: $red;}
-                            .border-green {background: $green;}
-                            .border-yellow {background: $yellow;}
-                            .border-orange {background: $gray;}
-                            .border-purple {background: $blue-light-50;}
-                            .content {
-                                padding: 20px 20px 25px 25px;
-                                transition: all 0.25s ease-in-out;
-                                .thumbnail {
-                                    display: flex;
-                                    justify-content: flex-end;
-                                    height: 120px;
-                                    width: 100%;
-                                    img {
-                                        height: 100%;
-                                        width: auto;
-                                    }
-                                }
-                                h2 {
-                                    font-size: 32px;
-                                    font-weight: 400;
-                                    color: #111;
-                                    margin-bottom: 16px;
-                                    font-family: poppins, sans-serif;
-                                }
-                                p {
-                                    font-size: 16px;
-                                    line-height: 24px;
-                                    text-align: start;
-                                    color: #222;
-                                    margin-bottom: 25px;
-                                }
-                                .sub-insurance {
+                            p {
+                                font-size: 16px;
+                                line-height: 24px;
+                                text-align: start;
+                                color: #222;
+                                margin-bottom: 25px;
+                            }
+                            .sub-insurance {
+                                display: grid;
+                                grid-template-columns: 100px 100px 100px;
+                                gap: 10px;
+                                margin-bottom: 25px;
+                                .si-box {
+                                    border: 1px solid $theme-bg-dark;
+                                    min-width: 80px;
+                                    width: auto;
+                                    max-width: 100px;
+                                    cursor: pointer;
+                                    border-radius: 8px;
                                     display: grid;
-                                    grid-template-columns: 1fr 1fr 1fr;
-                                    gap: 10px;
-                                    margin-bottom: 25px;
-                                    .si-box {
-                                        border: 1px solid $blue-light-80;
-                                        cursor: pointer;
-                                        aspect-ratio: 1/1;
-                                        border-radius: 8px;
-                                        display: grid;
-                                        padding: 6px;
-                                        place-items: center;
-                                        background-color: $blue-light-90;
-                                        transition: all 0.25s ease-in-out;
-                                        span {
-                                            text-align: center;
-                                            color: $gray-dark-70;
-                                            font-size: 14px;
-                                            line-height: 18px;
-                                            transition: all 0.25s ease-in-out;
-                                        }
-                                    }
-                                    .si-box:hover {
-                                        background-color: $blue;
-                                        transform: translateY(-5px);
-                                        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-                                        span {
-                                            color: white;
-                                        }
-                                    }
-                                }
-                                a.to-article-btn {
-                                    display: inline-flex;
-                                    align-items: center;
-                                    padding: 8px 16px;
-                                    font-size:14px;
-                                    letter-spacing: 1px;
-                                    line-height: 18px;
-                                    font-weight: 400;
-                                    background-color: $blue-dark-10;
-                                    text-decoration: none;
-                                    color: $white;
-                                    border-radius: 100px;
+                                    padding: 18px 6px;
+                                    place-items: center;
+                                    background-color: $theme-bg;
                                     transition: all 0.25s ease-in-out;
-                                    i.bi {
-                                        font-size: 0;
-                                        transition: all 0.2s ease-in-out;
+                                    span {
+                                        text-align: center;
+                                        color: $gray-dark-70;
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        transition: all 0.25s ease-in-out;
                                     }
                                 }
-                                a.to-article-btn:hover {
-                                    background-color: $blue-dark-30;
+                                .si-box:hover {
+                                    background-color: $blue;
+                                    transform: translateY(-5px);
+                                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                                    span {
+                                        color: white;
+                                    }
                                 }
+                            }
+                            a.to-article-btn {
+                                display: inline-flex;
+                                align-items: center;
+                                padding: 8px 16px;
+                                font-size:14px;
+                                letter-spacing: 1px;
+                                line-height: 18px;
+                                font-weight: 400;
+                                background-color: $blue-dark-10;
+                                text-decoration: none;
+                                color: $white;
+                                border-radius: 100px;
+                                transition: all 0.25s ease-in-out;
+                                span.icon {
+                                    font-size: 0;
+                                    transition: all 0.2s ease-in-out;
+                                }
+                            }
+                            a.to-article-btn:hover {
+                                background-color: $blue-dark-30;
                             }
                         }
-                        .insurance-card:hover {
-                            transform: translateY(-10px);
-                            a.to-article-btn {
-                                i.bi {
-                                    font-size: 1rem;
-                                    margin-left: 10px;
-                                }
+                        .thumbnail {
+                            display: flex;
+                            justify-content: center;
+                            height: 100%;
+                            margin: auto 0;
+                            object-fit: contain;
+                        }
+                    }
+                    .insurance-card:hover {
+                        transform: translateY(-10px);
+                        a.to-article-btn {
+                            span.icon {
+                                font-size: 1rem;
+                                margin-left: 10px;
                             }
                         }
                     }
@@ -417,15 +454,13 @@ body {
             height: 100%;
             padding: 20px 10px 50px 20px;
             border-radius: 20px 0 0 0;
-            background-color: $gray-light-90;
-            box-shadow: $box-shadow;
+            background-color: $theme-bg;
             .a-thumbnail {
                 width: 100%;
                 object-fit: contain;
                 margin-bottom: 25px;
                 border-radius: 12px;
                 overflow: hidden;
-                box-shadow: $box-shadow;
                 img {
                     width: 100%;
                 }
@@ -444,15 +479,15 @@ body {
                     list-style: none;
                     display: flex;
                     flex-wrap: wrap;
-                    row-gap: 12px;
-                    column-gap: 8px;
+                    row-gap: 14px;
+                    column-gap: 6px;
                     padding-left: 0;
                     li {
                         a {
                             padding: 4px 8px;
-                            background-color: $gray-light-80;
+                            background-color: $theme-bg-dark;
                             text-decoration: none;
-                            color: $gray-dark-80;
+                            color: $black;
                             border-radius: 30px;
                             font-size: 14px;
                             transition: all 0.25s ease-out;

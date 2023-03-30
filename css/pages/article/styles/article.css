@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
@@ -135,9 +136,9 @@ body footer#bF .bottom-line a:hover {
 }
 body {
   display: grid;
-  grid-template-columns: 25% 1fr;
+  grid-template-columns: 325px 1fr;
   grid-template-areas: "header header" "article_left main" "footer footer";
-  background-color: #f2f2f2;
+  background-color: #f2f6fc;
 }
 body .nav-url-box {
   height: 0;
@@ -169,71 +170,74 @@ body article#bAl .sticky-top {
   position: sticky;
   top: 20px;
 }
-body article#bAl .sidebar-box .label-blue {
-  color: #3b78dc;
-}
-body article#bAl .sidebar-box .label-yellow {
-  color: #dca200;
-}
 body article#bAl .sidebar-box .label {
-  font-size: 12px;
-  margin-bottom: 18px;
+  font-size: 14px;
+  margin-bottom: 24px;
   letter-spacing: 2px;
+  font-weight: 800;
+  color: #000;
   font-weight: bold;
   text-transform: uppercase;
 }
-body article#bAl .sidebar-box ul {
-  list-style: circle;
-}
-body article#bAl .sidebar-box ol, body article#bAl .sidebar-box ul {
-  padding-left: 20px;
-}
-body article#bAl .sidebar-box ol li, body article#bAl .sidebar-box ul li {
-  margin-bottom: 12px;
-}
-body article#bAl .sidebar-box ol li a, body article#bAl .sidebar-box ul li a {
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.1s ease-out;
-  color: #000;
-}
-body article#bAl .sidebar-box ol li a:hover, body article#bAl .sidebar-box ul li a:hover {
-  color: #4285f4;
-}
 body article#bAl .sidebar-box .navigation {
   list-style: none;
-  padding: 0;
+  letter-spacing: 0.5px;
+  padding-left: 20px;
+}
+body article#bAl .sidebar-box .navigation li:before {
+  content: "☯";
+  margin-left: -20px;
+  margin-right: 6px;
+  color: #c0c0c0;
 }
 body article#bAl .sidebar-box .navigation li {
-  margin-bottom: 12px;
+  padding: 4px 0;
 }
-body article#bAl .sidebar-box .navigation li ul {
-  list-style: none;
-  padding-left: 24px;
+body article#bAl .sidebar-box .navigation li a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 0;
+  font-weight: 500;
+  transition: all 0.1s ease-out;
+  border-radius: 3px;
+  color: #000;
 }
-body article#bAl .sidebar-box .navigation li ol {
-  padding-left: 32px;
+body article#bAl .sidebar-box .navigation li a span {
+  font-weight: 300;
+}
+body article#bAl .sidebar-box .navigation li a:hover {
+  background-color: #e2ecfc;
 }
 body article#bAl .sidebar-box .navigation li ul, body article#bAl .sidebar-box .navigation li ol {
-  margin-top: 12px;
+  list-style: none;
+  padding-left: 10px;
+  margin: 8px 0;
+}
+body article#bAl .sidebar-box .navigation li ul li:before, body article#bAl .sidebar-box .navigation li ol li:before {
+  content: "⚊";
+  margin-left: -20px;
+  margin-right: 6px;
+  color: #8d8d8d;
 }
 body article#bAl .sidebar-box .navigation li ul li, body article#bAl .sidebar-box .navigation li ol li {
-  margin-bottom: 0;
-  margin-bottom: 12px;
+  padding: 2px 0;
 }
 body article#bAl .sidebar-box .navigation li ul li a, body article#bAl .sidebar-box .navigation li ol li a {
   color: #000;
-}
-body article#bAl .sidebar-box .navigation li ul li a:hover, body article#bAl .sidebar-box .navigation li ol li a:hover {
-  color: #4285f4;
+  font-weight: 400;
 }
 body main#bM {
   grid-area: main;
   display: grid;
-  grid-template-columns: 1fr 20vw;
+  grid-template-columns: 1fr 325px;
   grid-template-areas: "article_hero article_hero" "article_content article_right";
   background-color: #fff;
   border-radius: 20px 0 0 0;
+}
+body main#bM hr {
+  border: 0;
+  height: 1px;
+  background-color: #c0c0c0;
 }
 body main#bM section.article-hero {
   grid-area: article_hero;
@@ -261,6 +265,9 @@ body main#bM section.article-hero .article-path ul li a {
   text-decoration: none;
   color: #666666;
   letter-spacing: 0.5px;
+}
+body main#bM section.article-hero .article-path ul li a span {
+  font-weight: 500;
 }
 body main#bM section.article-hero .article-path ul li a:hover {
   color: #4285f4;
@@ -539,6 +546,45 @@ body main#bM section.article-content .content .btn-link {
 body main#bM section.article-content .content .btn-link:hover {
   color: #4285f4;
 }
+body main#bM section.article-content .previous-next-articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "previous next";
+  gap: 50px;
+}
+body main#bM section.article-content .previous-next-articles .previous-article-btn {
+  grid-area: previous;
+}
+body main#bM section.article-content .previous-next-articles .previous-article-btn span {
+  margin-right: 4px;
+}
+body main#bM section.article-content .previous-next-articles .next-article-btn {
+  grid-area: next;
+  text-align: end;
+}
+body main#bM section.article-content .previous-next-articles .next-article-btn span {
+  margin-left: 4px;
+}
+body main#bM section.article-content .previous-next-articles .btn-box a {
+  text-align: center;
+  color: #000;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: roboto, sans-serif;
+  background-color: #f2f6fc;
+  border-radius: 4px;
+  border: 1px solid #e2ecfc;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+body main#bM section.article-content .previous-next-articles .btn-box a span {
+  font-weight: 600;
+  color: #f4b400;
+}
+body main#bM section.article-content .previous-next-articles .btn-box a:hover {
+  background-color: #4285f4;
+  color: #fff;
+}
 body main#bM section.article-content .recommendation {
   margin-bottom: 50px;
 }
@@ -552,102 +598,89 @@ body main#bM section.article-content .recommendation .c-header h6 {
   font-weight: bold;
   font-family: roboto, sans-serif;
 }
-body main#bM section.article-content .recommendation .container-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
-body main#bM section.article-content .recommendation .container-cards .right-box, body main#bM section.article-content .recommendation .container-cards .left-box {
-  max-width: 100%;
-}
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card {
+body main#bM section.article-content .recommendation .container-cards .insurance-card {
+  display: flex;
   border-radius: 12px;
+  padding-right: 20px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   transition: all 0.25s ease-in-out;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .card-top-border, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .card-top-border {
-  padding: 4px 0;
+body main#bM section.article-content .recommendation .container-cards .insurance-card .card-top-border {
+  padding: 0 4px;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-blue, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-blue {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .border-blue {
   background: #4285f4;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-red, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-red {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .border-red {
   background: #db4437;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-green, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-green {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .border-green {
   background: #0f9d58;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-yellow, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-yellow {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .border-yellow {
   background: #f4b400;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-orange, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-orange {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .border-orange {
   background: #808080;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .border-purple, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .border-purple {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .border-purple {
   background: #a1c2fa;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content {
-  padding: 20px 20px 25px 25px;
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content {
+  padding: 20px 0 25px 20px;
   transition: all 0.25s ease-in-out;
+  z-index: 1;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .thumbnail, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .thumbnail {
-  display: flex;
-  justify-content: flex-end;
-  height: 120px;
-  width: 100%;
-}
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .thumbnail img, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .thumbnail img {
-  height: 100%;
-  width: auto;
-}
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content h2, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content h2 {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content h2 {
   font-size: 32px;
   font-weight: 400;
   color: #111;
   margin-bottom: 16px;
   font-family: poppins, sans-serif;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content p, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content p {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content p {
   font-size: 16px;
   line-height: 24px;
   text-align: start;
   color: #222;
   margin-bottom: 25px;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .sub-insurance, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .sub-insurance {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content .sub-insurance {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 100px 100px 100px;
   gap: 10px;
   margin-bottom: 25px;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .sub-insurance .si-box, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .sub-insurance .si-box {
-  border: 1px solid #d9e7fd;
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content .sub-insurance .si-box {
+  border: 1px solid #e2ecfc;
+  min-width: 80px;
+  width: auto;
+  max-width: 100px;
   cursor: pointer;
-  aspect-ratio: 1/1;
   border-radius: 8px;
   display: grid;
-  padding: 6px;
+  padding: 18px 6px;
   place-items: center;
-  background-color: #ecf3fe;
+  background-color: #f2f6fc;
   transition: all 0.25s ease-in-out;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .sub-insurance .si-box span, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .sub-insurance .si-box span {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content .sub-insurance .si-box span {
   text-align: center;
   color: #262626;
   font-size: 14px;
   line-height: 18px;
   transition: all 0.25s ease-in-out;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .sub-insurance .si-box:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .sub-insurance .si-box:hover {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content .sub-insurance .si-box:hover {
   background-color: #4285f4;
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content .sub-insurance .si-box:hover span, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content .sub-insurance .si-box:hover span {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content .sub-insurance .si-box:hover span {
   color: white;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content a.to-article-btn, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content a.to-article-btn {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content a.to-article-btn {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
@@ -661,17 +694,25 @@ body main#bM section.article-content .recommendation .container-cards .right-box
   border-radius: 100px;
   transition: all 0.25s ease-in-out;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content a.to-article-btn i.bi, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content a.to-article-btn i.bi {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content a.to-article-btn span.icon {
   font-size: 0;
   transition: all 0.2s ease-in-out;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card .content a.to-article-btn:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card .content a.to-article-btn:hover {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .content a.to-article-btn:hover {
   background-color: #2e5dab;
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card:hover, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card:hover {
+body main#bM section.article-content .recommendation .container-cards .insurance-card .thumbnail {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: auto 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body main#bM section.article-content .recommendation .container-cards .insurance-card:hover {
   transform: translateY(-10px);
 }
-body main#bM section.article-content .recommendation .container-cards .right-box .insurance-card:hover a.to-article-btn i.bi, body main#bM section.article-content .recommendation .container-cards .left-box .insurance-card:hover a.to-article-btn i.bi {
+body main#bM section.article-content .recommendation .container-cards .insurance-card:hover a.to-article-btn span.icon {
   font-size: 1rem;
   margin-left: 10px;
 }
@@ -711,8 +752,7 @@ body main#bM article#bAr {
   height: 100%;
   padding: 20px 10px 50px 20px;
   border-radius: 20px 0 0 0;
-  background-color: #f2f2f2;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #f2f6fc;
 }
 body main#bM article#bAr .a-thumbnail {
   width: 100%;
@@ -721,7 +761,6 @@ body main#bM article#bAr .a-thumbnail {
   margin-bottom: 25px;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 body main#bM article#bAr .a-thumbnail img {
   width: 100%;
@@ -739,16 +778,16 @@ body main#bM article#bAr .a-tags ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 12px;
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  row-gap: 14px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
   padding-left: 0;
 }
 body main#bM article#bAr .a-tags ul li a {
   padding: 4px 8px;
-  background-color: #e6e6e6;
+  background-color: #e2ecfc;
   text-decoration: none;
-  color: #1a1a1a;
+  color: #000;
   border-radius: 30px;
   font-size: 14px;
   transition: all 0.25s ease-out;

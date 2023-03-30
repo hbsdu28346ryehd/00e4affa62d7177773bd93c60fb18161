@@ -199,9 +199,6 @@ body header .hero .hero-content .content-box .subtext {
   line-height: 34px;
   font-family: poppins, sans-serif;
 }
-body header .hero .hero-content .content-box .subtext i.bi-hearts {
-  color: #db4437;
-}
 body header .hero .hero-content .content-box .hero-footer-btn {
   display: flex;
   -moz-column-gap: 24px;
@@ -398,7 +395,7 @@ body main .container .insurance-types-container-box .insurance-card .content a.t
   border-radius: 100px;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-types-container-box .insurance-card .content a.to-article-btn i.bi {
+body main .container .insurance-types-container-box .insurance-card .content a.to-article-btn span.icon {
   font-size: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -408,7 +405,7 @@ body main .container .insurance-types-container-box .insurance-card .content a.t
 body main .container .insurance-types-container-box .insurance-card:hover {
   transform: translateY(-10px);
 }
-body main .container .insurance-types-container-box .insurance-card:hover a.to-article-btn i.bi {
+body main .container .insurance-types-container-box .insurance-card:hover a.to-article-btn span.icon {
   font-size: 1rem;
   margin-left: 10px;
 }

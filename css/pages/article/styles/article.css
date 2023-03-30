@@ -539,19 +539,6 @@ body main#bM section.article-content .content .btn-link {
 body main#bM section.article-content .content .btn-link:hover {
   color: #4285f4;
 }
-body main#bM section.article-content .article-image {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-body main#bM section.article-content .article-image img {
-  width: 100%;
-  height: auto;
-  outline: none;
-}
 body main#bM section.article-content .recommendation {
   margin-bottom: 50px;
 }
@@ -769,4 +756,119 @@ body main#bM article#bAr .a-tags ul li a {
 body main#bM article#bAr .a-tags ul li a:hover {
   background-color: #4285f4;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+  }
+  body article#bAl {
+    display: none;
+  }
+  body main#bM {
+    border-radius: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas: "article_hero" "article_content" "article_right";
+  }
+  body main#bM section.article-hero {
+    padding: 25px 20px 0 20px;
+  }
+  body main#bM section.article-hero .article-path {
+    margin-bottom: 25px;
+  }
+  body main#bM section.article-hero .article-path ul {
+    gap: 4px;
+  }
+  body main#bM section.article-hero .article-path ul li {
+    font-size: 14px;
+  }
+  body main#bM section.article-hero .article-path ul li a {
+    color: #404040;
+  }
+  body main#bM section.article-hero .article-path .pub-date {
+    display: none;
+  }
+  body main#bM section.article-hero .article-title {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 20px;
+  }
+  body main#bM section.article-content {
+    padding: 20px 20px 50px 20px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  body main#bM section.article-content .content p {
+    text-align: justify;
+    line-height: 24px;
+  }
+  body main#bM section.article-content .content .h1 {
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+    color: #1a1a1a;
+    line-height: 4.25rem;
+  }
+  body main#bM section.article-content .content h1 {
+    line-height: 3rem;
+  }
+  body main#bM section.article-content .content .h2 {
+    font-size: 3.25rem;
+    line-height: 3.25rem;
+    color: #1a1a1a;
+    line-height: 3.75rem;
+  }
+  body main#bM section.article-content .content h2 {
+    line-height: 2.5rem;
+  }
+  body main#bM section.article-content .content .h3 {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    color: #1a1a1a;
+    line-height: 3.25rem;
+  }
+  body main#bM section.article-content .content h3 {
+    line-height: 2rem;
+  }
+  body main#bM section.article-content .content .h4 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    color: #1a1a1a;
+    line-height: 2.75rem;
+  }
+  body main#bM section.article-content .content h4 {
+    line-height: 1.5rem;
+  }
+  body main#bM section.article-content .content .h5 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    color: #1a1a1a;
+    line-height: 2.25rem;
+  }
+  body main#bM section.article-content .content h5 {
+    line-height: 1rem;
+  }
+  body main#bM section.article-content .content .h6 {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: #1a1a1a;
+    line-height: 1.75rem;
+  }
+  body main#bM section.article-content .content h6 {
+    line-height: 0.5rem;
+  }
+  body main#bM section.article-content .recommendation {
+    margin-bottom: 0;
+  }
+  body main#bM section.article-content .recommendation .container-cards {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  body main#bM section.article-content .tags {
+    display: none;
+  }
+  body main#bM article#bAr .a-thumbnail {
+    display: none;
+  }
 }/*# sourceMappingURL=article.css.map */

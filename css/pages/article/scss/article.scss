@@ -252,18 +252,6 @@ body {
                     color: $blue;
                 }
             }
-            .article-image {
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                overflow: hidden;
-                object-fit:cover;
-                img {
-                    width: 100%;
-                    height: auto;
-                    outline: none;
-                }
-            }
             .recommendation {
                 margin-bottom: 50px;
                 .c-header {
@@ -474,6 +462,82 @@ body {
                             color: $white;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header' 'main' 'footer';
+        article#bAl {
+            display: none;
+        }
+        main#bM {
+            border-radius: 0;
+            grid-template-columns: 1fr;
+            grid-template-areas: 'article_hero' 'article_content' 'article_right';
+            section.article-hero {
+                padding: 25px 20px 0 20px;
+                .article-path {
+                    margin-bottom: 25px;
+                    ul {
+                        gap: 4px;
+                        li {
+                            font-size: 14px;
+                            a {
+                                color: $gray-dark-50;
+                            }
+                        }
+                    }
+                    .pub-date {
+                        display: none;
+                    }
+                }
+                .article-title {
+                    font-size: 2rem;
+                    line-height: 2.4rem;
+                    margin-bottom: 20px;
+                }
+            }
+            section.article-content {
+                padding: 20px 20px 50px 20px;
+                margin-bottom: 0;
+                font-size: 16px;
+                line-height: 24px;
+                .content {
+                    p {
+                        text-align: justify;
+                        line-height: 24px;
+                    }
+                    @each $header, $size in $font-sizes {
+                        .#{$header} {
+                            font-size: $size;
+                            line-height: $size;
+                            color: $gray-dark-80;
+                            line-height: $size + 0.5rem;
+                        }
+                        #{$header} {
+                            line-height: $size - 0.75rem;
+                        }
+                    }
+                }
+                .recommendation {
+                    margin-bottom: 0;
+                    .container-cards {
+                        grid-template-columns: 1fr;
+                        gap: 50px;
+                    }
+                }
+                .tags {
+                    display: none;
+                }
+            }
+            article#bAr {
+                .a-thumbnail {
+                    display: none;
                 }
             }
         }

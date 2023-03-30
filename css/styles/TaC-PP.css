@@ -115,7 +115,21 @@ body footer#bF .bottom-line a:hover {
   color: white;
 }
 
+.sm-d {
+  display: none;
+}
+
+.lg-d {
+  display: block;
+}
+
 @media only screen and (max-width: 768px) {
+  .sm-d {
+    display: block;
+  }
+  .lg-d {
+    display: none;
+  }
   body footer#bF {
     padding: 50px 20px;
   }

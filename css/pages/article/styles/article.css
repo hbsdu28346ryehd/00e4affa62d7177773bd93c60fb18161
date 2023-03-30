@@ -116,7 +116,21 @@ body footer#bF .bottom-line a:hover {
   color: white;
 }
 
+.sm-d {
+  display: none;
+}
+
+.lg-d {
+  display: block;
+}
+
 @media only screen and (max-width: 768px) {
+  .sm-d {
+    display: block;
+  }
+  .lg-d {
+    display: none;
+  }
   body footer#bF {
     padding: 50px 20px;
   }
@@ -258,12 +272,11 @@ body main#bM section.article-hero .article-path ul {
 body main#bM section.article-hero .article-path ul li {
   display: flex;
   align-items: center;
-  font-weight: bold;
   font-size: 16px;
 }
 body main#bM section.article-hero .article-path ul li a {
   text-decoration: none;
-  color: #666666;
+  color: #000;
   letter-spacing: 0.5px;
 }
 body main#bM section.article-hero .article-path ul li a span {
@@ -276,7 +289,7 @@ body main#bM section.article-hero .article-path ul li span {
   color: #f4b400;
 }
 body main#bM section.article-hero .article-path .pub-date {
-  color: #5a5a5a;
+  color: #000;
   font-size: 14px;
 }
 body main#bM section.article-hero .article-title {
@@ -558,6 +571,9 @@ body main#bM section.article-content .previous-next-articles .previous-article-b
 body main#bM section.article-content .previous-next-articles .previous-article-btn span {
   margin-right: 4px;
 }
+body main#bM section.article-content .previous-next-articles .previous-article-btn a.btn-round {
+  margin-right: auto;
+}
 body main#bM section.article-content .previous-next-articles .next-article-btn {
   grid-area: next;
   text-align: end;
@@ -565,19 +581,34 @@ body main#bM section.article-content .previous-next-articles .next-article-btn {
 body main#bM section.article-content .previous-next-articles .next-article-btn span {
   margin-left: 4px;
 }
-body main#bM section.article-content .previous-next-articles .btn-box a {
-  text-align: center;
-  color: #000;
-  padding: 8px 12px;
-  font-size: 16px;
-  font-family: roboto, sans-serif;
-  background-color: #f2f6fc;
-  border-radius: 4px;
-  border: 1px solid #e2ecfc;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
+body main#bM section.article-content .previous-next-articles .next-article-btn a.btn-round {
+  margin-left: auto;
 }
-body main#bM section.article-content .previous-next-articles .btn-box a span {
+body main#bM section.article-content .previous-next-articles .btn-box {
+  display: flex;
+  flex-direction: column;
+}
+body main#bM section.article-content .previous-next-articles .btn-box p {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #000;
+}
+body main#bM section.article-content .previous-next-articles .btn-box a {
+  text-decoration: none;
+  text-align: center;
+  background-color: #f2f6fc;
+  border: 1px solid #e2ecfc;
+  transition: all 0.2s ease-in-out;
+  color: #000;
+}
+body main#bM section.article-content .previous-next-articles .btn-box a.btn-text {
+  font-size: 16px;
+  padding: 8px 12px;
+  font-family: roboto, sans-serif;
+  border-radius: 4px;
+}
+body main#bM section.article-content .previous-next-articles .btn-box a.btn-text span {
   font-weight: 600;
   color: #f4b400;
 }
@@ -599,14 +630,17 @@ body main#bM section.article-content .recommendation .c-header h6 {
   font-family: roboto, sans-serif;
 }
 body main#bM section.article-content .recommendation .container-cards .insurance-card {
-  display: flex;
+  display: grid;
   border-radius: 12px;
+  grid-template-columns: 8px 55% auto;
+  grid-template-areas: "card_border content thumbnail";
   padding-right: 20px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   transition: all 0.25s ease-in-out;
 }
 body main#bM section.article-content .recommendation .container-cards .insurance-card .card-top-border {
+  grid-area: card_border;
   padding: 0 4px;
 }
 body main#bM section.article-content .recommendation .container-cards .insurance-card .border-blue {
@@ -628,6 +662,7 @@ body main#bM section.article-content .recommendation .container-cards .insurance
   background: #a1c2fa;
 }
 body main#bM section.article-content .recommendation .container-cards .insurance-card .content {
+  grid-area: content;
   padding: 20px 0 25px 20px;
   transition: all 0.25s ease-in-out;
   z-index: 1;
@@ -702,10 +737,10 @@ body main#bM section.article-content .recommendation .container-cards .insurance
   background-color: #2e5dab;
 }
 body main#bM section.article-content .recommendation .container-cards .insurance-card .thumbnail {
-  display: flex;
-  justify-content: center;
+  grid-area: thumbnail;
+  display: grid;
+  place-items: center;
   height: 100%;
-  margin: auto 0;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -902,15 +937,52 @@ body main#bM article#bAr .a-tags ul li a:hover {
   body main#bM section.article-content .content h6 {
     line-height: 0.5rem;
   }
+  body main#bM section.article-content .previous-next-articles {
+    gap: 0;
+  }
+  body main#bM section.article-content .previous-next-articles .btn-box {
+    flex-direction: column-reverse;
+    row-gap: 10px;
+  }
+  body main#bM section.article-content .previous-next-articles .next-article-btn a {
+    margin-left: auto;
+  }
+  body main#bM section.article-content .previous-next-articles a.btn-round {
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    border-radius: 50px;
+    font-size: 28px;
+  }
   body main#bM section.article-content .recommendation {
     margin-bottom: 0;
   }
-  body main#bM section.article-content .recommendation .container-cards {
+  body main#bM section.article-content .recommendation .container-cards .insurance-card {
     grid-template-columns: 1fr;
-    gap: 50px;
+    grid-template-areas: "card_border" "thumbnail" "content";
+    padding: 0;
+  }
+  body main#bM section.article-content .recommendation .container-cards .insurance-card .card-top-border {
+    padding: 4px 0;
+  }
+  body main#bM section.article-content .recommendation .container-cards .insurance-card .thumbnail {
+    margin-left: auto;
+    padding-top: 10px;
+    height: 120px;
+  }
+  body main#bM section.article-content .recommendation .container-cards .insurance-card .thumbnail img {
+    height: 120px;
+  }
+  body main#bM section.article-content .recommendation .container-cards .insurance-card .content {
+    padding: 20px;
   }
   body main#bM section.article-content .tags {
     display: none;
+  }
+  body main#bM article#bAr {
+    padding: 20px 20px 40px 20px;
+    border-radius: 0;
   }
   body main#bM article#bAr .a-thumbnail {
     display: none;

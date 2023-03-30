@@ -112,11 +112,10 @@ body {
                     li {
                         display: flex;
                         align-items: center;
-                        font-weight: bold;
                         font-size: 16px;
                         a {
                             text-decoration: none;
-                            color: $gray-dark-20;
+                            color: $black;
                             letter-spacing: 0.5px;
                             span {
                                 font-weight: 500;
@@ -131,7 +130,7 @@ body {
                     }
                 }
                 .pub-date {
-                    color: $gray-dark-30;
+                    color: $black;
                     font-size: 14px;
                 }
             }
@@ -262,6 +261,9 @@ body {
                     span {
                         margin-right: 4px;
                     }
+                    a.btn-round {
+                        margin-right: auto;
+                    }
                 }
                 .next-article-btn {
                     grid-area: next;
@@ -269,19 +271,32 @@ body {
                     span {
                         margin-left: 4px;
                     }
+                    a.btn-round {
+                        margin-left: auto;
+                    }
                 }
                 .btn-box {
-                    a {
-                        text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                        font-size: 12px;
+                        letter-spacing: 2px;
+                        font-weight: 400;
                         color: $black;
-                        padding: 8px 12px;
-                        font-size: 16px;
-                        font-family: roboto, sans-serif;
-                        background-color: $theme-bg;
-                        border-radius: 4px;
-                        border: 1px solid $theme-bg-dark;
+                    }
+                    a {
                         text-decoration: none;
+                        text-align: center;
+                        background-color: $theme-bg;
+                        border: 1px solid $theme-bg-dark;
                         transition: all 0.2s ease-in-out;
+                        color: $black;
+                    }
+                    a.btn-text {
+                        font-size: 16px;
+                        padding: 8px 12px;
+                        font-family: roboto, sans-serif;
+                        border-radius: 4px;
                         span {
                             font-weight: 600;
                             color: $yellow;
@@ -307,13 +322,16 @@ body {
                 }
                 .container-cards {
                     .insurance-card {
-                        display: flex;
+                        display: grid;
                         border-radius: 12px;
+                        grid-template-columns: 8px 55% auto;
+                        grid-template-areas: 'card_border content thumbnail';
                         padding-right: 20px;
                         overflow: hidden;
                         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                         transition: all 0.25s ease-in-out;
                         .card-top-border {
+                            grid-area: card_border;
                             padding: 0 4px;
                         }
                         .border-blue {background: $blue;}
@@ -323,6 +341,7 @@ body {
                         .border-orange {background: $gray;}
                         .border-purple {background: $blue-light-50;}
                         .content {
+                            grid-area: content;
                             padding: 20px 0 25px 20px;
                             transition: all 0.25s ease-in-out;
                             z-index: 1;
@@ -397,10 +416,10 @@ body {
                             }
                         }
                         .thumbnail {
-                            display: flex;
-                            justify-content: center;
+                            grid-area: thumbnail;
+                            display: grid;
+                            place-items: center;
                             height: 100%;
-                            margin: auto 0;
                             object-fit: contain;
                         }
                     }
@@ -563,11 +582,48 @@ body {
                         }
                     }
                 }
+                .previous-next-articles {
+                    gap: 0;
+                    .btn-box {
+                        flex-direction: column-reverse;
+                        row-gap: 10px;
+                    }
+                    .next-article-btn {
+                        a {
+                            margin-left: auto;
+                        }
+                    }
+                    a.btn-round {
+                        height: 50px;
+                        width: 50px;
+                        display: grid;
+                        place-items: center;
+                        border-radius: 50px;
+                        font-size: 28px;
+                    }
+                }
                 .recommendation {
                     margin-bottom: 0;
                     .container-cards {
-                        grid-template-columns: 1fr;
-                        gap: 50px;
+                        .insurance-card {
+                            grid-template-columns: 1fr;
+                            grid-template-areas: 'card_border' 'thumbnail' 'content';
+                            padding: 0;
+                            .card-top-border {
+                                padding: 4px 0;
+                            }
+                            .thumbnail {
+                                margin-left: auto;
+                                padding-top: 10px;
+                                height: 120px;
+                                img {
+                                    height: 120px;
+                                }
+                            }
+                            .content {
+                                padding: 20px;
+                            }
+                        }
                     }
                 }
                 .tags {
@@ -575,6 +631,8 @@ body {
                 }
             }
             article#bAr {
+                padding: 20px 20px 40px 20px;
+                border-radius: 0;
                 .a-thumbnail {
                     display: none;
                 }

@@ -117,7 +117,7 @@ body footer#bF .bottom-line a:hover {
 
 @media only screen and (max-width: 768px) {
   body footer#bF {
-    padding: 50px 25px;
+    padding: 50px 20px;
   }
   body footer#bF .menu {
     grid-template-columns: 1fr 1fr;
@@ -778,20 +778,25 @@ body main#bM article#bAr .a-tags ul li a:hover {
     margin-bottom: 25px;
   }
   body main#bM section.article-hero .article-path ul {
-    gap: 4px;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+    row-gap: 12px;
+    flex-wrap: wrap;
   }
   body main#bM section.article-hero .article-path ul li {
     font-size: 14px;
   }
   body main#bM section.article-hero .article-path ul li a {
     color: #404040;
+    white-space: nowrap;
+    letter-spacing: 0;
   }
   body main#bM section.article-hero .article-path .pub-date {
     display: none;
   }
   body main#bM section.article-hero .article-title {
-    font-size: 2rem;
-    line-height: 2.4rem;
+    font-size: 38px;
+    line-height: 48px;
     margin-bottom: 20px;
   }
   body main#bM section.article-content {
@@ -805,55 +810,55 @@ body main#bM article#bAr .a-tags ul li a:hover {
     line-height: 24px;
   }
   body main#bM section.article-content .content .h1 {
-    font-size: 3.75rem;
+    font-size: 3.6rem;
     line-height: 3.75rem;
     color: #1a1a1a;
-    line-height: 4.25rem;
+    line-height: 4.1rem;
   }
   body main#bM section.article-content .content h1 {
     line-height: 3rem;
   }
   body main#bM section.article-content .content .h2 {
-    font-size: 3.25rem;
+    font-size: 3.1rem;
     line-height: 3.25rem;
     color: #1a1a1a;
-    line-height: 3.75rem;
+    line-height: 3.6rem;
   }
   body main#bM section.article-content .content h2 {
     line-height: 2.5rem;
   }
   body main#bM section.article-content .content .h3 {
-    font-size: 2.75rem;
+    font-size: 2.6rem;
     line-height: 2.75rem;
     color: #1a1a1a;
-    line-height: 3.25rem;
+    line-height: 3.1rem;
   }
   body main#bM section.article-content .content h3 {
     line-height: 2rem;
   }
   body main#bM section.article-content .content .h4 {
-    font-size: 2.25rem;
+    font-size: 2.1rem;
     line-height: 2.25rem;
     color: #1a1a1a;
-    line-height: 2.75rem;
+    line-height: 2.6rem;
   }
   body main#bM section.article-content .content h4 {
     line-height: 1.5rem;
   }
   body main#bM section.article-content .content .h5 {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     line-height: 1.75rem;
     color: #1a1a1a;
-    line-height: 2.25rem;
+    line-height: 2.1rem;
   }
   body main#bM section.article-content .content h5 {
     line-height: 1rem;
   }
   body main#bM section.article-content .content .h6 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 1.25rem;
     color: #1a1a1a;
-    line-height: 1.75rem;
+    line-height: 1.6rem;
   }
   body main#bM section.article-content .content h6 {
     line-height: 0.5rem;

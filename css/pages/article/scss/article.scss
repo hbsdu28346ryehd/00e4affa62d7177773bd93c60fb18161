@@ -484,11 +484,15 @@ body {
                 .article-path {
                     margin-bottom: 25px;
                     ul {
-                        gap: 4px;
+                        column-gap: 8px;
+                        row-gap: 12px;
+                        flex-wrap: wrap;
                         li {
                             font-size: 14px;
                             a {
                                 color: $gray-dark-50;
+                                white-space: nowrap;
+                                letter-spacing: 0;
                             }
                         }
                     }
@@ -497,8 +501,8 @@ body {
                     }
                 }
                 .article-title {
-                    font-size: 2rem;
-                    line-height: 2.4rem;
+                    font-size: 38px;
+                    line-height: 48px;
                     margin-bottom: 20px;
                 }
             }
@@ -514,10 +518,10 @@ body {
                     }
                     @each $header, $size in $font-sizes {
                         .#{$header} {
-                            font-size: $size;
+                            font-size: $size - 0.15rem;
                             line-height: $size;
                             color: $gray-dark-80;
-                            line-height: $size + 0.5rem;
+                            line-height: $size + 0.35rem;
                         }
                         #{$header} {
                             line-height: $size - 0.75rem;

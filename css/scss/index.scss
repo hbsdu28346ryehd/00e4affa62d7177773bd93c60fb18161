@@ -327,20 +327,54 @@ body {
         grid-template-columns: 1fr;
         grid-template-areas: 'header' 'main' 'article' 'footer';
         header {
-            padding: 25px 10px;
-            .logo {
-                height: 24px;
-                img {
-                    height: 24px;
+            padding: 30px 0;
+            height: 100vh;
+            display: block;
+            .hero {
+                height: 100vh;
+                max-height: 100vh;
+                margin: 0;
+                padding: 0 20px;
+                display: block;
+                width: 100%;
+                .hero-content {
+                    height: 100%;
+                    text-align: center;
+                    .content-box {
+                        padding-top: 100px;
+                        margin: auto;
+                        height: 100%;
+                        .title-text {
+                            font-size: 18vw;
+                            margin-bottom: 25px;
+                        }
+                        .subtext {
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                        .hero-footer-btn {
+                            flex-direction: column;
+                            margin: auto;
+                            justify-content: center;
+                            .hero-btn {
+                                margin: auto;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+                .hero-image {
+                    display: none;
                 }
             }
         }
         main {
             margin-bottom: 50px;
+            padding: 50px 0;
+            border-radius: 0;
             .container {
                 grid-template-columns: 1fr;
                 grid-template-areas: 'ad_top' 'cheader' 'leftbox' 'ad_bottom' 'rightbox';
-                row-gap: 25px;
                 column-gap: 0;
                 padding: 0 25px;
                 .c-header {
@@ -349,11 +383,18 @@ body {
                     margin-bottom: 0;
                     h3 {
                         font-size: 1.5rem;
-                        text-align: start;
+                        text-align: center;
+                    }
+                }
+                .insurance-types-container-box {
+                    flex-direction: column;
+                    margin-bottom: 0;
+                    .right-box {
+                        padding-top: 50px;
                     }
                 }
                 .right-box {
-                    padding-top: 50px;
+                    padding-top: 0;
                 }
                 .right-box, .left-box {
                     row-gap: 75px;
@@ -387,7 +428,7 @@ body {
             }
         }
         article {
-            padding: 0 25px;
+            padding: 0 20px;
             margin-bottom: 50px;
             .a-header {
                 position: static;

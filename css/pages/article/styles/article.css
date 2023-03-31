@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #4285f4;
+  background-color: #1a73e8;
 }
 
 body footer#bF {
@@ -283,7 +283,7 @@ body main#bM section.article-hero .article-path ul li a span {
   font-weight: 500;
 }
 body main#bM section.article-hero .article-path ul li a:hover {
-  color: #4285f4;
+  color: #1a73e8;
 }
 body main#bM section.article-hero .article-path ul li span {
   color: #f4b400;
@@ -533,7 +533,7 @@ body main#bM section.article-content .content ul li a, body main#bM section.arti
   transition: all 0.1s ease-out;
 }
 body main#bM section.article-content .content ul li a:hover, body main#bM section.article-content .content ol li a:hover {
-  color: #4285f4;
+  color: #1a73e8;
   text-decoration: none;
 }
 body main#bM section.article-content .content ul {
@@ -541,7 +541,7 @@ body main#bM section.article-content .content ul {
 }
 body main#bM section.article-content .content a {
   text-decoration: none;
-  color: #3b78dc;
+  color: #1a73e8;
   transition: all 0.2s ease-in-out;
 }
 body main#bM section.article-content .content a:hover {
@@ -561,7 +561,7 @@ body main#bM section.article-content .content .btn-link {
   color: #000;
 }
 body main#bM section.article-content .content .btn-link:hover {
-  color: #4285f4;
+  color: #1a73e8;
 }
 body main#bM section.article-content #fireworks_animation {
   transform: translateY(-500px);
@@ -630,7 +630,7 @@ body main#bM section.article-content .previous-next-articles .btn-box a.btn-text
   color: #f4b400;
 }
 body main#bM section.article-content .previous-next-articles .btn-box a:hover {
-  background-color: #4285f4;
+  background-color: #1a73e8;
   color: #fff;
 }
 body main#bM section.article-content .recommendation {
@@ -641,7 +641,7 @@ body main#bM section.article-content .recommendation .c-header {
   margin-bottom: 25px;
 }
 body main#bM section.article-content .recommendation .c-header h6 {
-  color: #3b78dc;
+  color: #1a73e8;
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -726,7 +726,7 @@ body main#bM section.article-content .recommendation .container-cards .insurance
   transition: all 0.25s ease-in-out;
 }
 body main#bM section.article-content .recommendation .container-cards .insurance-card .content .sub-insurance .si-box:hover {
-  background-color: #4285f4;
+  background-color: #1a73e8;
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
@@ -741,7 +741,7 @@ body main#bM section.article-content .recommendation .container-cards .insurance
   letter-spacing: 1px;
   line-height: 18px;
   font-weight: 400;
-  background-color: #3b78dc;
+  background-color: #1a73e8;
   text-decoration: none;
   color: #fff;
   border-radius: 100px;
@@ -773,7 +773,7 @@ body main#bM section.article-content .tags {
   margin-bottom: 25px;
 }
 body main#bM section.article-content .tags h6 {
-  color: #3b78dc;
+  color: #1a73e8;
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: bold;
@@ -824,7 +824,7 @@ body main#bM article#bAr .a-tags p {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #3b78dc;
+  color: #1a73e8;
   margin: 24px 0 12px 0;
 }
 body main#bM article#bAr .a-tags ul {
@@ -846,7 +846,7 @@ body main#bM article#bAr .a-tags ul li a {
   transition: all 0.25s ease-out;
 }
 body main#bM article#bAr .a-tags ul li a:hover {
-  background-color: #4285f4;
+  background-color: #1a73e8;
   color: #fff;
 }
 

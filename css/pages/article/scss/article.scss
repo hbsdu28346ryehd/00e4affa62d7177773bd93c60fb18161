@@ -122,7 +122,7 @@ body {
                             }
                         }
                         a:hover {
-                            color: $blue;
+                            color: $text-blue;
                         }
                         span {
                             color: $yellow;
@@ -222,7 +222,7 @@ body {
                             transition: all 0.1s ease-out;
                         }
                         a:hover {
-                            color: $blue;
+                            color: $text-blue;
                             text-decoration: none;
                         }
                     }
@@ -230,7 +230,7 @@ body {
                 ul { list-style: circle; }
                 a {
                     text-decoration: none;
-                    color: $blue-dark-10;
+                    color: $text-blue;
                     transition: all 0.2s ease-in-out;
                 }
                 a:hover {
@@ -250,7 +250,7 @@ body {
                     color: $black;
                 }
                 .btn-link:hover {
-                    color: $blue;
+                    color: $text-blue;
                 }
             }
             #fireworks_animation {
@@ -317,7 +317,7 @@ body {
                         }
                     }
                     a:hover {
-                        background-color: $blue;
+                        background-color: $text-blue;
                         color: $white;
                     }
                 }
@@ -328,7 +328,7 @@ body {
                 .c-header {
                     margin-bottom: 25px;
                     h6 {
-                        color: $blue-dark-10;
+                        color: $text-blue;
                         font-size: 12px;
                         letter-spacing: 2px;
                         font-weight: bold;
@@ -400,7 +400,7 @@ body {
                                     }
                                 }
                                 .si-box:hover {
-                                    background-color: $blue;
+                                    background-color: $text-blue;
                                     transform: translateY(-5px);
                                     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                                     span {
@@ -416,7 +416,7 @@ body {
                                 letter-spacing: 1px;
                                 line-height: 18px;
                                 font-weight: 400;
-                                background-color: $blue-dark-10;
+                                background-color: $text-blue;
                                 text-decoration: none;
                                 color: $white;
                                 border-radius: 100px;
@@ -452,7 +452,7 @@ body {
             .tags {
                 margin-bottom: 25px;
                 h6 {
-                    color: $blue-dark-10;
+                    color: $text-blue;
                     font-size: 12px;
                     letter-spacing: 2px;
                     font-weight: bold;
@@ -506,7 +506,7 @@ body {
                     text-transform: uppercase;
                     font-weight: bold;
                     letter-spacing: 2px;
-                    color: $blue-dark-10;
+                    color: $text-blue;
                     margin: 24px 0 12px 0;
                 }
                 ul {
@@ -527,7 +527,7 @@ body {
                             transition: all 0.25s ease-out;
                         }
                         a:hover {
-                            background-color: $blue;
+                            background-color: $text-blue;
                             color: $white;
                         }
                     }

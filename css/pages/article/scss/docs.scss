@@ -161,7 +161,7 @@ body {
                 ul { list-style: circle; }
                 a {
                     text-decoration: none;
-                    color: $blue;
+                    color: $text-blue;
                     transition: all 0.2s ease-in-out;
                 }
                 a:hover {
@@ -174,7 +174,7 @@ body {
                 .c-header {
                     margin-bottom: 25px;
                     h6 {
-                        color: $blue-light-50;
+                        color: $text-blue;
                         font-size: 1rem;
                         letter-spacing: 2px;
                         font-weight: 500;
@@ -252,7 +252,7 @@ body {
                                         }
                                     }
                                     .si-box:hover {
-                                        background-color: $blue;
+                                        background-color: $text-blue;
                                         transform: translateY(-5px);
                                         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                                         span {
@@ -267,7 +267,7 @@ body {
                                     font-size: 1rem;
                                     letter-spacing: 1px;
                                     font-weight: 400;
-                                    background-color: $blue;
+                                    background-color: $text-blue;
                                     text-decoration: none;
                                     color: white;
                                     border-radius: 100px;
@@ -297,7 +297,7 @@ body {
             .tags {
                 margin-bottom: 50px;
                 h6 {
-                    color: $blue-light-50;
+                    color: $text-blue;
                     font-size: 1rem;
                     letter-spacing: 2px;
                     font-weight: 500;
@@ -322,7 +322,7 @@ body {
                         }
                         a:hover {
                             color: $white;
-                            background-color: $blue;
+                            background-color: $text-blue;
                         }
                     }
                 }
@@ -370,7 +370,7 @@ body {
                             transition: all 0.25s ease-out;
                         }
                         a:hover {
-                            background-color: $blue;
+                            background-color: $text-blue;
                             color: $white;
                         }
                     }

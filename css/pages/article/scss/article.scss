@@ -151,6 +151,8 @@ body {
             margin: 0 auto;
             margin-bottom: 100px;
             .content {
+                position: relative;
+                z-index: 10;
                 h1,h2,h3,h4,h5,h6 {
                     font-family: poppins, sans-serif;
                 }
@@ -251,6 +253,18 @@ body {
                     color: $blue;
                 }
             }
+            #fireworks_animation {
+                transform: translateY(-500px);
+                margin: 0 auto;
+                max-width: 500px;
+                display: none;
+                object-fit: contain;
+                img {
+                    width: 500px;
+                    height: 500px;
+                    position: absolute;
+                }
+            }
             .previous-next-articles {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -310,6 +324,7 @@ body {
             }
             .recommendation {
                 margin-bottom: 50px;
+                z-index: 10;
                 .c-header {
                     margin-bottom: 25px;
                     h6 {
@@ -580,6 +595,17 @@ body {
                         #{$header} {
                             line-height: $size - 0.75rem;
                         }
+                    }
+                }
+                #fireworks_animation {
+                    transform: translateY(-400px);
+                    margin: 0 auto;
+                    display: none;
+                    object-fit: contain;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        position: absolute;
                     }
                 }
                 .previous-next-articles {

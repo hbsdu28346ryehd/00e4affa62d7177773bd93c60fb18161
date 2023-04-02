@@ -479,6 +479,9 @@ body article .ad-container .google-ad {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "article" "footer";
   }
+  body .ad-container {
+    overflow: hidden;
+  }
   body header {
     padding: 30px 0;
     height: 100vh;

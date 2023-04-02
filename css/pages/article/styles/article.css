@@ -1007,6 +1007,9 @@ body main#bM article#bAr .a-tags ul li a:hover {
   body main#bM section.article-content .recommendation .container-cards .insurance-card .content {
     padding: 20px;
   }
+  body main#bM section.article-content .recommendation .container-cards .insurance-card .content .sub-insurance {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   body main#bM section.article-content .tags {
     display: none;
   }

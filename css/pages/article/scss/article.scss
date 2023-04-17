@@ -559,12 +559,122 @@ body {
             }
         }
     }
+    section#absolute_assets {
+        .share-menu{
+            z-index:999;
+            position:fixed;
+            padding:0;
+            margin:0;
+            list-style-type:none;
+            .share{
+                i.fa{
+                    height:50px;
+                    width:50px;
+                    text-align:center;
+                    line-height:50px;
+                    background-color: $theme-bg-dark;
+                    border-radius:4px;
+                    border-color: $theme-bg-darker;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                }
+                &:hover{
+                    &.top{
+                    .submenu{
+                        @for $i from 1 through 7 {
+                            li:nth-child(#{$i}){
+                                opacity:1;
+                                top:#{-$i*56}px;
+                                transition-delay:#{$i*0.08}s;
+                                transform:rotateY(0deg);
+                                border-bottom:1px dashed darken($white,15%);
+                            }
+                        }
+                    }
+                    }
+                }
+            }
+            .submenu{
+                list-style-type:none;
+                padding:0;
+                margin:0;
+                li{
+                    transition:all ease-in-out 0.5s;
+                    position:absolute;
+                    top: 0;
+                    left: 0;
+                    z-index:-1;
+                    opacity:0;
+                    a, button{
+                        color: #212121;
+                        outline: none;
+                        padding: none;
+                        border: none;
+                        &:hover{
+                            i.fa{
+                                color: $blue-dark-90;
+                            }
+                            &.facebook{
+                                i.fa{
+                                    background-color: #3b5999;
+                                    color: $white;
+                                }
+                            }
+                            &.twitter{
+                                i.fa{
+                                    background-color: #55acee;
+                                    color: $white;
+                                }
+                            }
+                            &.whatsapp{
+                                i.fa{
+                                    background-color: #25D366;
+                                    color: $white;
+                                }
+                            }
+                            &.instagram{
+                                i.fa{
+                                    background-color: #e4405f;
+                                    color: $white;
+                                }
+                            }
+                            &.pinterest{
+                                i.fa{
+                                    background-color: #e4405f;
+                                    color: $white;
+                                }
+                            }
+                            &.copy{
+                                i.fa{
+                                    background-color: $theme-bg-darker;
+                                }
+                            }
+                        }
+                    }
+                }
+                @for $i from 1 through 6 {
+                    li:nth-child(#{$i}){
+                        transform:rotateX(#{$i*45}deg);
+                    }
+                }
+            }
+            &.bottomRight{
+                bottom:20px;
+                right:20px;
+            }
+        }
+    }
 }
+
 
 @media only screen and (max-width: 768px) {
     body {
         grid-template-columns: 1fr;
         grid-template-areas: 'header' 'main' 'footer';
+        header#bH {
+            .social-feeds {
+                display: none;
+            }
+        }
         article#bAl {
             display: none;
         }

@@ -161,8 +161,9 @@ body .nav-url-box {
 body header#bH {
   grid-area: header;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   padding: 20px;
+  width: 100%;
 }
 body header#bH .logo {
   display: flex;
@@ -175,10 +176,34 @@ body header#bH .logo img {
   height: 20px;
   cursor: pointer;
 }
+body header#bH .social-feeds {
+  display: inline-flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+body header#bH .social-feeds a, body header#bH .social-feeds button {
+  display: grid;
+  place-items: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #070d18;
+  background: #e2ecfc;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  transition: all 0.25s ease-in-out;
+}
+body header#bH .social-feeds a:hover, body header#bH .social-feeds button:hover, body header#bH .social-feeds button:focus {
+  background-color: #4285f4;
+  outline: none;
+  color: #fff;
+}
 body article#bAl {
   grid-area: article_left;
   height: 100%;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 body article#bAl .sticky-top {
   position: sticky;

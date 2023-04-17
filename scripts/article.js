@@ -8,3 +8,14 @@ window.addEventListener('scroll', () => {
 		bottomElement.style.display = 'block';
 	}
 });
+
+
+function copyToClipboard(text) {
+	var temp = document.createElement("input");
+	document.body.appendChild(temp);
+	temp.value = text;
+	temp.select();
+	document.execCommand("copy");
+	document.body.removeChild(temp);
+	alert("Link copied to clipboard!");
+}

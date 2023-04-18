@@ -885,60 +885,68 @@ body section#absolute_assets .share-menu .share i.fa {
   height: 50px;
   width: 50px;
   text-align: center;
+  cursor: pointer;
   line-height: 50px;
   background-color: #e2ecfc;
   border-radius: 4px;
-  border-color: #d3e4ff;
+  border-color: #b9d4ff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.2s ease-in-out;
 }
-body section#absolute_assets .share-menu .share:hover.top .submenu li:nth-child(1) {
+body section#absolute_assets .share-menu .share label i.fa:hover {
+  background-color: #b9d4ff;
+}
+body section#absolute_assets .share-menu .share input {
+  display: none;
+}
+body section#absolute_assets .share-menu .share input:checked + .submenu li:nth-child(1) {
   opacity: 1;
-  top: -56px;
+  top: -58px;
   transition-delay: 0.08s;
   transform: rotateY(0deg);
-  border-bottom: 1px dashed #d9d9d9;
+  cursor: pointer;
 }
-body section#absolute_assets .share-menu .share:hover.top .submenu li:nth-child(2) {
+body section#absolute_assets .share-menu .share input:checked + .submenu li:nth-child(2) {
   opacity: 1;
-  top: -112px;
+  top: -116px;
   transition-delay: 0.16s;
   transform: rotateY(0deg);
-  border-bottom: 1px dashed #d9d9d9;
+  cursor: pointer;
 }
-body section#absolute_assets .share-menu .share:hover.top .submenu li:nth-child(3) {
+body section#absolute_assets .share-menu .share input:checked + .submenu li:nth-child(3) {
   opacity: 1;
-  top: -168px;
+  top: -174px;
   transition-delay: 0.24s;
   transform: rotateY(0deg);
-  border-bottom: 1px dashed #d9d9d9;
+  cursor: pointer;
 }
-body section#absolute_assets .share-menu .share:hover.top .submenu li:nth-child(4) {
+body section#absolute_assets .share-menu .share input:checked + .submenu li:nth-child(4) {
   opacity: 1;
-  top: -224px;
+  top: -232px;
   transition-delay: 0.32s;
   transform: rotateY(0deg);
-  border-bottom: 1px dashed #d9d9d9;
+  cursor: pointer;
 }
-body section#absolute_assets .share-menu .share:hover.top .submenu li:nth-child(5) {
+body section#absolute_assets .share-menu .share input:checked + .submenu li:nth-child(5) {
   opacity: 1;
-  top: -280px;
+  top: -290px;
   transition-delay: 0.4s;
   transform: rotateY(0deg);
-  border-bottom: 1px dashed #d9d9d9;
+  cursor: pointer;
 }
-body section#absolute_assets .share-menu .share:hover.top .submenu li:nth-child(6) {
+body section#absolute_assets .share-menu .share input:checked + .submenu li:nth-child(6) {
   opacity: 1;
-  top: -336px;
+  top: -348px;
   transition-delay: 0.48s;
   transform: rotateY(0deg);
-  border-bottom: 1px dashed #d9d9d9;
+  cursor: pointer;
 }
-body section#absolute_assets .share-menu .share:hover.top .submenu li:nth-child(7) {
+body section#absolute_assets .share-menu .share input:checked + .submenu li:nth-child(7) {
   opacity: 1;
-  top: -392px;
+  top: -406px;
   transition-delay: 0.56s;
   transform: rotateY(0deg);
-  border-bottom: 1px dashed #d9d9d9;
+  cursor: pointer;
 }
 body section#absolute_assets .share-menu .submenu {
   list-style-type: none;
@@ -962,7 +970,7 @@ body section#absolute_assets .share-menu .submenu li a, body section#absolute_as
 body section#absolute_assets .share-menu .submenu li a:hover i.fa, body section#absolute_assets .share-menu .submenu li button:hover i.fa {
   color: #070d18;
 }
-body section#absolute_assets .share-menu .submenu li a:hover.facebook i.fa, body section#absolute_assets .share-menu .submenu li button:hover.facebook i.fa {
+body section#absolute_assets .share-menu .submenu li a:hover.facebook i.fa, body section#absolute_assets .share-menu .submenu li a:hover.linkedin i.fa, body section#absolute_assets .share-menu .submenu li button:hover.facebook i.fa, body section#absolute_assets .share-menu .submenu li button:hover.linkedin i.fa {
   background-color: #3b5999;
   color: #fff;
 }
@@ -979,7 +987,8 @@ body section#absolute_assets .share-menu .submenu li a:hover.pinterest i.fa, bod
   color: #fff;
 }
 body section#absolute_assets .share-menu .submenu li a:hover.copy i.fa, body section#absolute_assets .share-menu .submenu li button:hover.copy i.fa {
-  background-color: #d3e4ff;
+  background-color: #0d1b31;
+  color: white;
 }
 body section#absolute_assets .share-menu .submenu li:nth-child(1) {
   transform: rotateX(45deg);

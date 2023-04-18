@@ -566,30 +566,34 @@ body {
             padding:0;
             margin:0;
             list-style-type:none;
-            .share{
+            .share {
                 i.fa{
                     height:50px;
                     width:50px;
                     text-align:center;
+                    cursor: pointer;
                     line-height:50px;
                     background-color: $theme-bg-dark;
                     border-radius:4px;
                     border-color: $theme-bg-darker;
                     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                    transition: all 0.2s ease-in-out;
                 }
-                &:hover{
-                    &.top{
-                    .submenu{
-                        @for $i from 1 through 7 {
-                            li:nth-child(#{$i}){
-                                opacity:1;
-                                top:#{-$i*56}px;
-                                transition-delay:#{$i*0.08}s;
-                                transform:rotateY(0deg);
-                                border-bottom:1px dashed darken($white,15%);
-                            }
+                label i.fa:hover {
+                    background-color: $theme-bg-darker;
+                }
+                input {
+                    display: none;
+                }
+                & input:checked + .submenu {
+                    @for $i from 1 through 7 {
+                        li:nth-child(#{$i}){
+                            opacity:1;
+                            top:#{-$i*58}px;
+                            transition-delay:#{$i*0.08}s;
+                            transform:rotateY(0deg);
+                            cursor: pointer;
                         }
-                    }
                     }
                 }
             }
@@ -613,7 +617,7 @@ body {
                             i.fa{
                                 color: $blue-dark-90;
                             }
-                            &.facebook{
+                            &.facebook, &.linkedin{
                                 i.fa{
                                     background-color: #3b5999;
                                     color: $white;
@@ -639,7 +643,8 @@ body {
                             }
                             &.copy{
                                 i.fa{
-                                    background-color: $theme-bg-darker;
+                                    background-color: $blue-dark-80;
+                                    color: white;
                                 }
                             }
                         }

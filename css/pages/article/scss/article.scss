@@ -575,6 +575,9 @@ body {
                         background-color: $theme-bg-dark;
                     }
                 }
+                button.copy {
+                    background-color: transparent;
+                }
                 i.fa {
                     height:50px;
                     width:50px;
@@ -621,13 +624,19 @@ body {
                         outline: none;
                         padding: none;
                         border: none;
-                        &:hover{
+                        &{
                             i.fa{
                                 color: $blue-dark-90;
                             }
-                            &.facebook, &.linkedin{
+                            &.facebook {
                                 i.fa{
                                     background-color: #3b5999;
+                                    color: $white;
+                                }
+                            }
+                            &.linkedin {
+                                i.fa {
+                                    background-color: #0A66C2;
                                     color: $white;
                                 }
                             }
@@ -654,6 +663,10 @@ body {
                                     background-color: $blue-dark-80;
                                     color: white;
                                 }
+                            }
+                            i.fa:hover {
+                                background-color: $theme-bg-dark;
+                                color: black;
                             }
                         }
                     }

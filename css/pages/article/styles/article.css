@@ -890,6 +890,9 @@ body section#absolute_assets .share-menu .share label i.fa {
 body section#absolute_assets .share-menu .share label i.fa:hover {
   background-color: #e2ecfc;
 }
+body section#absolute_assets .share-menu .share button.copy {
+  background-color: transparent;
+}
 body section#absolute_assets .share-menu .share i.fa {
   height: 50px;
   width: 50px;
@@ -976,28 +979,36 @@ body section#absolute_assets .share-menu .submenu li a, body section#absolute_as
   padding: none;
   border: none;
 }
-body section#absolute_assets .share-menu .submenu li a:hover i.fa, body section#absolute_assets .share-menu .submenu li button:hover i.fa {
+body section#absolute_assets .share-menu .submenu li a i.fa, body section#absolute_assets .share-menu .submenu li button i.fa {
   color: #070d18;
 }
-body section#absolute_assets .share-menu .submenu li a:hover.facebook i.fa, body section#absolute_assets .share-menu .submenu li a:hover.linkedin i.fa, body section#absolute_assets .share-menu .submenu li button:hover.facebook i.fa, body section#absolute_assets .share-menu .submenu li button:hover.linkedin i.fa {
+body section#absolute_assets .share-menu .submenu li a.facebook i.fa, body section#absolute_assets .share-menu .submenu li button.facebook i.fa {
   background-color: #3b5999;
   color: #fff;
 }
-body section#absolute_assets .share-menu .submenu li a:hover.twitter i.fa, body section#absolute_assets .share-menu .submenu li button:hover.twitter i.fa {
+body section#absolute_assets .share-menu .submenu li a.linkedin i.fa, body section#absolute_assets .share-menu .submenu li button.linkedin i.fa {
+  background-color: #0A66C2;
+  color: #fff;
+}
+body section#absolute_assets .share-menu .submenu li a.twitter i.fa, body section#absolute_assets .share-menu .submenu li button.twitter i.fa {
   background-color: #55acee;
   color: #fff;
 }
-body section#absolute_assets .share-menu .submenu li a:hover.whatsapp i.fa, body section#absolute_assets .share-menu .submenu li button:hover.whatsapp i.fa {
+body section#absolute_assets .share-menu .submenu li a.whatsapp i.fa, body section#absolute_assets .share-menu .submenu li button.whatsapp i.fa {
   background-color: #25D366;
   color: #fff;
 }
-body section#absolute_assets .share-menu .submenu li a:hover.pinterest i.fa, body section#absolute_assets .share-menu .submenu li button:hover.pinterest i.fa {
+body section#absolute_assets .share-menu .submenu li a.pinterest i.fa, body section#absolute_assets .share-menu .submenu li button.pinterest i.fa {
   background-color: #e4405f;
   color: #fff;
 }
-body section#absolute_assets .share-menu .submenu li a:hover.copy i.fa, body section#absolute_assets .share-menu .submenu li button:hover.copy i.fa {
+body section#absolute_assets .share-menu .submenu li a.copy i.fa, body section#absolute_assets .share-menu .submenu li button.copy i.fa {
   background-color: #0d1b31;
   color: white;
+}
+body section#absolute_assets .share-menu .submenu li a i.fa:hover, body section#absolute_assets .share-menu .submenu li button i.fa:hover {
+  background-color: #e2ecfc;
+  color: black;
 }
 body section#absolute_assets .share-menu .submenu li:nth-child(1) {
   transform: rotateX(45deg);

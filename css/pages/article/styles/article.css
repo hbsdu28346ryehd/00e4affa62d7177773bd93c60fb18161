@@ -1012,6 +1012,12 @@ body section#absolute_assets .share-menu.bottomRight {
   bottom: 20px;
   right: 20px;
 }
+body section#absolute_assets .share-menu .sm-d {
+  display: none;
+}
+body section#absolute_assets .share-menu .md-d {
+  display: block;
+}
 
 @media only screen and (max-width: 768px) {
   body {
@@ -1184,6 +1190,12 @@ body section#absolute_assets .share-menu.bottomRight {
     border-radius: 0;
   }
   body main#bM article#bAr .a-thumbnail {
+    display: none;
+  }
+  body section#absolute_assets .share-menu .sm-d {
+    display: block;
+  }
+  body section#absolute_assets .share-menu .md-d {
     display: none;
   }
 }/*# sourceMappingURL=article.css.map */

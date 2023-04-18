@@ -660,6 +660,12 @@ body {
                 bottom:20px;
                 right:20px;
             }
+            .sm-d {
+                display: none;
+            }
+            .md-d {
+                display: block;
+            }
         }
     }
 }
@@ -796,6 +802,16 @@ body {
                 padding: 20px 20px 40px 20px;
                 border-radius: 0;
                 .a-thumbnail {
+                    display: none;
+                }
+            }
+        }
+        section#absolute_assets {
+            .share-menu{
+                .sm-d {
+                    display: block;
+                }
+                .md-d {
                     display: none;
                 }
             }

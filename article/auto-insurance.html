@@ -294,7 +294,7 @@
     </footer>
     <section id="absolute_assets">
         <ul class="share-menu bottomRight">
-            <li class="share top">
+            <li class="md-d share top">
                 <label for="share_btn"><i class="fa fa-share-alt"></i></label>
                 <input type="checkbox" id="share_btn">
                 <ul class="submenu">
@@ -312,7 +312,7 @@
                     </li>
                     <!-- WhatsApp -->
                     <li>
-                        <a href="https://www.pinterest.com/pin/create/button/?url=https://www.insurancebhaiya.com/article/auto-insurance" target="_blank" onclick="window.open(`https://www.pinterest.com/pin/create/button/?url=https://www.insurancebhaiya.com/article/auto-insurance`, 'Pinterest Share', 'width=600,height=400'); return false;" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+                        <a href="whatsapp://send?text=Check%20out%20this%20webpage:%20https://www.insurancebhaiya.com/article/auto-insurance" target="_blank" onclick="window.open(`whatsapp://send?text=Check%20out%20this%20website:%20https://www.insurancebhaiya.com/article/auto-insurance`, `WhatsApp Share`, `width=600,height=400`); return false;" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
                     </li>
                     <!-- Pinterest -->
                     <li>
@@ -323,6 +323,11 @@
                         <button onclick="copyToClipboard(`https://www.insurancebhaiya.com/article/auto-insurance`)" class="copy"><i class="fa fa-copy"></i></button>
                     </li>
                 </ul>
+            </li>
+            <li class="sm-d share">
+                <i id="shareBtn" class="fa fa-share-alt"></i>
+                <input type="hidden" name="article-share-text" value="Auto Insurance">
+                <input type="hidden" name="article-share-url" value="https://www.insurancebhaiya.com/article/auto-insurance">
             </li>
         </ul>
     </section>

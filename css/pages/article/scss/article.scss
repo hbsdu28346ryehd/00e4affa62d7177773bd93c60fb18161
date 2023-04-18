@@ -277,18 +277,6 @@ body {
                     color: $text-blue;
                 }
             }
-            #fireworks_animation {
-                transform: translateY(-500px);
-                margin: 0 auto;
-                max-width: 500px;
-                display: none;
-                object-fit: contain;
-                img {
-                    width: 500px;
-                    height: 500px;
-                    position: absolute;
-                }
-            }
             .previous-next-articles {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -734,17 +722,6 @@ body {
                         #{$header} {
                             line-height: $size - 0.75rem;
                         }
-                    }
-                }
-                #fireworks_animation {
-                    transform: translateY(-400px);
-                    margin: 0 auto;
-                    display: none;
-                    object-fit: contain;
-                    img {
-                        width: 100%;
-                        height: auto;
-                        position: absolute;
                     }
                 }
                 .previous-next-articles {

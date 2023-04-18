@@ -588,19 +588,6 @@ body main#bM section.article-content .content .btn-link {
 body main#bM section.article-content .content .btn-link:hover {
   color: #1a73e8;
 }
-body main#bM section.article-content #fireworks_animation {
-  transform: translateY(-500px);
-  margin: 0 auto;
-  max-width: 500px;
-  display: none;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-body main#bM section.article-content #fireworks_animation img {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-}
 body main#bM section.article-content .previous-next-articles {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1126,18 +1113,6 @@ body section#absolute_assets .share-menu .md-d {
   }
   body main#bM section.article-content .content h6 {
     line-height: 0.5rem;
-  }
-  body main#bM section.article-content #fireworks_animation {
-    transform: translateY(-400px);
-    margin: 0 auto;
-    display: none;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  body main#bM section.article-content #fireworks_animation img {
-    width: 100%;
-    height: auto;
-    position: absolute;
   }
   body main#bM section.article-content .previous-next-articles {
     gap: 0;

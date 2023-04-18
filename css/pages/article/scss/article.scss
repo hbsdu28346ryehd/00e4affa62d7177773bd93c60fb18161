@@ -555,7 +555,27 @@ body {
             margin:0;
             list-style-type:none;
             .share {
-                i.fa{
+                label {
+                    padding: 12px 16px;
+                    text-align:center;
+                    user-select: none;
+                    cursor: pointer;
+                    line-height:50px;
+                    background-color: $theme-bg-dark;
+                    border-radius:4px;
+                    border-color: $theme-bg-darker;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                    transition: all 0.2s ease-in-out;
+                    i.fa {
+                        box-shadow: none;
+                        height: 0;
+                        width: 24px;
+                    }
+                    i.fa:hover {
+                        background-color: $theme-bg-dark;
+                    }
+                }
+                i.fa {
                     height:50px;
                     width:50px;
                     text-align:center;
@@ -567,7 +587,7 @@ body {
                     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
                     transition: all 0.2s ease-in-out;
                 }
-                label i.fa:hover {
+                label:hover {
                     background-color: $theme-bg-darker;
                 }
                 input {
@@ -591,10 +611,10 @@ body {
                 margin:0;
                 li{
                     transition:all ease-in-out 0.5s;
+                    z-index:-1;
                     position:absolute;
                     top: 0;
-                    left: 0;
-                    z-index:-1;
+                    right: 0;
                     opacity:0;
                     a, button{
                         color: #212121;

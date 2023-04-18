@@ -9,6 +9,17 @@ window.addEventListener('scroll', () => {
 	}
 });
 
+const share_btn = document.querySelector('#share_btn');
+document.addEventListener('click', (event) => {
+	const withinBoundaries = event.composedPath().includes(share_btn);
+	if (!withinBoundaries) {
+		document.querySelector("label[for='share_btn']").style.backgroundColor = "#e2ecfc";
+		document.querySelector("#share_btn").checked = false;
+	} else {
+		document.querySelector("label[for='share_btn']").style.backgroundColor = "#b9d4ff";
+	}
+})
+
 function copyToClipboard(text) {
 	var temp = document.createElement("input");
 	document.body.appendChild(temp);

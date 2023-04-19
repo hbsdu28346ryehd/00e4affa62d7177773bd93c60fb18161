@@ -1396,6 +1396,14 @@ body section#absolute_assets .share-menu .md-d {
   body main#bM article#bAr .a-thumbnail {
     display: none;
   }
+  body main#bM article#bAr .a-tags ul {
+    row-gap: 20px;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  body main#bM article#bAr .a-tags ul li a {
+    font-size: 16px;
+  }
   body section#absolute_assets .share-menu .sm-d {
     display: block;
   }

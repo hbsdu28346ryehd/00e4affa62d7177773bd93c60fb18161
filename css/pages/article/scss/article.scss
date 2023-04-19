@@ -560,6 +560,8 @@ body {
                     text-align:center;
                     user-select: none;
                     cursor: pointer;
+                    letter-spacing: 2px;
+                    font-family: poppins, sans-serif;
                     line-height:50px;
                     background-color: $theme-bg-dark;
                     border-radius:4px;
@@ -575,7 +577,7 @@ body {
                         background-color: $theme-bg-dark;
                     }
                 }
-                button.copy {
+                button {
                     background-color: transparent;
                 }
                 i.fa {
@@ -584,6 +586,7 @@ body {
                     text-align:center;
                     cursor: pointer;
                     line-height:50px;
+                    font-size: 18px;
                     background-color: $theme-bg-dark;
                     border-radius:4px;
                     border-color: $theme-bg-darker;
@@ -619,7 +622,7 @@ body {
                     top: 0;
                     right: 0;
                     opacity:0;
-                    a, button{
+                    button{
                         color: #212121;
                         outline: none;
                         padding: none;
@@ -660,8 +663,8 @@ body {
                             }
                             &.copy{
                                 i.fa{
-                                    background-color: $blue-dark-80;
-                                    color: white;
+                                    background-color: $white;
+                                    color: black;
                                 }
                             }
                             i.fa:hover {
@@ -697,9 +700,8 @@ body {
         grid-template-columns: 1fr;
         grid-template-areas: 'header' 'main' 'footer';
         header#bH {
-            .social-feeds {
-                display: none;
-            }
+            padding: 16px;
+            align-items: center;
         }
         article#bAl {
             display: none;

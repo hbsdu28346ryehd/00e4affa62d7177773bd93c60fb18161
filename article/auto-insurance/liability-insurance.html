@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../../assets/logo/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/logo/favicon.png" type="image/x-icon">
     <title>Liability Insurance - Insurance Bhaiya</title>
-    <link rel="stylesheet" href="../../css/pages/article/styles/article.css">
+    <link rel="stylesheet" href="/css/pages/article/styles/article.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="description" content="Liability insurance is a type of insurance that protects individuals or businesses from claims of negligence or wrongdoing. This type of insurance covers damages, legal fees, and other costs associated with lawsuits or claims. It is essential for anyone who could potentially face legal action related to their business or personal activities to have liability insurance. ">
     <meta name="keywords" content="liability insurance, insurance coverage, legal protection, risk management, third-party claims, negligence claims, business insurance, personal liability, professional liability, general liability, commercial liability, product liability, public liability, insurance policy, liability coverage, insurance premiums, legal fees, damages, lawsuit protection.">
     <link rel="canonical" href="https://www.insurancebhaiya.com/auto-insurance/liability-insurance">
@@ -29,11 +31,19 @@
 <body id="article">
     <!-- Header Section -->
     <header id="bH">
-        <a href="/" role="button">
+        <div class="nav-logo-box">
+            <a href="/" role="button">
             <div class="logo">
-                <img src="../../assets/logo/logo-horizontal-dark.png" alt="Insurance Bhaiya logo">
+                <img src="../../assets/logo/logo-horizontal-dark.png" alt="Insurance Bhaiya logo" loading="lazy" decoding="async" height="24px" width="180px" />
             </div>
-        </a>
+            </a>
+        </div>
+        <div class="social-feeds">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/InsuranceBhaiya" target="_blank" class="fa fa-facebook"></a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/InsuranceBhaiya" target="_blank" class="fa fa-twitter"></a>
+        </div>
     </header>
     <!-- Left Sidebar Section -->
     <article id="bAl">
@@ -214,6 +224,31 @@
             </div>
         </div>
     </footer>
+    <section id="absolute_assets">
+        <ul class="share-menu bottomRight">
+            <li class="md-d share top">
+                <label for="share_btn">SHARE <i class="fa fa-share-alt"></i></label>
+                <input type="checkbox" id="share_btn">
+                <ul class="submenu">
+                    <!-- Facebook -->
+                    <li><button onclick="shareOnSocialMedia('facebook')" class="facebook"><i class="fa fa-facebook"></i></button></li>
+                    <!-- Twitter -->
+                    <li><button onclick="shareOnSocialMedia('twitter')" class="twitter"><i class="fa fa-twitter"></i></button></li>
+                    <!-- LinkedIn -->
+                    <li><button onclick="shareOnSocialMedia('linkedIn')" class="linkedin"><i class="fa fa-linkedin"></i></button></li>
+                    <!-- WhatsApp -->
+                    <li><button onclick="shareOnSocialMedia('whatsapp')" class="whatsapp"><i class="fa fa-whatsapp"></i></button></li>
+                    <!-- Pinterest -->
+                    <li><button onclick="shareOnSocialMedia('pinterest')" class="pinterest"><i class="fa fa-pinterest"></i></button></li>
+                    <!-- Copy to Clipboard -->
+                    <li><button onclick="copyToClipboard()" class="copy"><i class="fa fa-copy"></i></button></li>
+                </ul>
+            </li>
+            <li class="sm-d share">
+                <i class="fa fa-share-alt" id="shareBtn"></i>
+            </li>
+        </ul>
+    </section>
     <script src="/scripts/article.js"></script>
 </body>
 </html>

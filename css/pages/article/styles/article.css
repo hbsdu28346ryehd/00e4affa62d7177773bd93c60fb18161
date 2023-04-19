@@ -875,10 +875,12 @@ body section#absolute_assets .share-menu .share label {
      -moz-user-select: none;
           user-select: none;
   cursor: pointer;
+  letter-spacing: 2px;
+  font-family: poppins, sans-serif;
   line-height: 50px;
   background-color: #e2ecfc;
   border-radius: 4px;
-  border-color: #b9d4ff;
+  border-color: #cce0ff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: all 0.2s ease-in-out;
 }
@@ -890,7 +892,7 @@ body section#absolute_assets .share-menu .share label i.fa {
 body section#absolute_assets .share-menu .share label i.fa:hover {
   background-color: #e2ecfc;
 }
-body section#absolute_assets .share-menu .share button.copy {
+body section#absolute_assets .share-menu .share button {
   background-color: transparent;
 }
 body section#absolute_assets .share-menu .share i.fa {
@@ -899,14 +901,15 @@ body section#absolute_assets .share-menu .share i.fa {
   text-align: center;
   cursor: pointer;
   line-height: 50px;
+  font-size: 18px;
   background-color: #e2ecfc;
   border-radius: 4px;
-  border-color: #b9d4ff;
+  border-color: #cce0ff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: all 0.2s ease-in-out;
 }
 body section#absolute_assets .share-menu .share label:hover {
-  background-color: #b9d4ff;
+  background-color: #cce0ff;
 }
 body section#absolute_assets .share-menu .share input {
   display: none;
@@ -973,40 +976,40 @@ body section#absolute_assets .share-menu .submenu li {
   right: 0;
   opacity: 0;
 }
-body section#absolute_assets .share-menu .submenu li a, body section#absolute_assets .share-menu .submenu li button {
+body section#absolute_assets .share-menu .submenu li button {
   color: #212121;
   outline: none;
   padding: none;
   border: none;
 }
-body section#absolute_assets .share-menu .submenu li a i.fa, body section#absolute_assets .share-menu .submenu li button i.fa {
+body section#absolute_assets .share-menu .submenu li button i.fa {
   color: #070d18;
 }
-body section#absolute_assets .share-menu .submenu li a.facebook i.fa, body section#absolute_assets .share-menu .submenu li button.facebook i.fa {
+body section#absolute_assets .share-menu .submenu li button.facebook i.fa {
   background-color: #3b5999;
   color: #fff;
 }
-body section#absolute_assets .share-menu .submenu li a.linkedin i.fa, body section#absolute_assets .share-menu .submenu li button.linkedin i.fa {
+body section#absolute_assets .share-menu .submenu li button.linkedin i.fa {
   background-color: #0A66C2;
   color: #fff;
 }
-body section#absolute_assets .share-menu .submenu li a.twitter i.fa, body section#absolute_assets .share-menu .submenu li button.twitter i.fa {
+body section#absolute_assets .share-menu .submenu li button.twitter i.fa {
   background-color: #55acee;
   color: #fff;
 }
-body section#absolute_assets .share-menu .submenu li a.whatsapp i.fa, body section#absolute_assets .share-menu .submenu li button.whatsapp i.fa {
+body section#absolute_assets .share-menu .submenu li button.whatsapp i.fa {
   background-color: #25D366;
   color: #fff;
 }
-body section#absolute_assets .share-menu .submenu li a.pinterest i.fa, body section#absolute_assets .share-menu .submenu li button.pinterest i.fa {
+body section#absolute_assets .share-menu .submenu li button.pinterest i.fa {
   background-color: #e4405f;
   color: #fff;
 }
-body section#absolute_assets .share-menu .submenu li a.copy i.fa, body section#absolute_assets .share-menu .submenu li button.copy i.fa {
-  background-color: #0d1b31;
-  color: white;
+body section#absolute_assets .share-menu .submenu li button.copy i.fa {
+  background-color: #fff;
+  color: black;
 }
-body section#absolute_assets .share-menu .submenu li a i.fa:hover, body section#absolute_assets .share-menu .submenu li button i.fa:hover {
+body section#absolute_assets .share-menu .submenu li button i.fa:hover {
   background-color: #e2ecfc;
   color: black;
 }
@@ -1044,8 +1047,9 @@ body section#absolute_assets .share-menu .md-d {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "footer";
   }
-  body header#bH .social-feeds {
-    display: none;
+  body header#bH {
+    padding: 16px;
+    align-items: center;
   }
   body article#bAl {
     display: none;

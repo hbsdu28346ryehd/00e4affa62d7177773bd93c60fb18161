@@ -5,10 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../assets/logo/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/logo/favicon.png" type="image/x-icon">
     <title>All about Insurance | Insurance Bhaiya</title>
     <link rel="stylesheet" href="/css/pages/article/styles/article.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="description"
         content="Looking for financial protection against unexpected events? Insurance can provide coverage for a wide range of risks, from auto accidents to home damage to medical expenses. With a variety of insurance policies available, it's important to understand the policy terms and coverage options to ensure you're adequately protected. This article explores the basics of insurance, including how it works, the types of policies available, and what to consider when purchasing insurance. Learn how insurance can provide valuable financial protection and peace of mind for individuals and organizations alike." />
     <meta name="keywords" content="insurance,
@@ -552,6 +553,31 @@
             </div>
         </div>
     </footer>
+    <section id="absolute_assets">
+        <ul class="share-menu bottomRight">
+            <li class="md-d share top">
+                <label for="share_btn">SHARE <i class="fa fa-share-alt"></i></label>
+                <input type="checkbox" id="share_btn">
+                <ul class="submenu">
+                    <!-- Facebook -->
+                    <li><button onclick="shareOnSocialMedia('facebook')" class="facebook"><i class="fa fa-facebook"></i></button></li>
+                    <!-- Twitter -->
+                    <li><button onclick="shareOnSocialMedia('twitter')" class="twitter"><i class="fa fa-twitter"></i></button></li>
+                    <!-- LinkedIn -->
+                    <li><button onclick="shareOnSocialMedia('linkedIn')" class="linkedin"><i class="fa fa-linkedin"></i></button></li>
+                    <!-- WhatsApp -->
+                    <li><button onclick="shareOnSocialMedia('whatsapp')" class="whatsapp"><i class="fa fa-whatsapp"></i></button></li>
+                    <!-- Pinterest -->
+                    <li><button onclick="shareOnSocialMedia('pinterest')" class="pinterest"><i class="fa fa-pinterest"></i></button></li>
+                    <!-- Copy to Clipboard -->
+                    <li><button onclick="copyToClipboard()" class="copy"><i class="fa fa-copy"></i></button></li>
+                </ul>
+            </li>
+            <li class="sm-d share">
+                <i class="fa fa-share-alt" id="shareBtn"></i>
+            </li>
+        </ul>
+    </section>
     <script src="/scripts/article.js" type="text/javascript"></script>
 </body>
 

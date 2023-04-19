@@ -21,7 +21,7 @@ document.addEventListener('click', (event) => {
 })
 
 function copyToClipboard() {
-	const articleUrl = window.location.origin + "/" + window.location.pathname;
+	const articleUrl = window.location.origin + window.location.pathname;
 	var temp = document.createElement("input");
 	document.body.appendChild(temp);
 	temp.value = articleUrl;
@@ -37,7 +37,7 @@ shareBtn.addEventListener('click', event => {
 	// Check for Web Share api support
 	if (navigator.share) {
 		const articleTitle = document.querySelector("title").innerText;
-		const articleUrl = window.location.origin + "/" + window.location.pathname;
+		const articleUrl = window.location.origin + window.location.pathname;
 		// Browser supports native share api
 		navigator.share({
 			text: articleTitle,
@@ -55,7 +55,7 @@ shareBtn.addEventListener('click', event => {
 function shareOnSocialMedia(platform) {
 	const articleTitle = document.querySelector("title").innerText;
 	const articleSummary = document.querySelector("meta[name='description']").content;
-	const articleUrl = window.location.origin + "/" + window.location.pathname;
+	const articleUrl = window.location.origin + window.location.pathname;
 	
 	// Facebook
 	if(platform.toLowerCase() === "facebook") {

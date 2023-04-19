@@ -170,8 +170,8 @@ body {
         section.article-content {
             grid-area: article_content;
             padding: 0 50px 0 50px;
-            font-size: 18px;
-            line-height: 32px;
+            font-size: 20px;
+            line-height: 34px;
             margin: 0 auto;
             margin-bottom: 100px;
             .content {
@@ -745,7 +745,13 @@ body {
                 .content {
                     p {
                         text-align: justify;
-                        line-height: 24px;
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                    li {
+                        font-size: 18px;
+                        line-height: 30px;
+                        text-align:start;
                     }
                     @each $header, $size in $font-sizes {
                         .#{$header} {

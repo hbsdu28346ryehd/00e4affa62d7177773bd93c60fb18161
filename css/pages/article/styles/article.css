@@ -514,8 +514,8 @@ body main#bM section.article-hero .article-title {
 body main#bM section.article-content {
   grid-area: article_content;
   padding: 0 50px 0 50px;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 34px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -1281,7 +1281,13 @@ body section#absolute_assets .share-menu .md-d {
   }
   body main#bM section.article-content .content p {
     text-align: justify;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  body main#bM section.article-content .content li {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: start;
   }
   body main#bM section.article-content .content .h1 {
     font-size: 3.6rem;

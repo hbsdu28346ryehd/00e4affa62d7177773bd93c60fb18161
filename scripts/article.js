@@ -1,14 +1,3 @@
-const topElement = document.getElementById('top_content');
-const bottomElement = document.getElementById('fireworks_animation');
-
-window.addEventListener('scroll', () => {
-	const topElementRect = topElement.getBoundingClientRect();
-
-	if (topElementRect.bottom <= window.innerHeight) {
-		bottomElement.style.display = 'block';
-	}
-});
-
 const share_btn = document.querySelector('#share_btn');
 document.addEventListener('click', (event) => {
 	const withinBoundaries = event.composedPath().includes(share_btn);

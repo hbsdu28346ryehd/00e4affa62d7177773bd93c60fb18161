@@ -10,3 +10,5 @@ RewriteRule ^(.*)$ $1.html [L]
 
 # Set index page to domain name
 DirectoryIndex /
+
+ErrorDocument 404 /404.html

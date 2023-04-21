@@ -4,7 +4,7 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirect 404 to custom 404 page
-ErrorDocument 404 /error/not-found-page.html
+ErrorDocument 404 /404.html
 
 # Remove file extensions
 RewriteCond %{REQUEST_FILENAME} !-d

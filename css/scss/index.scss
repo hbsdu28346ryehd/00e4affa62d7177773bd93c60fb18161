@@ -140,6 +140,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 column-gap: 50px;
+                padding: 0 25px;
                 .right-box {
                     grid-area: rightbox;
                     padding-top: 150px;
@@ -388,6 +389,7 @@ body {
                 }
                 .insurance-types-container-box {
                     flex-direction: column;
+                    align-items: center;
                     margin-bottom: 0;
                     .right-box {
                         padding-top: 50px;

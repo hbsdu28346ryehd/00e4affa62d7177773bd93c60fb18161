@@ -53,7 +53,7 @@ body {
     article#bAl {
         grid-area: article_left;
         height: 100%;
-        padding: 0 20px 20px 20px;
+        padding: 0 20px 100px 20px;
         .sticky-top {
             position: sticky;
             top: 20px;
@@ -173,7 +173,7 @@ body {
             font-size: 20px;
             line-height: 34px;
             margin: 0 auto;
-            margin-bottom: 100px;
+            margin-bottom: 50px;
             .box {
                 padding: 0 50px 0 50px;
             }
@@ -338,7 +338,6 @@ body {
                 }
             }
             .recommendation {
-                margin-bottom: 50px;
                 z-index: 10;
                 .c-header {
                     margin-bottom: 25px;
@@ -465,7 +464,6 @@ body {
                 }
             }
             .tags {
-                margin-bottom: 25px;
                 h6 {
                     color: $text-blue;
                     font-size: 12px;
@@ -741,10 +739,13 @@ body {
                 }
             }
             section.article-content {
-                padding: 20px 20px 50px 20px;
+                padding: 0;
                 margin-bottom: 0;
                 font-size: 16px;
                 line-height: 24px;
+                .box {
+                    padding: 0 20px 0 20px;
+                }
                 .content {
                     p {
                         text-align: justify;

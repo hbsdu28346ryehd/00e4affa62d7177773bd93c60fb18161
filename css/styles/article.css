@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+.poppins {
+  font-family: poppins, sans-serif;
+}
+
 body::-webkit-scrollbar {
   width: 5px;
   height: 0px;
@@ -406,7 +410,7 @@ body header#bH .social-feeds a:hover, body header#bH .social-feeds button:hover,
 body article#bAl {
   grid-area: article_left;
   height: 100%;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 100px 20px;
 }
 body article#bAl .sticky-top {
   position: sticky;
@@ -534,7 +538,7 @@ body main#bM section.article-content {
   font-size: 20px;
   line-height: 34px;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 body main#bM section.article-content .box {
   padding: 0 50px 0 50px;
@@ -852,7 +856,6 @@ body main#bM section.article-content .previous-next-articles .btn-box a:hover {
   color: #fff;
 }
 body main#bM section.article-content .recommendation {
-  margin-bottom: 50px;
   z-index: 10;
 }
 body main#bM section.article-content .recommendation .c-header {
@@ -986,9 +989,6 @@ body main#bM section.article-content .recommendation .container-cards .insurance
 body main#bM section.article-content .recommendation .container-cards .insurance-card:hover a.to-article-btn span.icon {
   font-size: 1rem;
   margin-left: 10px;
-}
-body main#bM section.article-content .tags {
-  margin-bottom: 25px;
 }
 body main#bM section.article-content .tags h6 {
   color: #1a73e8;
@@ -1294,10 +1294,13 @@ body section#absolute_assets .share-menu .md-d {
     margin-bottom: 20px;
   }
   body main#bM section.article-content {
-    padding: 20px 20px 50px 20px;
+    padding: 0;
     margin-bottom: 0;
     font-size: 16px;
     line-height: 24px;
+  }
+  body main#bM section.article-content .box {
+    padding: 0 20px 0 20px;
   }
   body main#bM section.article-content .content p {
     text-align: justify;

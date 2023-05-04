@@ -40,6 +40,27 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #1a73e8;
 }
 
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 50px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a1c2fa;
+  border-radius: 50px;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #1a73e8;
+}
+
 body footer#bF {
   grid-area: footer;
   padding: 100px;
@@ -410,11 +431,17 @@ body header#bH .social-feeds a:hover, body header#bH .social-feeds button:hover,
 body article#bAl {
   grid-area: article_left;
   height: 100%;
-  padding: 0 20px 100px 20px;
+  padding: 0 4px 100px 20px;
 }
 body article#bAl .sticky-top {
   position: sticky;
   top: 20px;
+}
+body article#bAl .sidebar-box {
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+  margin-bottom: 80px;
+  padding-bottom: 12px;
 }
 body article#bAl .sidebar-box .label {
   font-size: 14px;
@@ -553,26 +580,32 @@ body main#bM section.article-content .content h1, body main#bM section.article-c
 }
 body main#bM section.article-content .content .h1 {
   font-size: 3.75rem;
+  line-height: 5.625rem;
   margin-bottom: 1rem;
 }
 body main#bM section.article-content .content .h2 {
   font-size: 3.25rem;
+  line-height: 4.875rem;
   margin-bottom: 1rem;
 }
 body main#bM section.article-content .content .h3 {
   font-size: 2.75rem;
+  line-height: 4.125rem;
   margin-bottom: 1rem;
 }
 body main#bM section.article-content .content .h4 {
   font-size: 2.25rem;
+  line-height: 3.375rem;
   margin-bottom: 1rem;
 }
 body main#bM section.article-content .content .h5 {
   font-size: 1.75rem;
+  line-height: 2.625rem;
   margin-bottom: 1rem;
 }
 body main#bM section.article-content .content .h6 {
   font-size: 1.25rem;
+  line-height: 1.875rem;
   margin-bottom: 1rem;
 }
 body main#bM section.article-content .content .fw-300 {

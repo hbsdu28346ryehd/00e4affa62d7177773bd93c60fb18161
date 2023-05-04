@@ -170,8 +170,8 @@ body {
         section.article-content {
             grid-area: article_content;
             padding: 0;
-            font-size: 20px;
-            line-height: 34px;
+            font-size: 18px;
+            line-height: 30px;
             margin: 0 auto;
             margin-bottom: 50px;
             .box {
@@ -179,6 +179,7 @@ body {
             }
             .content {
                 position: relative;
+                color: rgba(0, 0, 0, 0.87);
                 z-index: 10;
                 h1,h2,h3,h4,h5,h6 {
                     font-family: poppins, sans-serif;
@@ -187,7 +188,6 @@ body {
                     .#{$header} {
                         font-size: $size;
                         margin-bottom: 1rem;
-                        color: $gray-dark-80;
                     }
                 }
                 @for $i from 3 through 9 {
@@ -235,9 +235,6 @@ body {
                     }
                 }
                 p { text-align: start; }
-                p, li {
-                    color: $gray-dark-80;
-                }
                 ul, ol {
                     padding-left: 20px;
                     li {
@@ -254,7 +251,7 @@ body {
                         }
                     }
                 }
-                ul { list-style: circle; }
+                ul { list-style:disc; }
                 a {
                     text-decoration: none;
                     color: $text-blue;
@@ -270,11 +267,11 @@ body {
                     }
                     span {
                         font-weight: 300;
-                        color: $blue-dark-80;
                     }
                 }
                 .btn-link {
-                    color: $black;
+                    color: $text-blue;
+                    font-weight: 500;
                 }
                 .btn-link:hover {
                     color: $text-blue;

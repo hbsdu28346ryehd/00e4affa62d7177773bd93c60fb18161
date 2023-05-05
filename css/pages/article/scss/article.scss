@@ -54,11 +54,9 @@ body {
         grid-area: article_left;
         height: 100%;
         padding: 0 20px 20px 20px;
-        .sticky-top {
+        .sidebar-page-nav {
             position: sticky;
             top: 20px;
-        }
-        .sidebar-box {
             .label {
                 font-size: 14px;
                 margin-bottom: 24px;

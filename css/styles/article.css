@@ -431,42 +431,45 @@ body header#bH .social-feeds a:hover, body header#bH .social-feeds button:hover,
 body article#bAl {
   grid-area: article_left;
   height: 100%;
-  padding: 0 4px 100px 20px;
+  padding: 0 4px 0 20px;
 }
-body article#bAl .sticky-top {
-  position: sticky;
-  top: 20px;
-}
-body article#bAl .sidebar-box {
-  height: calc(100vh - 50px);
-  overflow-y: scroll;
+body article#bAl .sidebar-page-nav {
   margin-bottom: 80px;
-  padding-bottom: 12px;
+  position: sticky;
+  top: 0;
 }
-body article#bAl .sidebar-box .label {
+body article#bAl .sidebar-page-nav .label {
+  background: linear-gradient(to top, rgba(242, 246, 252, 0.4352941176), #f2f6fc);
   font-size: 14px;
-  margin-bottom: 24px;
+  padding: 18px 0;
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
   letter-spacing: 2px;
   font-weight: 800;
   color: #000;
   font-weight: bold;
   text-transform: uppercase;
 }
-body article#bAl .sidebar-box .navigation {
+body article#bAl .sidebar-page-nav .navigation {
+  position: sticky;
+  top: 0;
+  overflow-y: scroll;
   list-style: none;
   letter-spacing: 0.5px;
   padding-left: 20px;
+  padding-right: 12px;
+  max-height: calc(100vh - 80px);
 }
-body article#bAl .sidebar-box .navigation li:before {
+body article#bAl .sidebar-page-nav .navigation li:before {
   content: "☯";
   margin-left: -20px;
   margin-right: 6px;
   color: #c0c0c0;
 }
-body article#bAl .sidebar-box .navigation li {
+body article#bAl .sidebar-page-nav .navigation li {
   padding: 4px 0;
 }
-body article#bAl .sidebar-box .navigation li a {
+body article#bAl .sidebar-page-nav .navigation li a {
   text-decoration: none;
   font-size: 14px;
   padding: 4px 0;
@@ -475,29 +478,46 @@ body article#bAl .sidebar-box .navigation li a {
   border-radius: 3px;
   color: #000;
 }
-body article#bAl .sidebar-box .navigation li a span {
+body article#bAl .sidebar-page-nav .navigation li a span {
   font-weight: 300;
 }
-body article#bAl .sidebar-box .navigation li a:hover {
+body article#bAl .sidebar-page-nav .navigation li a:hover {
   background-color: #e2ecfc;
 }
-body article#bAl .sidebar-box .navigation li ul, body article#bAl .sidebar-box .navigation li ol {
+body article#bAl .sidebar-page-nav .navigation li ul, body article#bAl .sidebar-page-nav .navigation li ol {
   list-style: none;
   padding-left: 10px;
   margin: 8px 0;
 }
-body article#bAl .sidebar-box .navigation li ul li:before, body article#bAl .sidebar-box .navigation li ol li:before {
+body article#bAl .sidebar-page-nav .navigation li ul li:before, body article#bAl .sidebar-page-nav .navigation li ol li:before {
   content: "⚊";
   margin-left: -20px;
   margin-right: 6px;
   color: #8d8d8d;
 }
-body article#bAl .sidebar-box .navigation li ul li, body article#bAl .sidebar-box .navigation li ol li {
+body article#bAl .sidebar-page-nav .navigation li ul li, body article#bAl .sidebar-page-nav .navigation li ol li {
   padding: 2px 0;
 }
-body article#bAl .sidebar-box .navigation li ul li a, body article#bAl .sidebar-box .navigation li ol li a {
+body article#bAl .sidebar-page-nav .navigation li ul li a, body article#bAl .sidebar-page-nav .navigation li ol li a {
   color: #000;
   font-weight: 400;
+}
+body article#bAl .sidebar-page-nav .navigation::-webkit-scrollbar {
+  width: 8px;
+  height: 0px;
+}
+body article#bAl .sidebar-page-nav .navigation::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 50px;
+}
+body article#bAl .sidebar-page-nav .navigation::-webkit-scrollbar-thumb {
+  background-color: #a1c2fa;
+  border-radius: 50px;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+body article#bAl .sidebar-page-nav .navigation::-webkit-scrollbar-thumb:hover {
+  background-color: #1a73e8;
 }
 body main#bM {
   grid-area: main;
@@ -804,7 +824,7 @@ body main#bM section.article-content .content a {
   color: #1a73e8;
   transition: all 0.2s ease-in-out;
 }
-body main#bM section.article-content .content a:hover {
+body main#bM section.article-content .content a:hover, body main#bM section.article-content .content a:active {
   color: #21437a;
 }
 body main#bM section.article-content .content .sub-title {
@@ -821,7 +841,7 @@ body main#bM section.article-content .content .btn-link {
   font-weight: 500;
 }
 body main#bM section.article-content .content .btn-link:hover {
-  color: #1a73e8;
+  color: #285092;
 }
 body main#bM section.article-content .previous-next-articles {
   display: grid;
@@ -906,24 +926,7 @@ body main#bM section.article-content .recommendation .container-cards .insurance
 body main#bM section.article-content .recommendation .container-cards .insurance-card .card-top-border {
   grid-area: card_border;
   padding: 0 4px;
-}
-body main#bM section.article-content .recommendation .container-cards .insurance-card .border-blue {
-  background: #4285f4;
-}
-body main#bM section.article-content .recommendation .container-cards .insurance-card .border-red {
-  background: #db4437;
-}
-body main#bM section.article-content .recommendation .container-cards .insurance-card .border-green {
-  background: #0f9d58;
-}
-body main#bM section.article-content .recommendation .container-cards .insurance-card .border-yellow {
-  background: #f4b400;
-}
-body main#bM section.article-content .recommendation .container-cards .insurance-card .border-orange {
-  background: #808080;
-}
-body main#bM section.article-content .recommendation .container-cards .insurance-card .border-purple {
-  background: #a1c2fa;
+  background-color: #db4437;
 }
 body main#bM section.article-content .recommendation .container-cards .insurance-card .content {
   grid-area: content;
@@ -1060,6 +1063,7 @@ body main#bM article#bAr .a-thumbnail {
 }
 body main#bM article#bAr .a-thumbnail img {
   width: 100%;
+  mix-blend-mode: multiply;
 }
 body main#bM article#bAr .a-tags p {
   font-size: 12px;

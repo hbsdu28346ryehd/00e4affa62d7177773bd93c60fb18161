@@ -433,11 +433,11 @@ body article#bAl {
   height: 100%;
   padding: 0 20px 20px 20px;
 }
-body article#bAl .sticky-top {
+body article#bAl .sidebar-page-nav {
   position: sticky;
   top: 20px;
 }
-body article#bAl .sidebar-box .label {
+body article#bAl .sidebar-page-nav .label {
   font-size: 14px;
   margin-bottom: 24px;
   letter-spacing: 2px;
@@ -446,21 +446,21 @@ body article#bAl .sidebar-box .label {
   font-weight: bold;
   text-transform: uppercase;
 }
-body article#bAl .sidebar-box .navigation {
+body article#bAl .sidebar-page-nav .navigation {
   list-style: none;
   letter-spacing: 0.5px;
   padding-left: 20px;
 }
-body article#bAl .sidebar-box .navigation li:before {
+body article#bAl .sidebar-page-nav .navigation li:before {
   content: "☯";
   margin-left: -20px;
   margin-right: 6px;
   color: #c0c0c0;
 }
-body article#bAl .sidebar-box .navigation li {
+body article#bAl .sidebar-page-nav .navigation li {
   padding: 4px 0;
 }
-body article#bAl .sidebar-box .navigation li a {
+body article#bAl .sidebar-page-nav .navigation li a {
   text-decoration: none;
   font-size: 14px;
   padding: 4px 0;
@@ -469,27 +469,27 @@ body article#bAl .sidebar-box .navigation li a {
   border-radius: 3px;
   color: #000;
 }
-body article#bAl .sidebar-box .navigation li a span {
+body article#bAl .sidebar-page-nav .navigation li a span {
   font-weight: 300;
 }
-body article#bAl .sidebar-box .navigation li a:hover {
+body article#bAl .sidebar-page-nav .navigation li a:hover {
   background-color: #e2ecfc;
 }
-body article#bAl .sidebar-box .navigation li ul, body article#bAl .sidebar-box .navigation li ol {
+body article#bAl .sidebar-page-nav .navigation li ul, body article#bAl .sidebar-page-nav .navigation li ol {
   list-style: none;
   padding-left: 10px;
   margin: 8px 0;
 }
-body article#bAl .sidebar-box .navigation li ul li:before, body article#bAl .sidebar-box .navigation li ol li:before {
+body article#bAl .sidebar-page-nav .navigation li ul li:before, body article#bAl .sidebar-page-nav .navigation li ol li:before {
   content: "⚊";
   margin-left: -20px;
   margin-right: 6px;
   color: #8d8d8d;
 }
-body article#bAl .sidebar-box .navigation li ul li, body article#bAl .sidebar-box .navigation li ol li {
+body article#bAl .sidebar-page-nav .navigation li ul li, body article#bAl .sidebar-page-nav .navigation li ol li {
   padding: 2px 0;
 }
-body article#bAl .sidebar-box .navigation li ul li a, body article#bAl .sidebar-box .navigation li ol li a {
+body article#bAl .sidebar-page-nav .navigation li ul li a, body article#bAl .sidebar-page-nav .navigation li ol li a {
   color: #000;
   font-weight: 400;
 }

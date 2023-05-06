@@ -577,13 +577,14 @@ body main#bM section.article-hero .article-title {
   line-height: 4rem;
   font-weight: 800;
   color: #142849;
+  opacity: 0.9;
   font-family: poppins, sans-serif;
 }
 body main#bM section.article-content {
   grid-area: article_content;
   padding: 0;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.8;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -592,7 +593,7 @@ body main#bM section.article-content .box {
 }
 body main#bM section.article-content .content {
   position: relative;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgb(0, 0, 0);
   z-index: 10;
 }
 body main#bM section.article-content .content h1, body main#bM section.article-content .content h2, body main#bM section.article-content .content h3, body main#bM section.article-content .content h4, body main#bM section.article-content .content h5, body main#bM section.article-content .content h6 {
@@ -627,6 +628,10 @@ body main#bM section.article-content .content .h6 {
   font-size: 1.25rem;
   line-height: 1.875rem;
   margin-bottom: 1rem;
+}
+body main#bM section.article-content .content h5 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
 }
 body main#bM section.article-content .content .fw-300 {
   font-weight: 300;

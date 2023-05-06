@@ -186,6 +186,7 @@ body {
                 line-height: 4rem;
                 font-weight: 800;
                 color: $blue-dark-70;
+                opacity: 0.9;
                 font-family: poppins, sans-serif;
             }
         }
@@ -193,7 +194,7 @@ body {
             grid-area: article_content;
             padding: 0;
             font-size: 18px;
-            line-height: 30px;
+            line-height: 1.8;
             margin: 0 auto;
             margin-bottom: 50px;
             .box {
@@ -201,7 +202,7 @@ body {
             }
             .content {
                 position: relative;
-                color: rgba(0, 0, 0, 0.87);
+                color: rgb(0, 0, 0);
                 z-index: 10;
                 h1,h2,h3,h4,h5,h6 {
                     font-family: poppins, sans-serif;
@@ -212,6 +213,10 @@ body {
                         line-height: calc($size + $size / 2);
                         margin-bottom: 1rem;
                     }
+                }
+                h5 {
+                    color: rgba(0, 0, 0, 0.8);
+                    font-weight: 600;
                 }
                 @for $i from 3 through 9 {
                     .fw-#{$i}00 {

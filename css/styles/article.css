@@ -936,7 +936,6 @@ body main#bM section.article-content .recommendation .container-cards .insurance
   border-radius: 12px;
   grid-template-columns: 8px 55% auto;
   grid-template-areas: "card_border content thumbnail";
-  padding-right: 20px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   transition: all 0.25s ease-in-out;
@@ -1028,6 +1027,10 @@ body main#bM section.article-content .recommendation .container-cards .insurance
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+body main#bM section.article-content .recommendation .container-cards .insurance-card .thumbnail img {
+  max-width: 200px;
+  height: auto;
 }
 body main#bM section.article-content .recommendation .container-cards .insurance-card:hover {
   transform: translateY(-10px);

@@ -393,7 +393,6 @@ body {
                         border-radius: 12px;
                         grid-template-columns: 8px 55% auto;
                         grid-template-areas: 'card_border content thumbnail';
-                        padding-right: 20px;
                         overflow: hidden;
                         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                         transition: all 0.25s ease-in-out;
@@ -483,6 +482,10 @@ body {
                             place-items: center;
                             height: 100%;
                             object-fit: contain;
+                            img {
+                                max-width: 200px;
+                                height: auto;
+                            }
                         }
                     }
                     .insurance-card:hover {

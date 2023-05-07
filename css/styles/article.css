@@ -591,6 +591,19 @@ body main#bM section.article-content {
 body main#bM section.article-content .box {
   padding: 0 50px 0 50px;
 }
+body main#bM section.article-content .box img {
+  mix-blend-mode: multiply;
+}
+body main#bM section.article-content .box .img-fr {
+  float: right;
+  max-height: 200px;
+  width: auto;
+}
+body main#bM section.article-content .box .img-fl {
+  float: left;
+  max-height: 200px;
+  width: auto;
+}
 body main#bM section.article-content .content {
   position: relative;
   color: rgb(0, 0, 0);
@@ -1336,10 +1349,24 @@ body section#absolute_assets .share-menu .md-d {
   body main#bM section.article-content .box {
     padding: 0 20px 0 20px;
   }
+  body main#bM section.article-content .box img {
+    mix-blend-mode: multiply;
+  }
+  body main#bM section.article-content .box .img-fr {
+    float: right;
+    max-height: 150px;
+    width: auto;
+    max-width: 25vh;
+  }
+  body main#bM section.article-content .box .img-fl {
+    float: left;
+    max-height: 150px;
+    width: auto;
+    max-width: 25vh;
+  }
   body main#bM section.article-content .content p {
-    text-align: justify;
-    font-size: 18px;
-    line-height: 30px;
+    text-align: start;
+    font-size: 16px;
   }
   body main#bM section.article-content .content li {
     font-size: 18px;

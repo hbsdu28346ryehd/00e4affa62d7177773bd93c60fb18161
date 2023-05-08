@@ -993,6 +993,8 @@ body section#absolute_assets .share-menu .md-d {
   }
   body main#bM section.article-content .search-container {
     padding: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   body main#bM section.article-content .box {
     padding: 0 20px;

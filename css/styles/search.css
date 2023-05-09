@@ -540,7 +540,7 @@ body main#bM section.article-content .search-container .search-box input:hover, 
   background-color: #e2ecfc;
 }
 body main#bM section.article-content .search-container .search-results-box {
-  padding: 0 12px;
+  padding: 0 8px;
   position: absolute;
   transform: translateY(50px);
   z-index: 1000;
@@ -571,16 +571,16 @@ body main#bM section.article-content .search-container .search-results-box .resu
   width: 100%;
   border-radius: 4px;
   display: block;
-  font-family: poppins, sans-serif;
+  font-family: roboto, sans-serif;
 }
 body main#bM section.article-content .search-container .search-results-box .results-box li a:hover {
   background: #e2ecfc;
 }
 body main#bM section.article-content .search-container .search-results-box .results-box li:first-child {
-  margin-top: 14px;
+  margin-top: 8px;
 }
 body main#bM section.article-content .search-container .search-results-box .results-box li:last-child {
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 body main#bM section.article-content .results-count {
   margin-bottom: 16px;
@@ -1008,6 +1008,9 @@ body section#absolute_assets .share-menu .md-d {
   }
   body main#bM section.article-content .results-container .box .result-card .card-text h2 {
     font-size: 24px;
+  }
+  body main#bM section.article-content .results-container .box .result-card-opposite {
+    flex-direction: column-reverse;
   }
   body main#bM section.article-content .recommendation {
     margin-bottom: 0;

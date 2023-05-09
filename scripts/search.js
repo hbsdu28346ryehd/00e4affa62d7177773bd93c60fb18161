@@ -108,15 +108,9 @@ function debounce(func, timeout = 500) {
 }
 
 function searchList(query, list) {
-    let matches = [];
-    for (let i = 0; i < list.length; i++) {
-        const item = list[i];
-        if (item.toLowerCase().includes(query.toLowerCase())) {
-            matches.push(item);
-        }
-    }
-    matches = matches.length < 10 ? matches : matches.slice(0, 10)
-    return matches;
+    const regex = new RegExp(query, 'i');
+    const matches = new Set(list.filter(item => regex.test(item)).slice(0, 10));
+    return Array.from(matches);
 }
 
 function searchByQuery() {
@@ -135,8 +129,8 @@ function searchByQuery() {
             for (var i = 0; i < matches.length; i++) {
                 const listItem = document.createElement("li");
                 const link = document.createElement("a");
-                link.href = "/search?q=" + matches[i];
-                link.textContent = matches[i];
+                link.href = "/search.html?q=" + matches[i];
+                link.innerHTML = `<span>&#10138;</span>&ensp;${matches[i]}`;
                 listItem.appendChild(link);
                 list.appendChild(listItem);
             }
@@ -166,7 +160,11 @@ fetch('/databases/insuranceData.json')
                 const name = item.name.toLowerCase();
                 const description = item.description.toLowerCase();
                 const keywords = item.keywords;
-                return name.includes(query.toLowerCase()) || keywords.includes(query.toLowerCase() || description.includes(query.toLocaleLowerCase()));
+                // Search keyword through array
+                const searchSet = new Set(keywords.map(item => item.toLowerCase()));
+                const isQueryMatched = searchSet.has(query.toLowerCase());
+
+                return name.includes(query.toLowerCase()) || ((isQueryMatched) || description.includes(query.toLocaleLowerCase()));
             });
     
             document.querySelector("#results_count").innerHTML = `About <span>${filteredData.length}</span> results`;
@@ -181,7 +179,7 @@ fetch('/databases/insuranceData.json')
                     if (index % 2 == 0) {
                         card = `
                         <div class="box">
-                            <a href="${item.url}" class="result-card" role="button" target="_blank">
+                            <a href="${item.url}" class="result-card result-card-opposite" role="button" target="_blank">
                                 <div class="card-text">
                                     <h2>${item.name}</h2>
                                     <p>${item.description}</p>

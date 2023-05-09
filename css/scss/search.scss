@@ -159,7 +159,7 @@ body {
                     }
                 }
                 .search-results-box {
-                    padding: 0 12px;
+                    padding: 0 8px;
                     position: absolute;
                     transform: translateY(50px);
                     z-index: 1000;
@@ -186,17 +186,17 @@ body {
                                 width: 100%;
                                 border-radius: 4px;
                                 display:block;
-                                font-family: poppins, sans-serif;
+                                font-family: roboto, sans-serif;
                             }
                             a:hover {
                                 background: $theme-bg-dark;
                             }
                         }
                         li:first-child {
-                            margin-top: 14px;
+                            margin-top: 8px;
                         }
                         li:last-child {
-                            margin-bottom: 14px;
+                            margin-bottom: 8px;
                         }
                     }
                 }
@@ -603,6 +603,9 @@ body {
                                     font-size: 24px;
                                 }
                             }
+                        }
+                        .result-card-opposite {
+                            flex-direction: column-reverse;
                         }
                     }
                 }

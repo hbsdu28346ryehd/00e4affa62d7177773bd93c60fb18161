@@ -129,7 +129,7 @@ function searchByQuery() {
             for (var i = 0; i < matches.length; i++) {
                 const listItem = document.createElement("li");
                 const link = document.createElement("a");
-                link.href = "/search.html?q=" + matches[i];
+                link.href = "/search?q=" + matches[i];
                 link.innerHTML = `<span>&#10138;</span>&ensp;${matches[i]}`;
                 listItem.appendChild(link);
                 list.appendChild(listItem);

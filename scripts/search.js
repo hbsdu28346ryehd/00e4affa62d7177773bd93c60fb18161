@@ -124,14 +124,14 @@ function searchByQuery() {
     fetch('/databases/insuranceKeywordsDB.json')
         .then(response => response.json())
         .then(data => {
-            const vehicles = data[0]['vehicles'];
+            const searchKeys = data[0]['searchKeys'];
 
             // Get the input field and create the autocomplete instance
             const input = document.getElementById("search_query_input");
             const list = document.getElementById('search_recommadation');
             list.innerHTML = '';
             const searchQuery = input.value.toLowerCase();
-            const matches = searchList(searchQuery.trim(), vehicles)
+            const matches = searchList(searchQuery.trim(), searchKeys)
             for (var i = 0; i < matches.length; i++) {
                 const listItem = document.createElement("li");
                 const link = document.createElement("a");

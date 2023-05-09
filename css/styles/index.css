@@ -379,7 +379,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 25%;
   grid-template-areas: "header header" "main article" "footer footer";
-  background-color: #1a1a1a;
+  background: linear-gradient(to bottom, #f2f6fc, #cce0ff);
 }
 body .ad-container {
   position: relative;
@@ -413,7 +413,7 @@ body header .hero {
   max-height: 75vh;
 }
 body header .hero .hero-content {
-  color: #fff;
+  color: #0d1b31;
   height: 100%;
   max-width: 700px;
 }
@@ -431,15 +431,15 @@ body header .hero .hero-content .content-box {
 }
 body header .hero .hero-content .content-box .title-text {
   width: 100%;
-  font-size: 150px;
+  font-size: 9rem;
   font-family: poppins, sans-serif;
   font-weight: 800;
 }
 body header .hero .hero-content .content-box .subtext {
   font-size: 24px;
-  color: #fada80;
+  color: rgba(0, 0, 0, 0.85);
   line-height: 34px;
-  font-family: poppins, sans-serif;
+  font-family: roboto, sans-serif;
 }
 body header .hero .hero-content .content-box .hero-footer-btn {
   display: flex;
@@ -455,13 +455,14 @@ body header .hero .hero-content .content-box .hero-footer-btn a, body header .he
 }
 body header .hero .hero-content .content-box .hero-footer-btn .hero-btn {
   padding: 12px 24px;
-  background-color: #fff;
+  background-color: #4285f4;
   margin-right: auto;
   border-radius: 30px;
-  color: #1a1a1a;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-family: inter, sans-serif;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: poppins, sans-serif;
   transition: all 0.15s ease-in-out;
 }
 body header .hero .hero-content .content-box .hero-footer-btn .hero-btn:hover {
@@ -479,14 +480,15 @@ body header .hero .hero-image {
   overflow: hidden;
 }
 body header .hero .hero-image img {
+  mix-blend-mode: multiply;
   aspect-ratio: attr(width)/attr(height);
 }
 body main {
   grid-area: main;
   padding: 100px 0;
   background-color: white;
-  border-radius: 0 50px 50px 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 3px inset;
+  border-radius: 0 50px 0 0;
+  box-shadow: rgba(69, 94, 122, 0.1) 0px 10px 15px 3px inset;
 }
 body main .container {
   display: flex;
@@ -504,7 +506,7 @@ body main .container .ad-container-top .google-ad {
 }
 body main .container .c-header {
   grid-area: cheader;
-  color: #404040;
+  color: rgba(0, 0, 0, 0.85);
 }
 body main .container .c-header h3 {
   font-size: 24px;
@@ -664,11 +666,11 @@ body article {
   grid-area: article;
   height: 100%;
   padding: 50px 25px 100px 25px;
-  color: white;
+  color: rgba(0, 0, 0, 0.85);
 }
 body article .a-header p {
   font-size: 1rem;
-  color: #f7cb4d;
+  color: #1a73e8;
   margin-bottom: 25px;
 }
 body article .a-header ul {
@@ -677,16 +679,16 @@ body article .a-header ul {
 }
 body article .a-header ul li {
   margin-bottom: 24px;
-  color: #f6c333;
+  color: #1a73e8;
 }
 body article .a-header ul li a {
   text-decoration: none;
-  color: #fff;
+  color: rgba(0, 0, 0, 0.85);
   font-size: 1rem;
   transition: all 0.25s ease-out;
 }
 body article .a-header ul li a:hover {
-  color: #f6c333;
+  color: #1a73e8;
 }
 body article .ad-container {
   margin-top: 50px;

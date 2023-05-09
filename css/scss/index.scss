@@ -5,7 +5,7 @@ body {
     grid-template-areas: 'header header'
                                         'main article'
                                         'footer footer';
-    background-color: $gray-dark-80;
+    background: linear-gradient(to bottom, $theme-bg, $theme-bg-darker);
     .ad-container {
         position: relative;
         .ad-label {
@@ -36,7 +36,7 @@ body {
             justify-content: space-between;
             max-height: 75vh;
             .hero-content {
-                color: $white;
+                color: $blue-dark-80;
                 height: 100%;
                 max-width: 700px;
                 .logo {
@@ -52,15 +52,15 @@ body {
                     flex-direction: column;
                     .title-text {
                         width: 100%;
-                        font-size: 150px;
+                        font-size: 9rem;
                         font-family: poppins, sans-serif;
                         font-weight: 800;
                     }
                     .subtext {
                         font-size: 24px;
-                        color: $yellow-light-50;
+                        color: rgba(0, 0, 0, 0.85);
                         line-height: 34px;
-                        font-family: poppins, sans-serif;
+                        font-family: roboto, sans-serif;
                     }
                     .hero-footer-btn {
                         display: flex;
@@ -74,13 +74,14 @@ body {
                         }
                         .hero-btn {
                             padding: 12px 24px;
-                            background-color: $white;
+                            background-color: $blue;
                             margin-right: auto;
                             border-radius: 30px;
-                            color: $gray-dark-80;
-                            font-weight: 600;
-                            letter-spacing: 1px;
-                            font-family: inter, sans-serif;
+                            color: $white;
+                            font-weight: 500;
+                            letter-spacing: 2px;
+                            font-size: 14px;
+                            font-family: poppins, sans-serif;
                             transition: all 0.15s ease-in-out;
                         }
                         .hero-btn:hover {
@@ -100,6 +101,7 @@ body {
             .hero-image {
                 overflow: hidden;
                 img {
+                    mix-blend-mode: multiply;
                     aspect-ratio: attr(width) / attr(height);
                 }
             }
@@ -110,8 +112,8 @@ body {
         grid-area: main;
         padding: 100px 0;
         background-color: white;
-        border-radius: 0 50px 50px 0;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 3px inset;
+        border-radius: 0 50px 0 0;
+        box-shadow: rgba(69, 94, 122, 0.1) 0px 10px 15px 3px inset;
         .container {
             display: flex;
             flex-direction: column;
@@ -127,7 +129,7 @@ body {
             }
             .c-header {
                 grid-area: cheader;
-                color: $gray-dark-50;
+                color: rgba(0, 0, 0, 0.85);
                 h3 {
                     font-size: 24px;
                     font-weight: 700;
@@ -278,11 +280,11 @@ body {
         grid-area: article;
         height: 100%;
         padding: 50px 25px 100px 25px;
-        color: white;
+        color: rgba(0, 0, 0, 0.85);
         .a-header {
             p {
                 font-size: 1rem;
-                color: $yellow-light-30;
+                color: $text-blue;
                 margin-bottom: 25px;
             }
             ul {
@@ -290,15 +292,15 @@ body {
                 padding-left: 20px;
                 li {
                     margin-bottom: 24px;
-                    color: $yellow-light-20;
+                    color: $text-blue;
                     a {
                         text-decoration: none;
-                        color: $white;
+                        color: rgba(0, 0, 0, 0.85);
                         font-size: 1rem;
                         transition: all 0.25s ease-out;
                     }
                     a:hover {
-                        color: $yellow-light-20;
+                        color: $text-blue;
                     }
                 }
             }

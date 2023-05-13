@@ -604,6 +604,10 @@ body main#bM section.article-content .box .img-fl {
   max-height: 200px;
   width: auto;
 }
+body main#bM section.article-content .banner-ad-box {
+  display: flex;
+  justify-content: center;
+}
 body main#bM section.article-content .content {
   position: relative;
   color: rgb(0, 0, 0);
@@ -1070,7 +1074,7 @@ body main#bM section.article-content .tags ul li a:hover {
 body main#bM article#bAr {
   grid-area: article_right;
   height: 100%;
-  padding: 20px 10px 50px 20px;
+  padding: 20px 10px 50px 15px;
   border-radius: 20px 0 0 0;
   background-color: #f2f6fc;
 }
@@ -1091,39 +1095,7 @@ body main#bM article#bAr .sticky-box {
   top: 20px;
 }
 body main#bM article#bAr .sticky-box .amazon-ad {
-  background: white;
-  border-radius: 8px;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 24px;
-  transition: all 0.25s ease-in-out;
-}
-body main#bM article#bAr .sticky-box .amazon-ad img {
-  width: 100%;
-  height: auto;
-  transition: all 0.25s ease-in-out;
-  margin: 12px 0;
-}
-body main#bM article#bAr .sticky-box .amazon-ad .best-seller-tag {
-  background: #db4437;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-}
-body main#bM article#bAr .sticky-box .amazon-ad p {
-  color: rgba(0, 0, 0, 0.85);
-  font-size: 14px;
-  margin-top: 12px;
-  line-height: 1.4;
-  transition: all 0.25s ease-in-out;
-}
-body main#bM article#bAr .sticky-box .amazon-ad:hover img {
-  scale: 1.05;
-}
-body main#bM article#bAr .sticky-box .amazon-ad:hover p {
-  color: #1a73e8;
 }
 body main#bM article#bAr .sticky-box .a-tags p {
   font-size: 12px;

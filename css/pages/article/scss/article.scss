@@ -513,40 +513,9 @@ body {
                 position: sticky;
                 top: 20px;
                 .amazon-ad {
-                    background: white;
-                    border-radius: 8px;
                     overflow: hidden;
-                    object-fit: cover;
-                    padding: 24px;
-                    transition: all 0.25s ease-in-out;
-                    img {
-                        width: 100%;
-                        height: auto;
-                        transition: all 0.25s ease-in-out;
-                        margin: 12px 0;
-                    }
-                    .best-seller-tag {
-                        background: $red;
-                        color: white;
-                        padding: 4px 8px;
-                        border-radius: 4px;
-                        font-size: 12px;
-                    }
-                    p {
-                        color: rgba(0, 0, 0, 0.85);
-                        font-size: 14px;
-                        margin-top: 12px;
-                        line-height: 1.4;
-                        transition: all 0.25s ease-in-out;
-                    }
-                }
-                .amazon-ad:hover {
-                    img {
-                        scale: 1.05;
-                    }
-                    p {
-                        color: $text-blue;
-                    }
+                    display: flex;
+                    justify-content: center;
                 }
                 .a-tags {
                     p {

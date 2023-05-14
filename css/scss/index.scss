@@ -1,11 +1,11 @@
 @import "base";
 body {
     display: grid;
-    grid-template-columns: 1fr 25%;
+    grid-template-columns: 1fr 350px;
     grid-template-areas: 'header header'
                                         'main article'
                                         'footer footer';
-    background: linear-gradient(to bottom, $theme-bg, $theme-bg-darker);
+    background: $theme-bg;
     .ad-container {
         position: relative;
         .ad-label {
@@ -114,6 +114,37 @@ body {
         background-color: white;
         border-radius: 0 50px 0 0;
         box-shadow: rgba(69, 94, 122, 0.1) 0px 10px 15px 3px inset;
+        .box {
+            padding: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+            img {
+                mix-blend-mode: multiply;
+            }
+            .img-fr {
+                float: right;
+                max-height: 200px;
+                width: auto;
+            }
+            .img-fl {
+                float: left;
+                max-height: 200px;
+                width: auto;
+            }
+            h5 {
+                font-size: 1.75rem;
+                line-height: 2.625rem;
+                margin-bottom: 1rem;
+                color: rgba(0, 0, 0, 0.8);
+                font-weight: 600;
+                font-family: poppins, sans-serif;
+            }
+            p {
+                text-align: start;
+                font-size: 18px;
+                line-height: 1.8;
+            }
+        }
         .container {
             display: flex;
             flex-direction: column;
@@ -282,6 +313,8 @@ body {
         padding: 50px 25px 100px 25px;
         color: rgba(0, 0, 0, 0.85);
         .a-header {
+            position: sticky;
+            top: 20px;
             p {
                 font-size: 1rem;
                 color: $text-blue;
@@ -289,7 +322,7 @@ body {
             }
             ul {
                 list-style:circle;
-                padding-left: 20px;
+                padding-left: 0px;
                 li {
                     margin-bottom: 24px;
                     color: $text-blue;

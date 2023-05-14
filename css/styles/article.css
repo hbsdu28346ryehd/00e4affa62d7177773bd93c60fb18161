@@ -589,7 +589,7 @@ body main#bM section.article-content {
   margin-bottom: 50px;
 }
 body main#bM section.article-content .box {
-  padding: 0 50px 0 50px;
+  padding: 0 50px;
 }
 body main#bM section.article-content .box img {
   mix-blend-mode: multiply;
@@ -1074,7 +1074,7 @@ body main#bM section.article-content .tags ul li a:hover {
 body main#bM article#bAr {
   grid-area: article_right;
   height: 100%;
-  padding: 20px 10px 50px 15px;
+  padding: 20px 10px 50px 20px;
   border-radius: 20px 0 0 0;
   background-color: #f2f6fc;
 }
@@ -1082,7 +1082,7 @@ body main#bM article#bAr .a-thumbnail {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -1090,12 +1090,23 @@ body main#bM article#bAr .a-thumbnail img {
   width: 100%;
   mix-blend-mode: multiply;
 }
+body main#bM article#bAr .insurance-type {
+  text-align: center;
+  margin-bottom: 24px;
+}
+body main#bM article#bAr .insurance-type h4 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: poppins, sans-serif;
+}
 body main#bM article#bAr .sticky-box {
   position: sticky;
   top: 20px;
 }
 body main#bM article#bAr .sticky-box .amazon-ad {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 body main#bM article#bAr .sticky-box .a-tags p {
   font-size: 12px;

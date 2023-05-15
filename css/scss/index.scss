@@ -6,21 +6,6 @@ body {
                                         'main article'
                                         'footer footer';
     background: $theme-bg;
-    .ad-container {
-        position: relative;
-        .ad-label {
-            position: absolute;
-            color:$gray; 
-            top: 8px; 
-            left: 10px;
-        }
-        .google-ad {
-            width: 100%;
-            height: auto;
-            background-color: $gray-light-90;
-            border-radius: 8px;
-        }
-    }
     header {
         grid-area: header;
         height: 100vh;
@@ -151,13 +136,6 @@ body {
             row-gap: 50px;
             max-width: 900px;
             margin: 0 auto;
-            .ad-container-top {
-                grid-area: ad_top;
-                .google-ad {
-                    margin: 0 auto;
-                    text-align: center;
-                }
-            }
             .c-header {
                 grid-area: cheader;
                 color: rgba(0, 0, 0, 0.85);
@@ -297,14 +275,6 @@ body {
                     }
                 }
             }
-            .ad-container-bottom {
-                grid-area: ad_bottom;
-                margin-top: 50px;
-                .google-ad {
-                    margin: 0 auto;
-                    text-align: center;
-                }
-            }
         }
     }
     article {
@@ -338,20 +308,6 @@ body {
                 }
             }
         }
-        .ad-container {
-            margin-top: 50px;
-            position: sticky;
-            top: 20px;
-            .ad-label {
-                color: $gray;
-            }
-            .google-ad {
-                width: 100%;
-                text-align: center;
-                margin: 0 auto;
-                background-color: $gray-dark-70;
-            }
-        }
     }
 }
 
@@ -359,9 +315,6 @@ body {
     body {
         grid-template-columns: 1fr;
         grid-template-areas: 'header' 'main' 'article' 'footer';
-        .ad-container {
-            overflow: hidden;
-        }
         header {
             padding: 30px 0;
             height: 100vh;
@@ -470,9 +423,6 @@ body {
             margin-bottom: 50px;
             .a-header {
                 position: static;
-            }
-            .ad-container {
-                display: none;
             }
         }
     }

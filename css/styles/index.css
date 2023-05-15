@@ -381,21 +381,6 @@ body {
   grid-template-areas: "header header" "main article" "footer footer";
   background: #f2f6fc;
 }
-body .ad-container {
-  position: relative;
-}
-body .ad-container .ad-label {
-  position: absolute;
-  color: #808080;
-  top: 8px;
-  left: 10px;
-}
-body .ad-container .google-ad {
-  width: 100%;
-  height: auto;
-  background-color: #f2f2f2;
-  border-radius: 8px;
-}
 body header {
   grid-area: header;
   height: 100vh;
@@ -527,13 +512,6 @@ body main .container {
   row-gap: 50px;
   max-width: 900px;
   margin: 0 auto;
-}
-body main .container .ad-container-top {
-  grid-area: ad_top;
-}
-body main .container .ad-container-top .google-ad {
-  margin: 0 auto;
-  text-align: center;
 }
 body main .container .c-header {
   grid-area: cheader;
@@ -685,14 +663,6 @@ body main .container .insurance-types-container-box .insurance-card:hover a.to-a
   font-size: 1rem;
   margin-left: 10px;
 }
-body main .container .ad-container-bottom {
-  grid-area: ad_bottom;
-  margin-top: 50px;
-}
-body main .container .ad-container-bottom .google-ad {
-  margin: 0 auto;
-  text-align: center;
-}
 body article {
   grid-area: article;
   height: 100%;
@@ -725,28 +695,11 @@ body article .a-header ul li a {
 body article .a-header ul li a:hover {
   color: #1a73e8;
 }
-body article .ad-container {
-  margin-top: 50px;
-  position: sticky;
-  top: 20px;
-}
-body article .ad-container .ad-label {
-  color: #808080;
-}
-body article .ad-container .google-ad {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  background-color: #262626;
-}
 
 @media only screen and (max-width: 768px) {
   body {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "main" "article" "footer";
-  }
-  body .ad-container {
-    overflow: hidden;
   }
   body header {
     padding: 30px 0;
@@ -854,8 +807,5 @@ body article .ad-container .google-ad {
   }
   body article .a-header {
     position: static;
-  }
-  body article .ad-container {
-    display: none;
   }
 }/*# sourceMappingURL=index.css.map */

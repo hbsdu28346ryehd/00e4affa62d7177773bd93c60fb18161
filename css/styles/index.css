@@ -379,7 +379,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 350px;
   grid-template-areas: "header header" "main article" "footer footer";
-  background: #f2f6fc;
+  background: #e2ecfc;
 }
 body header {
   grid-area: header;

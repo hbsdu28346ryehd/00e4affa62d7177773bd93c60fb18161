@@ -132,7 +132,7 @@ body {
     main#bM {
         grid-area: main;
         display: grid;
-        grid-template-columns: 1fr 325px;
+        grid-template-columns: 1fr 330px;
         grid-template-areas: 'article_hero article_hero'
                                             'article_content article_right';
         background-color: $white;
@@ -761,8 +761,17 @@ body {
         grid-template-columns: 1fr;
         grid-template-areas: 'header' 'main' 'footer';
         header#bH {
+            position: sticky;
+            background: $theme-bg;
+            top: 0;
             padding: 16px;
             align-items: center;
+            z-index: 1000;
+            .social-feeds {
+                .fa-instagram, .fa-linkedin {
+                    display: none;
+                }
+            }
         }
         article#bAl {
             display: none;

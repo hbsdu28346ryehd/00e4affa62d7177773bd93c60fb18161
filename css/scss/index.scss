@@ -5,7 +5,7 @@ body {
     grid-template-areas: 'header header'
                                         'main article'
                                         'footer footer';
-    background: $theme-bg;
+    background: $theme-bg-dark;
     header {
         grid-area: header;
         height: 100vh;

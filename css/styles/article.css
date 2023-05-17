@@ -522,7 +522,7 @@ body article#bAl .sidebar-page-nav .navigation::-webkit-scrollbar-thumb:hover {
 body main#bM {
   grid-area: main;
   display: grid;
-  grid-template-columns: 1fr 325px;
+  grid-template-columns: 1fr 330px;
   grid-template-areas: "article_hero article_hero" "article_content article_right";
   background-color: #fff;
   border-radius: 20px 0 0 0;
@@ -1326,8 +1326,15 @@ body section#absolute_assets .share-menu .md-d {
     grid-template-areas: "header" "main" "footer";
   }
   body header#bH {
+    position: sticky;
+    background: #f2f6fc;
+    top: 0;
     padding: 16px;
     align-items: center;
+    z-index: 1000;
+  }
+  body header#bH .social-feeds .fa-instagram, body header#bH .social-feeds .fa-linkedin {
+    display: none;
   }
   body article#bAl {
     display: none;

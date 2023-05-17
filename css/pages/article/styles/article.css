@@ -16,7 +16,7 @@
 }
 
 .poppins {
-  font-family: poppins, sans-serif;
+  font-family: poppins, sans-serif !important;
 }
 
 body::-webkit-scrollbar {

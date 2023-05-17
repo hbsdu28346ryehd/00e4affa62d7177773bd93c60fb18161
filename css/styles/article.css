@@ -16,7 +16,7 @@
 }
 
 .poppins {
-  font-family: poppins, sans-serif;
+  font-family: poppins, sans-serif !important;
 }
 
 body::-webkit-scrollbar {
@@ -646,7 +646,7 @@ body main#bM section.article-content .content .h6 {
   line-height: 1.875rem;
   margin-bottom: 1rem;
 }
-body main#bM section.article-content .content h5 {
+body main#bM section.article-content .content h5, body main#bM section.article-content .content h6 {
   color: rgba(0, 0, 0, 0.8);
   font-weight: 600;
 }
@@ -837,6 +837,19 @@ body main#bM section.article-content .content ul li a, body main#bM section.arti
 body main#bM section.article-content .content ul li a:hover, body main#bM section.article-content .content ol li a:hover {
   color: #1a73e8;
   text-decoration: none;
+}
+body main#bM section.article-content .content ol li {
+  margin-bottom: 18px;
+}
+body main#bM section.article-content .content ol li p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+body main#bM section.article-content .content ol li h6, body main#bM section.article-content .content ol li .h6 {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  font-family: poppins, sans-serif;
 }
 body main#bM section.article-content .content ul {
   list-style: disc;

@@ -375,18 +375,13 @@ body section#absolute_assets .share-menu .md-d {
     display: none;
   }
 }
-body {
-  display: grid;
-  grid-template-columns: 1fr 350px;
-  grid-template-areas: "header header" "main article" "footer footer";
-  background: #e2ecfc;
-}
 body header {
   grid-area: header;
   height: 100vh;
   display: grid;
   place-items: center;
   padding: 0 50px;
+  background: #f2f6fc;
 }
 body header .hero {
   padding: 100px 0;
@@ -416,7 +411,7 @@ body header .hero .hero-content .content-box {
 }
 body header .hero .hero-content .content-box .title-text {
   width: 100%;
-  font-size: 9rem;
+  font-size: 6rem;
   font-family: poppins, sans-serif;
   font-weight: 800;
 }
@@ -472,8 +467,6 @@ body main {
   grid-area: main;
   padding: 100px 0;
   background-color: white;
-  border-radius: 0 50px 0 0;
-  box-shadow: rgba(69, 94, 122, 0.1) 0px 10px 15px 3px inset;
 }
 body main .box {
   padding: 25px;
@@ -663,44 +656,8 @@ body main .container .insurance-types-container-box .insurance-card:hover a.to-a
   font-size: 1rem;
   margin-left: 10px;
 }
-body article {
-  grid-area: article;
-  height: 100%;
-  padding: 50px 25px 100px 25px;
-  color: rgba(0, 0, 0, 0.85);
-}
-body article .a-header {
-  position: sticky;
-  top: 20px;
-}
-body article .a-header p {
-  font-size: 1rem;
-  color: #1a73e8;
-  margin-bottom: 25px;
-}
-body article .a-header ul {
-  list-style: circle;
-  padding-left: 0px;
-}
-body article .a-header ul li {
-  margin-bottom: 24px;
-  color: #1a73e8;
-}
-body article .a-header ul li a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.85);
-  font-size: 1rem;
-  transition: all 0.25s ease-out;
-}
-body article .a-header ul li a:hover {
-  color: #1a73e8;
-}
 
 @media only screen and (max-width: 768px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "article" "footer";
-  }
   body header {
     padding: 30px 0;
     height: 100vh;
@@ -800,12 +757,5 @@ body article .a-header ul li a:hover {
   }
   body main .container .insurance-card .content a.to-article-btn {
     font-size: 1rem;
-  }
-  body article {
-    padding: 0 20px;
-    margin-bottom: 50px;
-  }
-  body article .a-header {
-    position: static;
   }
 }/*# sourceMappingURL=index.css.map */

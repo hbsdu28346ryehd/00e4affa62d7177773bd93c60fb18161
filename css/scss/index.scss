@@ -1,17 +1,12 @@
 @import "base";
 body {
-    display: grid;
-    grid-template-columns: 1fr 350px;
-    grid-template-areas: 'header header'
-                                        'main article'
-                                        'footer footer';
-    background: $theme-bg-dark;
     header {
         grid-area: header;
         height: 100vh;
         display: grid;
         place-items: center;
         padding: 0 50px;
+        background: $theme-bg;
         .hero {
             padding: 100px 0;
             max-width: 1250px;
@@ -37,7 +32,7 @@ body {
                     flex-direction: column;
                     .title-text {
                         width: 100%;
-                        font-size: 9rem;
+                        font-size: 6rem;
                         font-family: poppins, sans-serif;
                         font-weight: 800;
                     }
@@ -90,15 +85,12 @@ body {
                     aspect-ratio: attr(width) / attr(height);
                 }
             }
-            
         }
     }
     main {
         grid-area: main;
         padding: 100px 0;
         background-color: white;
-        border-radius: 0 50px 0 0;
-        box-shadow: rgba(69, 94, 122, 0.1) 0px 10px 15px 3px inset;
         .box {
             padding: 25px;
             max-width: 900px;
@@ -277,44 +269,10 @@ body {
             }
         }
     }
-    article {
-        grid-area: article;
-        height: 100%;
-        padding: 50px 25px 100px 25px;
-        color: rgba(0, 0, 0, 0.85);
-        .a-header {
-            position: sticky;
-            top: 20px;
-            p {
-                font-size: 1rem;
-                color: $text-blue;
-                margin-bottom: 25px;
-            }
-            ul {
-                list-style:circle;
-                padding-left: 0px;
-                li {
-                    margin-bottom: 24px;
-                    color: $text-blue;
-                    a {
-                        text-decoration: none;
-                        color: rgba(0, 0, 0, 0.85);
-                        font-size: 1rem;
-                        transition: all 0.25s ease-out;
-                    }
-                    a:hover {
-                        color: $text-blue;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media only screen and (max-width: 768px) {
     body {
-        grid-template-columns: 1fr;
-        grid-template-areas: 'header' 'main' 'article' 'footer';
         header {
             padding: 30px 0;
             height: 100vh;
@@ -416,13 +374,6 @@ body {
                         }
                     }
                 }
-            }
-        }
-        article {
-            padding: 0 20px;
-            margin-bottom: 50px;
-            .a-header {
-                position: static;
             }
         }
     }

@@ -131,10 +131,6 @@ body {
     }
     main#bM {
         grid-area: main;
-        display: grid;
-        grid-template-columns: 1fr 330px;
-        grid-template-areas: 'article_hero article_hero'
-                                            'article_content article_right';
         background-color: $white;
         border-radius: 20px 0 0 0;
         hr {
@@ -145,6 +141,8 @@ body {
         section.article-hero {
             grid-area: article_hero;
             padding: 40px 50px;
+            max-width: 1000px;
+            margin: 0 auto;
             .article-path {
                 display: flex;
                 align-items: center;
@@ -199,6 +197,8 @@ body {
             margin-bottom: 50px;
             .box {
                 padding: 0 50px;
+                max-width: 1000px;
+                margin: 0 auto;
                 img {
                     mix-blend-mode: multiply;
                 }
@@ -551,77 +551,6 @@ body {
                 }
             }
         }
-        article#bAr {
-            grid-area: article_right;
-            height: 100%;
-            padding: 20px 10px 50px 20px;
-            border-radius: 20px 0 0 0;
-            background-color: $theme-bg;
-            .a-thumbnail {
-                width: 100%;
-                object-fit: contain;
-                margin-bottom: 24px;
-                border-radius: 12px;
-                overflow: hidden;
-                img {
-                    width: 100%;
-                    mix-blend-mode: multiply;
-                }
-            }
-            .insurance-type {
-                text-align: center;
-                margin-bottom: 24px;
-                h4 {
-                    font-size: 18px;
-                    font-weight: 400;
-                    font-family: poppins, sans-serif;
-
-                }
-            }
-            .sticky-box {
-                position: sticky;
-                top: 20px;
-                .amazon-ad {
-                    overflow: hidden;
-                    display: flex;
-                    justify-content: center;
-                }
-                .a-tags {
-                    p {
-                        font-size: 12px;
-                        font-weight: bold;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                        letter-spacing: 2px;
-                        color: $text-blue;
-                        margin: 24px 0 12px 0;
-                    }
-                    ul {
-                        list-style: none;
-                        display: flex;
-                        flex-wrap: wrap;
-                        row-gap: 14px;
-                        column-gap: 6px;
-                        padding-left: 0;
-                        li {
-                            a {
-                                padding: 4px 8px;
-                                background-color: $theme-bg-dark;
-                                text-decoration: none;
-                                color: $black;
-                                border-radius: 30px;
-                                font-size: 14px;
-                                transition: all 0.25s ease-out;
-                            }
-                            a:hover {
-                                background-color: $text-blue;
-                                color: $white;
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
     section#absolute_assets {
         .share-menu{
@@ -793,8 +722,6 @@ body {
         }
         main#bM {
             border-radius: 0;
-            grid-template-columns: 1fr;
-            grid-template-areas: 'article_hero' 'article_content' 'article_right';
             section.article-hero {
                 padding: 25px 20px 0 20px;
                 .article-path {
@@ -916,24 +843,6 @@ body {
                 }
                 .tags {
                     display: none;
-                }
-            }
-            article#bAr {
-                padding: 20px 20px 40px 20px;
-                border-radius: 0;
-                .a-thumbnail {
-                    display: none;
-                }
-                .a-tags {
-                    ul {
-                        row-gap: 20px;
-                        column-gap: 12px;
-                        li {
-                            a {
-                                font-size: 16px;
-                            }
-                        }
-                    }
                 }
             }
         }

@@ -282,7 +282,10 @@ fetch("/databases/insuranceData.json")
                 </div>`;
       resultsList.innerHTML += card;
     }
+    // Initialize the ad
+    (adsbygoogle = window.adsbygoogle || []).push({});
   })
+  .then (() => {(adsbygoogle = window.adsbygoogle || []).push({})})
   .catch((error) => console.error(error));
 
 const inputField = document.getElementById("search_query_input");
@@ -295,6 +298,3 @@ inputField.addEventListener("focusout", (event) => {
     document.getElementById("search_recommadation").innerHTML = "";
   }
 });
-
-// Initialize the ad
-(adsbygoogle = window.adsbygoogle || []).push({});

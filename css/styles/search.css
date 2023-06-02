@@ -432,8 +432,6 @@ body article#bAl {
   padding: 0 20px;
 }
 body article#bAl .top-insurance-container {
-  position: sticky;
-  top: 20px;
   padding-bottom: 50px;
 }
 body article#bAl .top-insurance-container h6.label-title {
@@ -472,6 +470,12 @@ body article#bAl .top-insurance-container .top-insurance .card img {
 }
 body article#bAl .top-insurance-container .top-insurance .card:hover {
   background: #f2f6fc;
+}
+body article#bAl .ad-box {
+  position: sticky;
+  top: 0;
+  padding: 24px 0;
+  margin-bottom: 100px;
 }
 body main#bM {
   grid-area: main;

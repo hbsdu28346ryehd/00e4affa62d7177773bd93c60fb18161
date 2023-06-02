@@ -54,8 +54,8 @@ body {
         grid-area: article_left;
         padding: 0 20px;
         .top-insurance-container {
-            position: sticky;
-            top: 20px;
+            // position: sticky;
+            // top: 20px;
             padding-bottom: 50px;
             h6.label-title {
                 font-size: 14px;
@@ -94,6 +94,12 @@ body {
                     background: $theme-bg;
                 }
             }
+        }
+        .ad-box {
+            position: sticky;
+            top: 0;
+            padding: 24px 0;
+            margin-bottom: 100px;
         }
     }
     main#bM {

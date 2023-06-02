@@ -209,6 +209,21 @@ fetch('/databases/insuranceData.json')
                                 </a>
                             </div>`;
                     }
+                    if ((index + 2) % 2 == 0) {
+                        card += `
+                        <div class="box">
+                            <!-- Horizontal ads -->
+                            <ins class="adsbygoogle"
+                            style="display:block"
+                            data-ad-client="ca-pub-5387266499802314"
+                            data-ad-slot="6219538114"
+                            data-ad-format="auto"
+                            data-full-width-responsive="true"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>`;
+                    }
                     resultsList.innerHTML += card;
                 });
             } else {
@@ -220,6 +235,18 @@ fetch('/databases/insuranceData.json')
                                 <p>Try to search something related to insurance.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="box">
+                        <!-- Horizontal ads -->
+                        <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-5387266499802314"
+                        data-ad-slot="6219538114"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
                     </div>`;
                 resultsList.innerHTML += card;
             }

@@ -224,7 +224,7 @@ fetch("/databases/insuranceData.json")
                                 </a>
                             </div>`;
           }
-          if ((index + 2) % 2 == 0) {
+          if ((((index + 2) % 2 == 0) && filteredData.length < 5) || ((index + 3) % 2 == 0) && filteredData.length > 5) {
             card += `<div class="box ad-section"></div>`;
           }
           resultsList.innerHTML += card;

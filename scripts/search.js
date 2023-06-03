@@ -209,8 +209,7 @@ fetch("/databases/insuranceData.json")
                             </a>
                         </div>`;
           } else {
-            card = `
-                            <div class="box">
+            card = `<div class="box">
                                 <a href="${item.url}" class="result-card" role="button" target="_blank">
                                     <div class="thumbnail"><img src="${thumbnail}" alt="${item.name} illustration"></div>
                                     <div class="card-text">
@@ -226,16 +225,7 @@ fetch("/databases/insuranceData.json")
                             </div>`;
           }
           if ((index + 2) % 2 == 0) {
-            card += `
-                        <div class="box">
-                            <!-- Horizontal ads -->
-                            <ins class="adsbygoogle"
-                            style="display:block"
-                            data-ad-client="ca-pub-5387266499802314"
-                            data-ad-slot="6219538114"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true"></ins>
-                        </div>`;
+            card += `<div class="box ad-section"></div>`;
           }
           resultsList.innerHTML += card;
         });
@@ -271,21 +261,17 @@ fetch("/databases/insuranceData.json")
                         </div>
                     </div>
                 </div>
-                <div class="box">
-                    <!-- Horizontal ads -->
-                    <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-5387266499802314"
-                    data-ad-slot="6219538114"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                </div>`;
+                <div class="box ad-section"></div>`;
       resultsList.innerHTML += card;
     }
-    // Initialize the ad
-    (adsbygoogle = window.adsbygoogle || []).push({});
   })
-  .then (() => {(adsbygoogle = window.adsbygoogle || []).push({})})
+  .then(() => {
+    // Call the function to push Google Ads initially
+    var adSections = document.getElementsByClassName("ad-section");
+    for (var i = 0; i < adSections.length; i++) {
+      pushGoogleAds("ca-pub-5387266499802314", "6219538114", adSections[i]);
+    }
+  })
   .catch((error) => console.error(error));
 
 const inputField = document.getElementById("search_query_input");
@@ -298,3 +284,36 @@ inputField.addEventListener("focusout", (event) => {
     document.getElementById("search_recommadation").innerHTML = "";
   }
 });
+
+function pushGoogleAds(adClientId, adSlotId, adContainer) {
+  // Create the ad container
+  var ad = document.createElement("ins");
+  ad.className = "adsbygoogle";
+  ad.style.display = "block";
+  ad.setAttribute("data-ad-client", adClientId);
+  ad.setAttribute("data-ad-slot", adSlotId);
+  ad.setAttribute("data-ad-format", "auto");
+
+  // Append the ad container to the specified section
+  adContainer.appendChild(ad);
+
+  // Initialize the ad
+  (adsbygoogle = window.adsbygoogle || []).push({});
+}
+
+function refreshGoogleAds() {
+  // Get all ad sections
+  var adSections = document.getElementsByClassName("ad-section");
+
+  // Refresh ads in each section
+  for (var i = 0; i < adSections.length; i++) {
+    var adSection = adSections[i];
+    adSection.innerHTML = ""; // Clear the section
+
+    // Push the Google Ad to the section again
+    pushGoogleAds("ca-pub-5387266499802314", "6219538114", adSection);
+  }
+}
+
+// Refresh ads every minute (60000 milliseconds)
+setInterval(refreshGoogleAds, 30000);

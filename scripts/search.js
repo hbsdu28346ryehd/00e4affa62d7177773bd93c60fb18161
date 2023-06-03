@@ -152,6 +152,8 @@ function searchByQuery() {
 }
 var search_by_query = debounce(() => searchByQuery());
 
+
+let itemCount = 0;
 // Load the JSON data from the file
 fetch("/databases/insuranceData.json")
   .then((response) => response.json())
@@ -224,8 +226,13 @@ fetch("/databases/insuranceData.json")
                                 </a>
                             </div>`;
           }
-          if ((((index + 2) % 2 == 0) && filteredData.length < 5) || ((index + 3) % 2 == 0) && filteredData.length > 5) {
+          if (itemCount == index) {
             card += `<div class="box ad-section"></div>`;
+            if (filteredData.length > 5) {
+              itemCount += 3;
+            } else {
+              itemCount += 2;
+            }
           }
           resultsList.innerHTML += card;
         });

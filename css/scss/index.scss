@@ -122,6 +122,11 @@ body {
                 line-height: 1.8;
             }
         }
+        .ad-box {
+            padding: 25px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
         .container {
             display: flex;
             flex-direction: column;
@@ -156,113 +161,115 @@ body {
                     flex-direction: column;
                     row-gap: 50px;
                     max-width: 400px;
-                    .google-ad {
-                        text-align: center;
-                        margin: 0 auto;
-                    }
                 }
-                .insurance-card {
-                    border-radius: 12px;
-                    overflow: hidden;
-                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-                    transition: all 0.25s ease-in-out;
-                    .card-top-border {
-                        padding: 4px 0;
-                    }
-                    .border-blue {background: $blue;}
-                    .border-red {background: $red;}
-                    .border-green {background: $green;}
-                    .border-yellow {background: $yellow;}
-                    .border-orange {background: $gray;}
-                    .border-purple {background: $blue-light-50;}
-                    .content {
-                        padding: 20px 20px 25px 25px;
+                .ad-card {
+                    width: 100%;
+                }
+                .iCard {
+                    padding: 0;
+                    .insurance-card {
+                        border-radius: 12px;
+                        overflow: hidden;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                         transition: all 0.25s ease-in-out;
-                        .thumbnail {
-                            display: flex;
-                            justify-content: flex-end;
-                            height: 120px;
-                            width: 100%;
-                            img {
-                                height: 100%;
-                                width: auto;
-                            }
+                        .card-top-border {
+                            padding: 4px 0;
                         }
-                        h2 {
-                            font-size: 32px;
-                            font-weight: 400;
-                            color: #111;
-                            margin-bottom: 16px;
-                            font-family: poppins, sans-serif;
-                        }
-                        p {
-                            font-size: 16px;
-                            line-height: 24px;
-                            text-align: start;
-                            color: #222;
-                            margin-bottom: 25px;
-                        }
-                        .sub-insurance {
-                            display: grid;
-                            grid-template-columns: 1fr 1fr 1fr;
-                            gap: 10px;
-                            margin-bottom: 25px;
-                            .si-box {
-                                border: 1px solid $blue-light-80;
-                                cursor: pointer;
-                                aspect-ratio: 1/1;
-                                border-radius: 8px;
-                                display: grid;
-                                padding: 6px;
-                                place-items: center;
-                                background-color: $blue-light-90;
-                                transition: all 0.25s ease-in-out;
-                                span {
-                                    text-align: center;
-                                    color: $gray-dark-70;
-                                    font-size: 14px;
-                                    line-height: 18px;
-                                    transition: all 0.25s ease-in-out;
-                                }
-                            }
-                            .si-box:hover {
-                                background-color: $text-blue;
-                                transform: translateY(-5px);
-                                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-                                span {
-                                    color: white;
-                                }
-                            }
-                        }
-                        a.to-article-btn {
-                            display: inline-flex;
-                            align-items: center;
-                            padding: 8px 16px;
-                            font-size:14px;
-                            letter-spacing: 1px;
-                            line-height: 18px;
-                            font-weight: 400;
-                            background-color: $text-blue;
-                            text-decoration: none;
-                            color: $white;
-                            border-radius: 100px;
+                        .border-blue {background: $blue;}
+                        .border-red {background: $red;}
+                        .border-green {background: $green;}
+                        .border-yellow {background: $yellow;}
+                        .border-orange {background: $gray;}
+                        .border-purple {background: $blue-light-50;}
+                        .content {
+                            padding: 20px 20px 25px 25px;
                             transition: all 0.25s ease-in-out;
-                            span.icon {
-                                font-size: 0;
-                                transition: all 0.2s ease-in-out;
+                            .thumbnail {
+                                display: flex;
+                                justify-content: flex-end;
+                                height: 120px;
+                                width: 100%;
+                                img {
+                                    height: 100%;
+                                    width: auto;
+                                }
                             }
-                        }
-                        a.to-article-btn:hover {
-                            background-color: $blue-dark-20;
+                            h2 {
+                                font-size: 32px;
+                                font-weight: 400;
+                                color: #111;
+                                margin-bottom: 16px;
+                                font-family: poppins, sans-serif;
+                            }
+                            p {
+                                font-size: 16px;
+                                line-height: 24px;
+                                text-align: start;
+                                color: #222;
+                                margin-bottom: 25px;
+                            }
+                            .sub-insurance {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                gap: 10px;
+                                margin-bottom: 25px;
+                                .si-box {
+                                    border: 1px solid $blue-light-80;
+                                    cursor: pointer;
+                                    aspect-ratio: 1/1;
+                                    border-radius: 8px;
+                                    display: grid;
+                                    padding: 6px;
+                                    place-items: center;
+                                    background-color: $blue-light-90;
+                                    transition: all 0.25s ease-in-out;
+                                    span {
+                                        text-align: center;
+                                        color: $gray-dark-70;
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        transition: all 0.25s ease-in-out;
+                                    }
+                                }
+                                .si-box:hover {
+                                    background-color: $text-blue;
+                                    transform: translateY(-5px);
+                                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                                    span {
+                                        color: white;
+                                    }
+                                }
+                            }
+                            a.to-article-btn {
+                                display: inline-flex;
+                                align-items: center;
+                                padding: 8px 16px;
+                                font-size:14px;
+                                letter-spacing: 1px;
+                                line-height: 18px;
+                                font-weight: 400;
+                                background-color: $text-blue;
+                                text-decoration: none;
+                                color: $white;
+                                border-radius: 100px;
+                                transition: all 0.25s ease-in-out;
+                                span.icon {
+                                    font-size: 0;
+                                    transition: all 0.2s ease-in-out;
+                                }
+                            }
+                            a.to-article-btn:hover {
+                                background-color: $blue-dark-20;
+                            }
                         }
                     }
-                }
-                .insurance-card:hover {
-                    transform: translateY(-10px);
-                    a.to-article-btn {
-                        span.icon {
-                            font-size: 1rem;
-                            margin-left: 10px;
+                    .insurance-card:hover {
+                        transform: translateY(-10px);
+                        a.to-article-btn {
+                            span.icon {
+                                font-size: 1rem;
+                                margin-left: 10px;
+                            }
                         }
                     }
                 }
@@ -319,6 +326,10 @@ body {
             margin-bottom: 50px;
             padding: 50px 0;
             border-radius: 0;
+            .ad-box {
+                max-width: 100%;
+                padding: 25px 0;
+            }
             .container {
                 grid-template-columns: 1fr;
                 grid-template-areas: 'ad_top' 'cheader' 'leftbox' 'ad_bottom' 'rightbox';
@@ -337,40 +348,48 @@ body {
                     flex-direction: column;
                     align-items: center;
                     margin-bottom: 0;
-                    padding: 0 20px;
+                    padding: 0;
+                    width: 100%;
+                    column-gap: 0;
                     .right-box {
                         padding-top: 50px;
                     }
-                }
-                .right-box {
-                    padding-top: 0;
-                }
-                .right-box, .left-box {
-                    row-gap: 75px;
-                }
-                .insurance-card {
-                    .content {
-                        padding: 20px 20px 30px 25px;
-                        h2 {
-                            font-size: 2.4rem;
-                            margin-bottom: 20px;
-                        }
-                        p {
-                            font-size: 1.1rem;
-                            line-height: 1.8rem;
-                            margin-bottom: 25px;
-                        }
-                        .sub-insurance {
-                            gap: 10px;
-                            margin-bottom: 25px;
-                            .si-box {
-                                span {
-                                    font-size: 0.75rem;
+                    .right-box, .left-box {
+                        row-gap: 75px;
+                        max-width: 100%;
+                    }
+                    .ad-card {
+                        width: 100%;
+                        padding: 0;
+                    }
+                    .iCard {
+                        padding: 0 20px;
+                        .insurance-card {
+                            width: 100%;
+                            .content {
+                                padding: 20px 20px 30px 25px;
+                                h2 {
+                                    font-size: 2.4rem;
+                                    margin-bottom: 20px;
+                                }
+                                p {
+                                    font-size: 1.1rem;
+                                    line-height: 1.8rem;
+                                    margin-bottom: 25px;
+                                }
+                                .sub-insurance {
+                                    gap: 10px;
+                                    margin-bottom: 25px;
+                                    .si-box {
+                                        span {
+                                            font-size: 0.75rem;
+                                        }
+                                    }
+                                }
+                                a.to-article-btn {
+                                    font-size: 1rem;
                                 }
                             }
-                        }
-                        a.to-article-btn {
-                            font-size: 1rem;
                         }
                     }
                 }

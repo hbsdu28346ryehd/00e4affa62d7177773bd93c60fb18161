@@ -499,6 +499,11 @@ body main .box p {
   font-size: 18px;
   line-height: 1.8;
 }
+body main .ad-box {
+  padding: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
 body main .container {
   display: flex;
   flex-direction: column;
@@ -537,72 +542,74 @@ body main .container .insurance-types-container-box .right-box, body main .conta
   row-gap: 50px;
   max-width: 400px;
 }
-body main .container .insurance-types-container-box .right-box .google-ad, body main .container .insurance-types-container-box .left-box .google-ad {
-  text-align: center;
-  margin: 0 auto;
+body main .container .insurance-types-container-box .ad-card {
+  width: 100%;
 }
-body main .container .insurance-types-container-box .insurance-card {
+body main .container .insurance-types-container-box .iCard {
+  padding: 0;
+}
+body main .container .insurance-types-container-box .iCard .insurance-card {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-types-container-box .insurance-card .card-top-border {
+body main .container .insurance-types-container-box .iCard .insurance-card .card-top-border {
   padding: 4px 0;
 }
-body main .container .insurance-types-container-box .insurance-card .border-blue {
+body main .container .insurance-types-container-box .iCard .insurance-card .border-blue {
   background: #4285f4;
 }
-body main .container .insurance-types-container-box .insurance-card .border-red {
+body main .container .insurance-types-container-box .iCard .insurance-card .border-red {
   background: #db4437;
 }
-body main .container .insurance-types-container-box .insurance-card .border-green {
+body main .container .insurance-types-container-box .iCard .insurance-card .border-green {
   background: #0f9d58;
 }
-body main .container .insurance-types-container-box .insurance-card .border-yellow {
+body main .container .insurance-types-container-box .iCard .insurance-card .border-yellow {
   background: #f4b400;
 }
-body main .container .insurance-types-container-box .insurance-card .border-orange {
+body main .container .insurance-types-container-box .iCard .insurance-card .border-orange {
   background: #808080;
 }
-body main .container .insurance-types-container-box .insurance-card .border-purple {
+body main .container .insurance-types-container-box .iCard .insurance-card .border-purple {
   background: #a1c2fa;
 }
-body main .container .insurance-types-container-box .insurance-card .content {
+body main .container .insurance-types-container-box .iCard .insurance-card .content {
   padding: 20px 20px 25px 25px;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-types-container-box .insurance-card .content .thumbnail {
+body main .container .insurance-types-container-box .iCard .insurance-card .content .thumbnail {
   display: flex;
   justify-content: flex-end;
   height: 120px;
   width: 100%;
 }
-body main .container .insurance-types-container-box .insurance-card .content .thumbnail img {
+body main .container .insurance-types-container-box .iCard .insurance-card .content .thumbnail img {
   height: 100%;
   width: auto;
 }
-body main .container .insurance-types-container-box .insurance-card .content h2 {
+body main .container .insurance-types-container-box .iCard .insurance-card .content h2 {
   font-size: 32px;
   font-weight: 400;
   color: #111;
   margin-bottom: 16px;
   font-family: poppins, sans-serif;
 }
-body main .container .insurance-types-container-box .insurance-card .content p {
+body main .container .insurance-types-container-box .iCard .insurance-card .content p {
   font-size: 16px;
   line-height: 24px;
   text-align: start;
   color: #222;
   margin-bottom: 25px;
 }
-body main .container .insurance-types-container-box .insurance-card .content .sub-insurance {
+body main .container .insurance-types-container-box .iCard .insurance-card .content .sub-insurance {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   margin-bottom: 25px;
 }
-body main .container .insurance-types-container-box .insurance-card .content .sub-insurance .si-box {
+body main .container .insurance-types-container-box .iCard .insurance-card .content .sub-insurance .si-box {
   border: 1px solid #d9e7fd;
   cursor: pointer;
   aspect-ratio: 1/1;
@@ -613,22 +620,22 @@ body main .container .insurance-types-container-box .insurance-card .content .su
   background-color: #ecf3fe;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-types-container-box .insurance-card .content .sub-insurance .si-box span {
+body main .container .insurance-types-container-box .iCard .insurance-card .content .sub-insurance .si-box span {
   text-align: center;
   color: #262626;
   font-size: 14px;
   line-height: 18px;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-types-container-box .insurance-card .content .sub-insurance .si-box:hover {
+body main .container .insurance-types-container-box .iCard .insurance-card .content .sub-insurance .si-box:hover {
   background-color: #1a73e8;
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
-body main .container .insurance-types-container-box .insurance-card .content .sub-insurance .si-box:hover span {
+body main .container .insurance-types-container-box .iCard .insurance-card .content .sub-insurance .si-box:hover span {
   color: white;
 }
-body main .container .insurance-types-container-box .insurance-card .content a.to-article-btn {
+body main .container .insurance-types-container-box .iCard .insurance-card .content a.to-article-btn {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
@@ -642,17 +649,17 @@ body main .container .insurance-types-container-box .insurance-card .content a.t
   border-radius: 100px;
   transition: all 0.25s ease-in-out;
 }
-body main .container .insurance-types-container-box .insurance-card .content a.to-article-btn span.icon {
+body main .container .insurance-types-container-box .iCard .insurance-card .content a.to-article-btn span.icon {
   font-size: 0;
   transition: all 0.2s ease-in-out;
 }
-body main .container .insurance-types-container-box .insurance-card .content a.to-article-btn:hover {
+body main .container .insurance-types-container-box .iCard .insurance-card .content a.to-article-btn:hover {
   background-color: #356ac3;
 }
-body main .container .insurance-types-container-box .insurance-card:hover {
+body main .container .insurance-types-container-box .iCard .insurance-card:hover {
   transform: translateY(-10px);
 }
-body main .container .insurance-types-container-box .insurance-card:hover a.to-article-btn span.icon {
+body main .container .insurance-types-container-box .iCard .insurance-card:hover a.to-article-btn span.icon {
   font-size: 1rem;
   margin-left: 10px;
 }
@@ -705,6 +712,10 @@ body main .container .insurance-types-container-box .insurance-card:hover a.to-a
     padding: 50px 0;
     border-radius: 0;
   }
+  body main .ad-box {
+    max-width: 100%;
+    padding: 25px 0;
+  }
   body main .container {
     grid-template-columns: 1fr;
     grid-template-areas: "ad_top" "cheader" "leftbox" "ad_bottom" "rightbox";
@@ -725,37 +736,48 @@ body main .container .insurance-types-container-box .insurance-card:hover a.to-a
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
-    padding: 0 20px;
+    padding: 0;
+    width: 100%;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
   body main .container .insurance-types-container-box .right-box {
     padding-top: 50px;
   }
-  body main .container .right-box {
-    padding-top: 0;
-  }
-  body main .container .right-box, body main .container .left-box {
+  body main .container .insurance-types-container-box .right-box, body main .container .insurance-types-container-box .left-box {
     row-gap: 75px;
+    max-width: 100%;
   }
-  body main .container .insurance-card .content {
+  body main .container .insurance-types-container-box .ad-card {
+    width: 100%;
+    padding: 0;
+  }
+  body main .container .insurance-types-container-box .iCard {
+    padding: 0 20px;
+  }
+  body main .container .insurance-types-container-box .iCard .insurance-card {
+    width: 100%;
+  }
+  body main .container .insurance-types-container-box .iCard .insurance-card .content {
     padding: 20px 20px 30px 25px;
   }
-  body main .container .insurance-card .content h2 {
+  body main .container .insurance-types-container-box .iCard .insurance-card .content h2 {
     font-size: 2.4rem;
     margin-bottom: 20px;
   }
-  body main .container .insurance-card .content p {
+  body main .container .insurance-types-container-box .iCard .insurance-card .content p {
     font-size: 1.1rem;
     line-height: 1.8rem;
     margin-bottom: 25px;
   }
-  body main .container .insurance-card .content .sub-insurance {
+  body main .container .insurance-types-container-box .iCard .insurance-card .content .sub-insurance {
     gap: 10px;
     margin-bottom: 25px;
   }
-  body main .container .insurance-card .content .sub-insurance .si-box span {
+  body main .container .insurance-types-container-box .iCard .insurance-card .content .sub-insurance .si-box span {
     font-size: 0.75rem;
   }
-  body main .container .insurance-card .content a.to-article-btn {
+  body main .container .insurance-types-container-box .iCard .insurance-card .content a.to-article-btn {
     font-size: 1rem;
   }
 }/*# sourceMappingURL=index.css.map */

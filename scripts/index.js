@@ -105,5 +105,5 @@ function pushGoogleAds(adClientId, adSlotId, adContainer) {
   }
   
   // Refresh ads every minute (60000 milliseconds)
-//   refreshGoogleAds()
+  refreshGoogleAds()
   setInterval(refreshGoogleAds, 60000);

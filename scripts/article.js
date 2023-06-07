@@ -125,4 +125,4 @@ function scrollFunction() {
   
   // Refresh ads every minute (60000 milliseconds)
   refreshGoogleAds()
-  setInterval(refreshGoogleAds, 60000);
+//   setInterval(refreshGoogleAds, 60000);

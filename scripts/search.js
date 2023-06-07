@@ -323,4 +323,5 @@ function refreshGoogleAds() {
 }
 
 // Refresh ads every minute (60000 milliseconds)
-setInterval(refreshGoogleAds, 60000);
+refreshGoogleAds()
+// setInterval(refreshGoogleAds, 60000);
